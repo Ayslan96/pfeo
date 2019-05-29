@@ -7,5 +7,7 @@ Animal::Animal(int m_id, std::string m_class, std::string m_nome_cientifico, cha
 	this->m_sexo = m_sexo;
 	this->m_tamanho = m_tamanho;
 	this->m_dieta = m_dieta;
-	this->m_nome_batismo;
+	this->m_nome_batismo = m_nome_batismo;
 }
+
+Animal::~Animal(){}
