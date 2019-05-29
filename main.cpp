@@ -2,16 +2,14 @@
 #include "interfaces.h"
 #include "menu.h"
 
-using std::cin;
-using std::cout;
-using std::cerr;
-
 
 int main(){
 	
-	menu Menu;
+	menu main;
 
-	Menu.menu();
-	~Menu.menu();
+	main.menuM();
+
+	
+
 	return 0;
 }

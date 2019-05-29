@@ -1,7 +1,10 @@
+#include <iostream>
 #include "interfaces.h"
-using cout = std::cout;
-using endl = std::endl;
-Interfaces::Interface(){
+
+using std::cout;
+using std::endl;
+
+void Interfaces::exibeNome(){
 	cout << " #######      ########    ################    ###########    ########    #####      ######## " << endl;
 	cout << " ##     #     ########    ################    ###########    ########    #    #     #      # " << endl;
 	cout << " ##      #    #                  ##           ##             #           ##    #    #      # "<< endl;

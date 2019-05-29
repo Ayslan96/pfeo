@@ -1,4 +1,21 @@
-char op;
+#include <iostream>
+#include "menu.h"
+#include "interfaces.h"
+
+
+using std::cin;
+using std::cout;
+using std::cerr;
+
+
+
+void menu::menuM(){
+	
+	Interfaces nome;
+
+	nome.exibeNome();
+
+	char op;
 
 	cout<<"1. Cadastrar novo animal\n";
 	cout<<"2. Remover animal\n";
@@ -40,5 +57,5 @@ char op;
 		break;
 	default:cout<<"Opcao "<<op<<" invalida. ";
 		break;
-
 		}
+}

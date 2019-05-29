@@ -6,8 +6,9 @@ class Interfaces{
 private:
 
 public:
-	Interfaces();
-	~Interfaces(); 
+	//Interfaces();
+	//~Interfaces(); 
+	void exibeNome();
 };
 
 #endif
