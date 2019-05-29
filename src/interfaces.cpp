@@ -1,5 +1,5 @@
 #include <iostream>
-#include "interfaces.h"
+#include "../include/interfaces.h"
 
 using std::cout;
 using std::endl;
