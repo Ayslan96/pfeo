@@ -3,12 +3,15 @@
 
 #include <string>
 
-class MamiferoNativo : public Mamifero {
+class MamiferoNativo : public Mamifero , public AnimalNativo {
 
 public:
 
-	MamiferoNativo();
+	MamiferoNativo(int id, std::string classe, std::string nome_cientifico, char sexo, double tamanho, std::string dieta, Veterinario veterinario,  
+		Tratador tratador, std::string nome_batismo, std::string cor_pelo);
 
+	MamiferoNativo();
+	
 	~MamiferoNativo();
 
 };
