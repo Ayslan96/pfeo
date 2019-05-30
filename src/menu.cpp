@@ -1,6 +1,6 @@
 #include <iostream>
-#include "menu.h"
-#include "interfaces.h"
+#include "../include/menu.h"
+#include "../include/interfaces.h"
 
 
 using std::cin;
