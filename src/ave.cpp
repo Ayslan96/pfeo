@@ -1,6 +1,6 @@
 #include "../include/ave.h"
 
-Ave::	Ave(int id, std::string classe, std::string nome_cientifico, char sexo, double tamanho, std::string dieta, std::sstring nome_batismo, double tamanho_do_bico_cm, double envergadura_das_asas){
+Ave::	Ave(int id, std::string classe, std::string nome_cientifico, char sexo, double tamanho, std::string dieta, std::string nome_batismo, double tamanho_do_bico_cm, double envergadura_das_asas){
 
 	this->m_id = m_id;
 	this->m_class = m_class;

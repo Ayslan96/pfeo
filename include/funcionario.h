@@ -3,6 +3,8 @@
 
 #include <string>
 
+using std::string;
+
 class Funcionario {
 protected:
 	int m_id;
@@ -15,7 +17,8 @@ protected:
 
 public:
 
-	method(type);
-	method(type);
-
+	Funcionario(int m_id, string m_nome, string m_cpf, 
+				short m_idade, short m_tipo_sanguineo, char m_fator_rh,
+				string m_especialidade);
+	~Funcionario();
 };
