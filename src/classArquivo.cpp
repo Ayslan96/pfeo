@@ -1,4 +1,5 @@
-#include "infoanimal.h"
+#include "../include/infoanimal.h"
+
 
 void Arquivo_Geral::leituraArquivo_Animal(ifstream arquivo_){
 }
