@@ -1,6 +1,6 @@
 #include <iostream>
-#include "interfaces.h"
-#include "menu.h"
+#include "../include/interfaces.h"
+#include "../include/menu.h"
 
 
 int main(){
