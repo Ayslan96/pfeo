@@ -6,7 +6,7 @@
 //#include "tratador.h"
 
 class Animal {
-	
+	 
 protected:
 	int m_id;
 	std::string m_class;
@@ -23,9 +23,11 @@ public:
 	Animal(void);
 	Animal(int m_id, std::string m_class, std::string m_nome_cientifico, char m_sexo, double m_tamanho, std::string m_dieta, std::string m_nome_batismo);
     ~Animal();
-    virtual void print() = 0;
- 
+  	virtual std::ostream& print(std::ostream&) const = 0;
+    friend std::ostream& operator << (std::ostream& os, const Animal& b) {
+		return b.print(os);
+	}
 
-};
+ };
 
 #endif
