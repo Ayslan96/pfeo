@@ -1,5 +1,7 @@
 #include "../include/animal.h"
 
+Animal::Animal(void){}
+
 Animal::Animal(int m_id, std::string m_class, std::string m_nome_cientifico, char m_sexo, double m_tamanho, std::string m_dieta, std::string m_nome_batismo){
 	this->m_id = m_id;
 	this->m_class = m_class;
