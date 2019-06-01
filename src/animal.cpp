@@ -21,7 +21,7 @@ Animal::~Animal(){}
 		m_class = classe;
 	}
 	void Animal::setM_nome_cientifico(string nome_cientifico){
-		setM_nome_cientifico = nome_cientifico;
+		m_nome_cientifico = nome_cientifico;
 	}
 	void Animal::setM_sexo(char sexo){
 		m_sexo=sexo;

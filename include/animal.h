@@ -33,7 +33,7 @@ public:
 	void setM_sexo(char);
 	void setM_tamanho(double);
 	void setM_dieta(string);
-	void setM_nome_batismo(str);
+	void setM_nome_batismo(string);
 
 	int getM_id();
 	string getM_class();
