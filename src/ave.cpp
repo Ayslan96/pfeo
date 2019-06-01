@@ -1,5 +1,5 @@
 #include "ave.h"
-Ave::	Ave(int id, std::string classe, std::string nome_cientifico, char sexo, double tamanho, std::string dieta, std::string nome_batismo, double tamanho_do_bico_cm, double envergadura_das_asas){
+Ave::Ave((double tamanho_do_bico_cm, double envergadura_das_asas):Animal(int id, std::string classe, std::string nome_cientifico, char sexo, double tamanho, std::string dieta, std::string nome_batismo) {
 
 	this->m_id = m_id;
 	this->m_class = m_class;
