@@ -1,12 +1,13 @@
-#include "animal.h"
-#include "ave.h"
+#include "../include/animal.h"
+#include "../include/ave.h"
 
 
-int main() {
-	
-	Ave teste(12,"mamifero","nathanliss",'f',1.50,"cenoura","nathan",2.68, 3.1);
+int main(){
 
-	std::cout << teste << std::endl;
+	Ave teste(12,"mamifero","nathanliss",'f',1.50,"cenoura","nathan",2.68, 3.1); //erro na compilação
 
-	return 0;
-} 
+	cout << teste << endl;
+
+
+return 0;
+}

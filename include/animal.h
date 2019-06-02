@@ -3,14 +3,17 @@
 #include <string>
 #include <iostream>
 
-
-using std::string;
+using namespace std;
 
 class Animal {
-	
+
+private:
+
+virtual std::ostream& print(std::ostream&) const = 0;
+
 protected:
 	int m_id;
-	std::string m_class;
+	std::string m_classe;
 	std::string m_nome_cientifico;
 	char m_sexo;
 	double m_tamanho;
@@ -18,17 +21,16 @@ protected:
 	std::string m_nome_batismo;
 
 public:
-
-	//Animal();
-	Animal(int m_id, std::string m_class, std::string m_nome_cientifico, char m_sexo, double m_tamanho, std::string m_dieta, std::string m_nome_batismo);
-    ~Animal();
-    //friend std::ostream& operator << (std::ostream &saida, const Animal& p){
-    //saida << "Id: " << p.m_id << " Classe: " << p.m_class<< " Nome cientifico: " << p.m_nome_cientifico << " Sexo: " << p.m_nome_cientifico << " Tamanho: " << p.m_tamanho << " Dieta: " << p.m_dieta << " Nome de batismo: " << p.m_nome_batismo;
-	//return saida;
-	//}
+	Animal(void);
+	Animal(int id, string classe, string nome_cientifico, char sexo, int tamanho, string dieta, string nome_batismo);
+	~Animal();
+	virtual void imprime()=0;
+    friend std::ostream& operator << (std::ostream& os, const Animal& b) {
+		return b.print(os);
+	}
 
 	void setM_id(int);
-	void setM_class(string);
+	void setM_classe(string);
 	void setM_nome_cientifico(string);
 	void setM_sexo(char);
 	void setM_tamanho(double);
@@ -36,7 +38,7 @@ public:
 	void setM_nome_batismo(string);
 
 	int getM_id();
-	string getM_class();
+	string getM_classe();
 	string getM_nome_cientifico();
 	char getM_sexo();
 	double getM_tamanho();
