@@ -4,9 +4,10 @@
 
 int main(){
 
-	Ave teste(12,"mamifero","nathanliss",'f',1.50,"cenoura","nathan",2.68, 3.1); //erro na compilação
+	Animal* teste = new Ave(12,"mamifero","nathanliss",'f',1.50,"cenoura","nathan",1.5,2.6); 
 
-	cout << teste << endl;
+	cout << *teste << endl;
+
 
 
 return 0;
