@@ -6,6 +6,11 @@
 using std::string;
 
 class Funcionario {
+
+private:
+
+virtual std::ostream& print(std::ostream&) const = 0;
+
 protected:
 	int m_id;
 	std::string m_nome;
@@ -18,9 +23,16 @@ protected:
 public:
 
 	Funcionario(int m_id, string m_nome, string m_cpf, 
-				short m_idade, short m_tipo_sanguineo, char m_fator_rh,
-				string m_especialidade);
+				short m_idade, short m_tipo_sanguineo, 
+				char m_fator_rh, string m_especialidade);
 	~Funcionario();
+
+	virtual void imprime()=0;
+
+	friend std::ostream& operator << (std::ostream& os, const Funcionario& b) {
+	return b.print(os);
+	}
+
 
 	void setM_id(int);
 	void setM_nome(string);

@@ -1,18 +1,9 @@
-#include "../include/funcionario.h"
-
-Funcionario::Funcionario(int m_id, string m_nome, string m_cpf, 
-				short m_idade, short m_tipo_sanguineo, char m_fator_rh,
-				string m_especialidade){
-	this->m_id = m_id;
-	this->m_nome = m_nome;
-	this->m_cpf = m_cpf;
-	this->m_idade = m_idade;
-	this->m_tipo_sanguineo = m_tipo_sanguineo;
-	this->m_fator_rh = m_fator_rh;
-	this->m_especialidade = m_especialidade;
-}
+Funcionario::Funcionario(int id, string nome, string cpf, short idade, short tipo_sanguineo, char fator_rh, string especialidade):
+m_id(id), m_nome(nome), m_cpf(cpf), m_idade(idade), m_tipo_sanguineo(tipo_sanguineo), m_fator_rh(fator_rh), m_especialidade(especialidade){}
 
 Funcionario::~Funcionario(){}
+
+void
 
 //setters
 	void Funcionario::setM_id(int id){
