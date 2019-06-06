@@ -1,7 +1,7 @@
 #ifndef Anfibio_H
 #define Anfibio_H
 
-#include "animal.h"
+#include "./include/animal/animal.h"
 #include "../include/date"
 #include <string>
 
