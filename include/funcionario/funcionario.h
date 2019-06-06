@@ -37,7 +37,7 @@ public:
 	void setM_id(int);
 	void setM_nome(string);
 	void setM_cpf(string);
-	void setM_idade(int);
+	void setM_idade(short);
 	void setM_tipo_sanguineo(short);
 	void setM_fator_rh(char);
 	void setM_especialidade(string);
@@ -45,12 +45,10 @@ public:
 	int getM_id();
 	string getM_nome();
 	string getM_cpf();
-	int getM_idade();
+	short getM_idade();
 	short getM_tipo_sanguineo();
 	char getM_fator_rh();
 	string getM_especialidade();
-
-
-
-
 };
+
+#endif

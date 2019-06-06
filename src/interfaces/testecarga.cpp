@@ -1,5 +1,5 @@
-#include "../include/animal/animal.h"
-#include "../include/ave/ave.h"
+#include "../include/animal.h"
+#include "../include/ave.h"
 
 
 int main(){
