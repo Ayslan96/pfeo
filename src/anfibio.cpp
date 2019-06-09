@@ -1,17 +1,17 @@
-#include "../include/animal/anfibio/anfibio.h"
+#include "/home/andrehabib/Documentos/pfeo/include/animal/anfibio/anfibio.h"
 
 Anfibio::Anfibio(void){}
 
 Anfibio::Anfibio(int id, string classe, string nome_cientifico, char sexo, int tamanho, string dieta, string nome_batismo,
-		ìnt total_de_mudas, date ultima_muda):
+		int total_de_mudas, Date ultima_muda):
 	Animal(m_id, m_classe, m_nome_cientifico, m_sexo, m_tamanho, m_dieta, m_nome_batismo),
-		m_total_de_mudas(total_de_mudas),m_ultima_muda(ultima_muda) {}
+		m_total_de_mudas(total_de_mudas), m_ultima_muda(ultima_muda) {}
 	
 
 
 Anfibio::~Anfibio(){}
 
-void Ave::imprime(){
+void Anfibio::imprime(){
 
 	cout << m_id << m_classe << m_nome_cientifico << m_sexo << m_tamanho
 	<< m_dieta << m_nome_batismo << m_total_de_mudas << m_ultima_muda << endl;
