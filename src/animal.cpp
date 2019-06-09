@@ -1,7 +1,5 @@
 #include "/home/andrehabib/Documentos/pfeo/include/animal/animal.h"
 
-
-
 Animal::Animal(void){}
 
 Animal::Animal(int id, string classe, string nome_cientifico, char sexo, int tamanho, string dieta, string nome_batismo):

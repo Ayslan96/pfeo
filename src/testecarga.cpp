@@ -5,12 +5,11 @@
 
 int main(){
 
-	//Date teste1(2,12,2019);
+	
 
 	Animal* teste = new Ave(12,"mamifero","nathanliss",'f',1.50,"cenoura","nathan",1.6,2.0); 
 
-	teste->imprime();
-	//cout << *teste << endl;
+	cout << *teste << endl;
 
 
 

@@ -1,6 +1,4 @@
-#include "../include/ave/ave.h"
-
-
+#include "/home/andrehabib/Documentos/pfeo/include/animal/ave/ave.h"
 
 Ave::Ave(void){}
 

@@ -2,12 +2,16 @@
 #define _MENU_H_
 
 #include <iostream>
-#include "interfaces.h"
+#include "home/andrehabib/Documentos/pfeo/include/interfaces/interfaces.h"
 
-class menu{
+
+class Menu{
 
 public:
 	void menuM();
+	void cadastrarAnimal();
+
+
 };
 
 

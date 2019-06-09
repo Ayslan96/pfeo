@@ -1,15 +1,14 @@
 #include <iostream>
-#include "../include/menu.h"
-#include "../include/interfaces.h"
+#include "/home/andrehabib/Documentos/pfeo/include/interfaces/menu.h"
+#include "/home/andrehabib/Documentos/pfeo/include/interfaces/interfaces.h"
 
 
 using std::cin;
 using std::cout;
 using std::cerr;
 
-
 //vdc
-void menu::menuM(){
+void Menu::MenuM(){
 	
 	Interfaces nome;
 
@@ -17,15 +16,15 @@ void menu::menuM(){
 
 	char op;
 
-	cout<<"1. Cadastrar novo animal\n";
-	cout<<"2. Remover animal\n";
-	cout<<"3. Alteração de cadastro de animal\n";
-	cout<<"4. Consultar animal\n";
-	cout<<"5. Cadastrar novo funcionario\n";
-	cout<<"6. Remover funcionario\n";
-	cout<<"7. Alteração de cadastro de funcionario\n";
-	cout<<"8. Consultar funcionario\n\n";
-	cout<<"ENTRE COM A OPCAO DESEJADA: ";
+	cout<<"1. Cadastrar novo animal " << endl;
+	cout<<"2. Remover animal " << endl;
+	cout<<"3. Alteração de cadastro de animal " << endl;
+	cout<<"4. Consultar animal " << endl;
+	cout<<"5. Cadastrar novo funcionario " << endl;
+	cout<<"6. Remover funcionario " << endl;
+	cout<<"7. Alteração de cadastro de funcionario " << endl;
+	cout<<"8. Consultar funcionario " << endl;
+	cout<<"ENTRE COM A OPCAO DESEJADA: " << endl;
 	cin>>op;
 
 
@@ -33,6 +32,7 @@ void menu::menuM(){
 
 	case '1':
 		cout<<"estamos na opcao "<<op;
+		cadastrarAnimal();
 		break;
 	case '2':
 		cout<<"estamos na opcao "<<op;
@@ -56,6 +56,48 @@ void menu::menuM(){
 		cout<<"estamos na opcao "<<op;
 		break;
 	default:cout<<"Opcao "<<op<<" invalida. ";
+		return MenuM();
 		break;
 		}
 }
+
+
+void Menu::cadastrarAnimal(){
+
+	int op = 0;
+	Interfaces nome;
+
+	cout<<"1. Mamifero " << endl;
+	cout<<"2. Ave " << endl;
+	cout<<"3. Anfibio " << endl;
+	cout<<"4. Reptil " << endl;
+	cout<<"ENTRE COM A OPCAO DESEJADA: " << endl;
+	cin>>op;
+
+
+	switch(op){
+
+	case '1':
+		cout<<"estamos na opcao "<<op;
+		nome.mamifero();
+		break;
+	case '2':
+		cout<<"estamos na opcao "<<op;
+		nome.ave();
+		break;
+	case '3':
+		cout<<"estamos na opcao "<<op;
+		nome.anfibio();
+		break;
+	case '4':
+		cout<<"estamos na opcao "<<op;
+		nome.reptil()
+		break;
+	default:cout<<"Opcao "<<op<<" invalida. ";
+		return cadastrarAnimal();
+		break;
+		}
+
+}
+
+
