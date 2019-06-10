@@ -1,4 +1,4 @@
-#include "/home/andrehabib/Documentos/pfeo/include/animal/animal.h"
+#include "../include/animal.h"
 
 Animal::Animal(void){}
 
