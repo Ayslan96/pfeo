@@ -8,13 +8,13 @@ $(PROG) : $(OBJS)
 	$(CC) $(OBJS) -o $(PROG) 
 
 main.o :
-	$(CC) $(CPPFLAGS) -c testecarga.cpp 
+	$(CC) $(CPPFLAGS) -c main.cpp 
 
-classes1.o : ../include/animal/animal.h
-	$(CC) $(CPPFLAGS) -c ../src/animal/animal.cpp
+classes1.o : ../include/animal.h
+	$(CC) $(CPPFLAGS) -c ../src/animal.cpp
 
-classes2.o : ../include/animal/anfibio/anfibio.h
-	$(CC) $(CPPFLAGS) -c ../src/animal/anfibio/anfibio.cpp
+classes2.o : ../include/anfibio.h
+	$(CC) $(CPPFLAGS) -c ../src/anfibio.cpp
 
 classes3.o : ../include/date.h
 	$(CC) $(CPPFLAGS) -c ../src/date.cpp

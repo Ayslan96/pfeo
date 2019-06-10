@@ -43,7 +43,9 @@ void Anfibio::imprime(){
 	void Anfibio::setM_total_de_mudas(int total_de_mudas){
 		m_total_de_mudas= total_de_mudas;
 	}
-	void setM_ultima_muda(Date ultima_muda)
+	//void setM_ultima_muda(Date ultima_muda){
+		//m_ultima_muda = ultima_muda;
+	//}
 
 //getters
 	int Anfibio::getM_id(){
@@ -67,3 +69,11 @@ void Anfibio::imprime(){
 	string Anfibio::getM_nome_batismo(){
 		return m_nome_batismo;
 	}
+
+	int Anfibio::getM_total_de_mudas(){
+		return m_total_de_mudas;
+	}
+
+	//Date Anfibio::getM_ultima_muda(){
+		//return m_ultima_muda;
+	//}

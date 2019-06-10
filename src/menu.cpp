@@ -44,7 +44,7 @@ void Menu::menuM(){
 		cout << "Estamos na opcao " << op;
 		break;
 	case '5':
-		cout << "Estamos na opcao " <<o p;
+		cout << "Estamos na opcao " << op;
 		break;
 	case '6':
 		cout << "Estamos na opcao " << op;
@@ -60,6 +60,7 @@ void Menu::menuM(){
 		return menuM();
 		break;
 		
+	}
 }
 
 
@@ -92,7 +93,7 @@ void Menu::cadastrarAnimal(){
 		break;
 	case '4':
 		cout << "Estamos na opcao " << op;
-		nome.reptil()
+		nome.reptil();
 		break;
 	default: 
 		cout << "Opcao " << op << " invalida. ";
@@ -100,6 +101,7 @@ void Menu::cadastrarAnimal(){
 		break;
 		
 
+	}
 }
 
 

@@ -6,6 +6,7 @@
 #include "anfibio.h"
 #include "ave.h"
 #include "animal.h"
+#include "date.h"
 
 class Interfaces{
 
@@ -19,7 +20,7 @@ private:
 	std::string nome_batismo;
 
 public:
-	//Interfaces();
+	//Interfaces(void);
 	//~Interfaces(); 
 	void exibeNome();
 	void mamifero();

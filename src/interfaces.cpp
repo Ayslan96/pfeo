@@ -97,8 +97,8 @@ void Interfaces::reptil(){
 }
 
 void Interfaces::anfibio(){
-	int total_de_mudas;
-	Date ultima_muda;
+	int total_de_muda, dia, mes, ano;
+
 
 	cout<< " Digite o nome do animal: " << endl;
 	cin >> id;
@@ -114,8 +114,14 @@ void Interfaces::anfibio(){
 	cin >> nome_batismo;
 	cout<< " Digite o total de mudas: " << endl;
 	cin >> total_de_muda;
-	cout<< " Digite a data da ultima muda ( exemplo: 3 12 2019) " << endl;
-	cin >> ultima_muda;
+	cout<< " Digite o dia da ultima muda: " << endl;
+	cin >> dia;
+	cout<< " Digite o mes da ultima muda: " << endl;
+	cin >> mes;
+	cout<< " Digite o ano da ultima muda: " << endl;
+	cin >> ano;
+
+	Date ultima_muda(dia,mes,ano);
 
 	classe = "anfibio";
 	Animal* anfibio = new Anfibio(id, classe, nome_cientifico, sexo, tamanho, dieta, nome_batismo , total_de_muda, ultima_muda);

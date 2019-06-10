@@ -1,9 +1,9 @@
-s#ifndef Reptil_H
+#ifndef Reptil_H
 #define Reptil_H
-
 #include "animal.h"
 
-class Reptil : public Animal {
+class Reptil : public Animal{
+
 private:
 	bool m_venenoso;
 	std::string m_tipo_veneno;

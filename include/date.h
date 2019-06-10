@@ -1,6 +1,7 @@
 #ifndef Date_h
 #define Date_h
 #include <iostream>
+#include <istream>
 using namespace std;
 
 class Date{
@@ -22,6 +23,12 @@ public:
 		
 		return saida;
 	}
+
+	//friend std::istream& operator >> (std::istream& saida2, const Date& t) {
+		//saida2 >> t.dia >> t.mes >> t.ano;
+		//return saida2;
+	//}
+
 };
 
 

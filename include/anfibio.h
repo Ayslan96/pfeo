@@ -35,7 +35,7 @@ public:
 	void setM_dieta(string);
 	void setM_nome_batismo(string);
 	void setM_total_de_mudas(int);
-	void setM_ultima_muda(Date);
+	//void setM_ultima_muda(Date);
 
 	int getM_id();
 	string getM_classe();
@@ -45,7 +45,7 @@ public:
 	string getM_dieta();
 	string getM_nome_batismo();
 	int getM_total_de_mudas();
-	Date getM_ultima_muda();
+	//Date getM_ultima_muda();
 
 
    

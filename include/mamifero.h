@@ -3,7 +3,9 @@
 
 #include "animal.h"
 
-class Mamifero : public Animal {
+
+class Mamifero : public Animal{
+
 private:
 	
 	std::string m_cor_pelo;
@@ -18,7 +20,7 @@ public:
 
 	Mamifero(void);
 
-	Mamifero(int id, string classe, string nome_cientifico, char sexo, double tamanho, string dieta, Veterinario veterinario,  Tratador tratador, string nome_batismo, string cor_pelo);
+	Mamifero(int id, string classe, string nome_cientifico, char sexo, double tamanho, string dieta, string nome_batismo, string cor_pelo);
 	
 	~Mamifero();
 	
@@ -26,3 +28,5 @@ public:
 
 
 };
+
+#endif
