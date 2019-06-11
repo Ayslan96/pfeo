@@ -1,9 +1,12 @@
-#ifndef ANIMAL_H
-#define ANIMAL_H
-#include <string>
-#include <iostream>
+#ifndef Animal_H
+#define Animal_H
 
-using namespace std;
+#include <iostream>
+#include <string>
+
+using std::cout;
+using std::string;
+using std::endl;
 
 class Animal {
 
@@ -21,10 +24,14 @@ protected:
 	std::string m_nome_batismo;
 
 public:
-	Animal(void);
-	Animal(int id, string classe, string nome_cientifico, char sexo, int tamanho, string dieta, string nome_batismo);
+	
+	Animal(int m_id, string m_classe, string m_nome_cientifico, 
+		   char m_sexo, double m_tamanho, string m_dieta, 
+		   string m_nome_batismo);
 	~Animal();
+
 	virtual void imprime()=0;
+
     friend std::ostream& operator << (std::ostream& os, const Animal& b) {
 		return b.print(os);
 	}
