@@ -1,6 +1,15 @@
 #include <iostream>
 #include "../include/menu.h"
 #include "../include/interfaces.h"
+#include "animal.h"
+#include "ave.h"
+#include "anfibio.h"
+#include "mamifero.h"
+#include "reptil.h"
+#include "funcionario.h"
+#include "veterinario.h"
+#include "tratador.h"
+
 
 
 using std::cin;
@@ -8,10 +17,41 @@ using std::cout;
 using std::cerr;
 
 
+
+void menu::cadastrarAnimal(){
+
+}
+void menu::removerAnimal(){
+
+}
+void menu::alterarCadastroAnimal(){
+
+}
+void menu::consultarAnimal(){
+
+}
+void menu::cadastrarNovofuncionario(){
+
+}
+void menu::removerFuncionario(){
+
+}
+void menu::alteraçãoCadastroFuncionario(){
+
+}
+void menu::consultarFuncionario(){
+
+}
+
+
+
 //vdc
 void menu::menuM(){
 	
+	bool a;
 	Interfaces nome;
+
+	while(a==true){
 
 	nome.exibeNome();
 
@@ -24,38 +64,35 @@ void menu::menuM(){
 	cout<<"5. Cadastrar novo funcionario\n";
 	cout<<"6. Remover funcionario\n";
 	cout<<"7. Alteração de cadastro de funcionario\n";
-	cout<<"8. Consultar funcionario\n\n";
+	cout<<"8. Consultar funcionario\n";
+	cout<<"9. SAIR\n\n"
 	cout<<"ENTRE COM A OPCAO DESEJADA: ";
 	cin>>op;
-
 
 	switch(op){
 
 	case '1':
-		cout<<"estamos na opcao "<<op;
-		break;
+		cadastrarAnimal();	
 	case '2':
-		cout<<"estamos na opcao "<<op;
-		break;
+		removerAnimal();
 	case '3':
-		cout<<"estamos na opcao "<<op;
-		break;
+		alterarCadastroAnimal();
 	case '4':
-		cout<<"estamos na opcao "<<op;
-		break;
+		consultarAnimal();
 	case '5':
-		cout<<"estamos na opcao "<<op;
-		break;
+		cadastrarNovofuncionario();
 	case '6':
-		cout<<"estamos na opcao "<<op;
-		break;
+		removerFuncionario();
 	case '7':
-		cout<<"estamos na opcao "<<op;
-		break;
+		alteraçãoCadastroFuncionario();
 	case '8':
-		cout<<"estamos na opcao "<<op;
-		break;
+		consultarFuncionario();
+	case '9':
+		a=false;
 	default:cout<<"Opcao "<<op<<" invalida. ";
 		break;
 		}
+
+
+	}
 }
