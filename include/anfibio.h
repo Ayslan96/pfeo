@@ -2,40 +2,53 @@
 #define Anfibio_H
 
 #include "animal.h"
-#include <string>
-
+#include "date.h"
 
 
 class Anfibio : public Animal {
 private:
 	
 	int m_total_de_mudas;
-	std::string m_ultima_muda;
+	Date m_ultima_muda;
+	
+	std::ostream& print(std::ostream& os) const {
+		return os << "Id: " << m_id << ", Classe: " << m_classe << ", Nome Cientifico: " << m_nome_cientifico << ", Sexo: " << m_sexo 
+			  <<", Tamanho: " << m_tamanho <<", Dieta: "<< m_dieta <<", Nome de Batismo: "<< m_nome_batismo
+			  <<", Total de mudas: " << m_total_de_mudas << ", Última muda: " << m_ultima_muda << endl;
+	}
 	
 public:
 
-	/Anfibio(delete);
+	Anfibio(void);
 
-	Ave(double tamanho_do_bico_cm, double envergadura_das_asas):Animal(int id, std::string classe, 
-		std::string nome_cientifico, char sexo, double tamanho, std::string dieta, std::string nome_batismo);
-	~Ave();
-
-	friend std::ostream& operator << (std::ostream &saida, const Ave& p){
-    saida << "Id: " << p.m_id << " Classe: " << p.m_class<< " Nome cientifico: " << p.m_nome_cientifico << " Sexo: " << p.m_nome_cientifico << " Tamanho: " << p.m_tamanho << " Dieta: " << p.m_dieta << " Nome de batismo: " << p.m_nome_batismo << "Tamanho de bico: " << p.m_tamanho_do_bico_cm << " Envergadura das asas: " << p.m_envergadura_das_asas;
-	return saida;
-	}
-	
-	Anfibio(std::string nome_batismo, int total_de_mudas): Animal (int id, std::string classe, std::string nome_cientifico, char sexo,
-			double tamanho, std::string dieta);
+	Anfibio(int id, string classe, string nome_cientifico, 
+		char sexo, int tamanho, string dieta, string nome_batismo, int total_de_mudas, Date ultima_muda);
 	~Anfibio();
 
-	friend std::ostream& operator << (std::ostream &saida, const Ave& p){
-    saida << "Id: " << p.m_id << " Classe: " << p.m_class<< " Nome cientifico: " << p.m_nome_cientifico << " Sexo: " << p.m_nome_cientifico << " Tamanho: " << p.m_tamanho << " Dieta: " << p.m_dieta << " Nome de batismo: " << p.m_nome_batismo << "Tamanho de bico: " << p.m_tamanho_do_bico_cm << " Envergadura das asas: " << p.m_envergadura_das_asas;
-	return saida;
+	void imprime();
 
-	friend std::ostream& print(std::ostream os) const{
-    	return os << "Id: " << m_id << " Classe: " << m_class<< " Nome cientifico: " << m_nome_cientifico << " Sexo: " << m_nome_cientifico << " Tamanho: "	<< m_tamanho << " Dieta: " << m_dieta << " Nome de batismo: " << m_nome_batismo << " Total de mudas: " << m_total_de_mudas << " Ultima muda: " << m_ultima_muda;
-	}
+	void setM_id(int);
+	void setM_classe(string);
+	void setM_nome_cientifico(string);
+	void setM_sexo(char);
+	void setM_tamanho(double);
+	void setM_dieta(string);
+	void setM_nome_batismo(string);
+	void setM_total_de_mudas(int);
+	//void setM_ultima_muda(Date);
+
+	int getM_id();
+	string getM_classe();
+	string getM_nome_cientifico();
+	char getM_sexo();
+	double getM_tamanho();
+	string getM_dieta();
+	string getM_nome_batismo();
+	int getM_total_de_mudas();
+	//Date getM_ultima_muda();
+
+
+   
 };
 
 #endif
