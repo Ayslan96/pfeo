@@ -17,9 +17,7 @@ private:
 		
 public:
 	Ave(void);
-	Ave(
-		int id, string classe, string nome_cientifico, 
-		char sexo, int tamanho, string dieta, string nome_batismo, double tamanho_do_bico_cm, double envergadura_das_asas);
+	Ave(int, string, string, char, int, string, string, double, double);
 	~Ave();
 	void imprime();
 

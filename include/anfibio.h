@@ -21,8 +21,7 @@ public:
 
 	Anfibio(void);
 
-	Anfibio(int id, string classe, string nome_cientifico, 
-		char sexo, int tamanho, string dieta, string nome_batismo, int total_de_mudas, Date ultima_muda);
+	Anfibio(int , string, string, char, int, string, string, int, Date);
 	~Anfibio();
 
 	void imprime();
