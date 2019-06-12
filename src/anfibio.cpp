@@ -2,10 +2,10 @@
 
 Anfibio::Anfibio(void){}
 
-Anfibio::Anfibio(int id, string classe, string nome_cientifico, char sexo, int tamanho, string dieta, string nome_batismo,
-		int total_de_mudas, Date ultima_muda):
+Anfibio::Anfibio(int m_id, string m_classe, string m_nome_cientifico, char m_sexo, int m_tamanho, string m_dieta, string m_nome_batismo,
+		int m_total_de_mudas, Date m_ultima_muda):
 	Animal(m_id, m_classe, m_nome_cientifico, m_sexo, m_tamanho, m_dieta, m_nome_batismo),
-		m_total_de_mudas(total_de_mudas), m_ultima_muda(ultima_muda) {}
+		m_total_de_mudas(m_total_de_mudas), m_ultima_muda(m_ultima_muda) {}
 	
 
 
