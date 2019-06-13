@@ -41,6 +41,8 @@ void Interfaces::mamifero(){
 	Animal* mamifero = new Mamifero(id, classe, nome_cientifico, sexo, tamanho, dieta, nome_batismo, cor_do_pelo);
 	
 
+	
+
 }
 
 void Interfaces::ave(){
@@ -66,6 +68,7 @@ void Interfaces::ave(){
 
 	classe = "ave";
 	Animal* ave = new Ave(id, classe, nome_cientifico, sexo, tamanho, dieta, nome_batismo ,tamanho_do_bico, envergadura_das_asas);
+	
 
 }
 
@@ -93,6 +96,7 @@ void Interfaces::reptil(){
 
 	classe = "reptil";
 	Animal* reptil = new Reptil(id, classe, nome_cientifico, sexo, tamanho, dieta, nome_batismo, venenoso, tipo_veneno);
+
 	
 }
 
@@ -125,5 +129,6 @@ void Interfaces::anfibio(){
 
 	classe = "anfibio";
 	Animal* anfibio = new Anfibio(id, classe, nome_cientifico, sexo, tamanho, dieta, nome_batismo , total_de_muda, ultima_muda);
+	
 
 }

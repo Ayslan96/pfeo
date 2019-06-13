@@ -2,35 +2,39 @@
 #define classArquivos_h
 #include <iostream>
 #include <fstream>
+#include <string> 
+#include "mamifero.h"
+#include "reptil.h"
+#include "anfibio.h"
+#include "ave.h"
+#include "animal.h"
+#include "date.h"
+#include "funcionario.h"
+#include "tratador.h"
+#include "veterinario.h"
 
 class Arquivo_Geral {
+private:
 
-	int numero;
-	std::string classe;
-	std::string nome;
-	std::string nome_Cien;
-	char cpf[11];
-	int idade_funcionario;
-	std::string tipo_sangue;
-	char fator_rh[1];
-	std::string especialidade;
-	std::string codigo_CRMV;
-	int nivel_seguranca; 
-	char sexo;
-	float tamanho_Metros;
-	std::string dieta;
-	int veterinario;
-	int tratador;
-	std::string nome_Batismo;
-	ifstream arquivo;
+	ofstream arquivoFuncionario_;
+	ofstream arquivoAnimal_;
+	ifstream arquivoFuncionario;
+	ifstream arquivoAnimal;
+	std::string linha;
+
 
 
 
 public:
-	void leituraArquivo_Animal(ifstream arquivo_);
-	void leituraArquivo_Funcionario(ifstream arquivo2_);
+	void leituraArquivo_Animal();
+	void leituraArquivo_Funcionario();
+	void fecharArquivo_Animal();
+	void fecharArquivo_Funcionario();
+	void cadastrar_Mamifero(Mamifero &m);
+	void cadastrar_Tratador(Tratador &t);
 
 };
+
 
 
 

@@ -7,6 +7,7 @@
 #include "ave.h"
 #include "animal.h"
 #include "date.h"
+#include "classArquivo.h"
 
 class Interfaces{
 
@@ -18,6 +19,7 @@ private:
 	double tamanho;
 	std::string dieta;
 	std::string nome_batismo;
+	Arquivo_Geral geral; // objeto da calsse Arquivo_Geral apra chamar os métodos.
 
 public:
 	//Interfaces(void);
