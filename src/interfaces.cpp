@@ -1,5 +1,6 @@
 #include <iostream>
 #include "../include/interfaces.h"
+#include <fstream>
 
 using std::cout;
 using std::endl;
@@ -22,8 +23,10 @@ void Interfaces::exibeNome(){
 void Interfaces::mamifero(){
 	string cor_do_pelo;
 
-	cout<< " Digite o nome do animal: " << endl;
-	cin >> id;
+	cout << " Digite o id do animal " << endl;
+	cin>> id;
+	cout<< " Digite o nome do animal do batismo: " << endl;
+	cin >> nome_batismo;
 	cout<< " Digite o nome cientifico: " << endl;
 	cin >> nome_cientifico;
 	cout<< " Digite o sexo: " << endl;
@@ -32,15 +35,21 @@ void Interfaces::mamifero(){
 	cin >> tamanho;
 	cout<< " Digite a dieta: " << endl;
 	cin >> dieta;
-	cout<< " Digite o nome do batismo: " << endl;
-	cin >> nome_batismo;
 	cout<< " Digite a cor do pelo: " << endl;
 	cin >> cor_do_pelo;
 
 	classe = "mamifero";
 	Animal* mamifero = new Mamifero(id, classe, nome_cientifico, sexo, tamanho, dieta, nome_batismo, cor_do_pelo);
 	
-
+	ofstream ArquivoTeste;
+	ArquivoTeste.open("animais.txt",ios::app);
+	if(ArquivoTeste.is_open()){
+		ArquivoTeste << *mamifero;
+		ArquivoTeste << "\n";
+	}else{
+		std::cout << " Não foi possivel cadastrar o animal! " << std::endl;
+	}
+	ArquivoTeste.close();
 	
 
 }

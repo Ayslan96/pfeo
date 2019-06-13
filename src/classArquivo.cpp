@@ -1,4 +1,4 @@
-#include "../include/classArquivo"
+#include "../include/classArquivo.h"
 
 void Arquivo_Geral::leituraArquivo_Animal(){
 	arquivoAnimal.open("animais.txt");
@@ -23,11 +23,10 @@ void Arquivo_Geral::leituraArquivo_Funcionario(){
 	}
 }
 
-void Arquivo_Geral::cadastrar_Mamifero(Mamifero &m) {
-
+void Arquivo_Geral::cadastrar_Mamifero(Animal &m) {
 	arquivoAnimal_.open("animais.txt",ios::app);
 	if(arquivoAnimal_.is_open()){
-		arquivoAnimal_ << *m;
+		//arquivoAnimal_ << teste.getM_id();
 		arquivoAnimal_ << "\n";
 	}else{
 		std::cout << " Não foi possivel cadastrar o animal! " << std::endl;
@@ -48,3 +47,15 @@ void Arquivo_Geral::cadastrar_Tratador(Tratador &t) {
 	
 	fecharArquivo_Funcionario();
 }
+
+
+void Arquivo_Geral::fecharArquivo_Funcionario(){
+	arquivoFuncionario_.close();
+	arquivoFuncionario.close();
+} 
+
+void Arquivo_Geral::fecharArquivo_Animal(){
+	arquivoAnimal_.close();
+	arquivoAnimal.close();
+} 
+

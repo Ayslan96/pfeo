@@ -14,7 +14,7 @@ void Menu::menuM(){
 
 	nome.exibeNome();
 
-	char op;
+	int op;
 
 	cout<<"1. Cadastrar novo animal " << endl;
 	cout<<"2. Remover animal " << endl;
@@ -30,33 +30,33 @@ void Menu::menuM(){
 
 	switch(op){
 
-	case '1':
+	case 1:
 		cout << "Estamos na opcao " << op;
 		cadastrarAnimal();
 		break;
-	case '2':
+	case 2:
 		cout << "Estamos na opcao " << op;
 		break;
-	case '3':
+	case 3:
 		cout << "Estamos na opcao " << op;
 		break;
-	case '4':
+	case 4:
 		cout << "Estamos na opcao " << op;
 		break;
-	case '5':
+	case 5:
 		cout << "Estamos na opcao " << op;
 		break;
-	case '6':
+	case 6:
 		cout << "Estamos na opcao " << op;
 		break;
-	case '7':
+	case 7:
 		cout << "Estamos na opcao " << op;
 		break;
-	case '8':
+	case 8:
 		cout << "Estamos na opcao " << op;
 		break;
 	default:
-		cout << "Opcao " << op << " invalida. ";
+		cout << "Opcao " << op << " invalida. " << endl;
 		return menuM();
 		break;
 		
@@ -67,8 +67,8 @@ void Menu::menuM(){
 void Menu::cadastrarAnimal(){
 
 	int op = 0;
-	Interfaces nome;
-
+	Interfaces classe;
+	cout << "" << endl;
 	cout<<"1. Mamifero " << endl;
 	cout<<"2. Ave " << endl;
 	cout<<"3. Anfibio " << endl;
@@ -79,21 +79,21 @@ void Menu::cadastrarAnimal(){
 
 	switch(op){
 
-	case '1':
+	case 1:
 		cout << "Estamos na opcao " << op;
-		nome.mamifero();
+		classe.mamifero();
 		break;
-	case '2':
+	case 2:
 		cout << "Estamos na opcao " << op;
-		nome.ave();
+		classe.ave();
 		break;
-	case '3':
+	case 3:
 		cout << "Estamos na opcao " << op;
-		nome.anfibio();
+		classe.anfibio();
 		break;
-	case '4':
+	case 4:
 		cout << "Estamos na opcao " << op;
-		nome.reptil();
+		classe.reptil();
 		break;
 	default: 
 		cout << "Opcao " << op << " invalida. ";

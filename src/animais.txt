@@ -1,0 +1,2 @@
+Id: 46, Classe: mamifero, Nome Cientifico: navgalis, Sexo: m, Tamanho: 2, Dieta: frango, Nome de Batismo: andre, Cor do pelo: marrom
+
