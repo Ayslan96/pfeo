@@ -30,7 +30,7 @@ public:
 	void leituraArquivo_Animal(ifstream arquivo_);
 	void leituraArquivo_Funcionario(ifstream arquivo2_);
 
-}
+};
 
 
 

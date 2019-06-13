@@ -1,7 +1,13 @@
 #include "animal.h"
 
+<<<<<<< HEAD:src/animal/animal.cpp
 
 Animal::Animal(int id, string classe, string nome_cientifico, char sexo, double tamanho, string dieta, string nome_batismo):
+=======
+Animal::Animal(void){}
+
+Animal::Animal(int id, string classe, string nome_cientifico, char sexo, int tamanho, string dieta, string nome_batismo):
+>>>>>>> origin/master:src/animal.cpp
 m_id(id), m_classe(classe), m_nome_cientifico(nome_cientifico), m_sexo(sexo), m_tamanho(tamanho), 
 m_dieta(dieta), m_nome_batismo(nome_batismo) {}
 
