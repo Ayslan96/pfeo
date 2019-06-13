@@ -20,7 +20,7 @@ public:
 
 	void imprime();
 
-	Veterinario(int,string,string,short,short,char,string,string);
+	Veterinario(int,string,string,int,string,char,string,string);
 	~Veterinario();
 
 	

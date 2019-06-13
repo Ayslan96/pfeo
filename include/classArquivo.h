@@ -30,7 +30,7 @@ public:
 	void leituraArquivo_Funcionario();
 	void fecharArquivo_Animal();
 	void fecharArquivo_Funcionario();
-	void cadastrar_Mamifero(Mamifero &m);
+	void cadastrar_Mamifero(Animal &m);
 	void cadastrar_Tratador(Tratador &t);
 
 };

@@ -45,6 +45,7 @@ void Menu::menuM(){
 		break;
 	case 5:
 		cout << "Estamos na opcao " << op;
+		cadastrarFuncionario();
 		break;
 	case 6:
 		cout << "Estamos na opcao " << op;
@@ -98,6 +99,37 @@ void Menu::cadastrarAnimal(){
 	default: 
 		cout << "Opcao " << op << " invalida. ";
 		return cadastrarAnimal();
+		break;
+		
+
+	}
+}
+
+void Menu::cadastrarFuncionario(){
+
+	int op = 0;
+	Interfaces classe;
+	cout << "" << endl;
+	cout<<"1. Veterinário " << endl;
+	cout<<"2. Tratador " << endl;
+
+	cout<<"ENTRE COM A OPCAO DESEJADA: " << endl;
+	cin>>op;
+
+
+	switch(op){
+
+	case 1:
+		cout << "Estamos na opcao " << op;
+		classe.veterinario();
+		break;
+	case 2:
+		cout << "Estamos na opcao " << op;
+		//classe.tratador();
+		break;
+	default: 
+		cout << "Opcao " << op << " invalida. ";
+		return cadastrarFuncionario();
 		break;
 		
 

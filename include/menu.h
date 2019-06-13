@@ -11,6 +11,7 @@ public:
 
 	void menuM();
 	void cadastrarAnimal();
+	void cadastrarFuncionario();
 	//void removerAnimal();
 	//void alterarCadastroAnimal();
 	//void consultarAnimal();

@@ -8,6 +8,9 @@
 #include "animal.h"
 #include "date.h"
 #include "classArquivo.h"
+#include "funcionario.h"
+#include "veterinario.h"
+#include "tratador.h"
 
 class Interfaces{
 
@@ -20,6 +23,12 @@ private:
 	std::string dieta;
 	std::string nome_batismo;
 	Arquivo_Geral geral; // objeto da calsse Arquivo_Geral apra chamar os métodos.
+	std::string m_nome;
+	std::string m_cpf;
+	int m_idade;
+	std::string m_tipo_sanguineo;
+	char m_fator_rh;
+	std::string m_especialidade;
 
 public:
 	//Interfaces(void);
@@ -29,6 +38,8 @@ public:
 	void ave();
 	void reptil();
 	void anfibio();
+	void veterinario();
+	//void tratador();
 
 };
 

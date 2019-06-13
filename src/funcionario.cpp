@@ -1,12 +1,12 @@
 #include "../include/funcionario.h"
 
-Funcionario::Funcionario(int id, string nome, string cpf, short idade, short tipo_sanguineo, char fator_rh, string especialidade):
+Funcionario::Funcionario(int id, string nome, string cpf, int idade, string tipo_sanguineo, char fator_rh, string especialidade):
 m_id(id), m_nome(nome), m_cpf(cpf), m_idade(idade), m_tipo_sanguineo(tipo_sanguineo), m_fator_rh(fator_rh), m_especialidade(especialidade){}
 
 Funcionario::~Funcionario(){}
 
 //setters
-	void Funcionario::setM_id(int idd){
+	/*void Funcionario::setM_id(int idd){
 		m_id = idd;
 	}
 	void Funcionario::setM_nome(string nome){
@@ -49,4 +49,4 @@ Funcionario::~Funcionario(){}
 	}
 	string Funcionario::getM_especialidade(){
 		return m_especialidade;
-	}
+	}*/
