@@ -4,7 +4,10 @@ Animal::Animal(void){}
 
 Animal::Animal(int id, string classe, string nome_cientifico, char sexo, int tamanho, string dieta, string nome_batismo):
 m_id(id), m_classe(classe), m_nome_cientifico(nome_cientifico), m_sexo(sexo), m_tamanho(tamanho), 
-m_dieta(dieta), m_nome_batismo(nome_batismo) {}
+m_dieta(dieta), m_nome_batismo(nome_batismo) {
+
+	total++;
+}
 
 Animal::~Animal(){}
 
@@ -54,3 +57,5 @@ Animal::~Animal(){}
 	string Animal::getM_nome_batismo(){
 		return m_nome_batismo;
 	}
+
+	int Animal::getTotal(){return total;}

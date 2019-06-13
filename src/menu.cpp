@@ -24,6 +24,7 @@ void Menu::menuM(){
 	cout<<"6. Remover funcionario " << endl;
 	cout<<"7. Alteração de cadastro de funcionario " << endl;
 	cout<<"8. Consultar funcionario " << endl;
+	cout<<"9. SAIR DO PROGRAMA " <<endl;
 	cout<<"ENTRE COM A OPCAO DESEJADA: " << endl;
 	cin>>op;
 
@@ -56,6 +57,11 @@ void Menu::menuM(){
 	case 8:
 		cout << "Estamos na opcao " << op;
 		break;
+	case 9:
+		cout<< "Saindo..."<<endl;
+		cout<<flush;
+		return;
+		break;
 	default:
 		cout << "Opcao " << op << " invalida. " << endl;
 		return menuM();
@@ -83,25 +89,27 @@ void Menu::cadastrarAnimal(){
 	case 1:
 		cout << "Estamos na opcao " << op;
 		classe.mamifero();
+		menuM();
 		break;
 	case 2:
 		cout << "Estamos na opcao " << op;
 		classe.ave();
+		menuM();
 		break;
 	case 3:
 		cout << "Estamos na opcao " << op;
 		classe.anfibio();
+		menuM();
 		break;
 	case 4:
 		cout << "Estamos na opcao " << op;
 		classe.reptil();
+		menuM();
 		break;
 	default: 
 		cout << "Opcao " << op << " invalida. ";
 		return cadastrarAnimal();
 		break;
-		
-
 	}
 }
 

@@ -25,7 +25,7 @@ public:
 	Funcionario(int m_id, string m_nome, string m_cpf, 
 				int m_idade, string m_tipo_sanguineo, 
 				char m_fator_rh, string m_especialidade);
-	~Funcionario();
+	virtual ~Funcionario();
 
 	virtual void imprime()=0;
 

@@ -21,6 +21,7 @@ public:
 	void imprime();
 
 	Veterinario(int,string,string,int,string,char,string,string);
+	
 	~Veterinario();
 
 	

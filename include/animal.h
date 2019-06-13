@@ -11,6 +11,7 @@ private:
 
 virtual std::ostream& print(std::ostream&) const = 0;
 
+
 protected:
 	int m_id;
 	std::string m_classe;
@@ -23,11 +24,15 @@ protected:
 public:
 	Animal(void);
 	Animal(int id, string classe, string nome_cientifico, char sexo, int tamanho, string dieta, string nome_batismo);
-	~Animal();
+	virtual ~Animal();
+
 	virtual void imprime()=0;
     friend std::ostream& operator << (std::ostream& os, const Animal& b) {
 		return b.print(os);
 	}
+
+	static int total;
+	static int getTotal();
 
 	void setM_id(int);
 	void setM_classe(string);

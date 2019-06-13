@@ -5,7 +5,11 @@
 using std::cout;
 using std::endl;
 
+
+int Animal::total = 0;
+
 void Interfaces::exibeNome(){
+
 	cout << " #######      ########    ################    ###########    ########    #####      ######## " << endl;
 	cout << " ##     #     ########    ################    ###########    ########    #    #     #      # " << endl;
 	cout << " ##      #    #                  ##           ##             #           ##    #    #      # "<< endl;
@@ -50,7 +54,10 @@ void Interfaces::mamifero(){
 	}else{
 		std::cout << " Não foi possivel cadastrar o animal! " << std::endl;
 	}
+
 	ArquivoTeste.close();
+
+	delete(mamifero);
 
 
 	
@@ -63,6 +70,7 @@ void Interfaces::ave(){
 
 	cout<< " Digite o id do animal: " << endl;
 	cin >> id;
+
 	cout<< " Digite o nome cientifico: " << endl;
 	cin >> nome_cientifico;
 	cout<< " Digite o sexo: " << endl;
@@ -92,6 +100,7 @@ void Interfaces::ave(){
 	}
 	ArquivoTeste.close();
 	
+	delete ave;
 
 }
 
@@ -129,7 +138,10 @@ void Interfaces::reptil(){
 	}else{
 		std::cout << " Não foi possivel cadastrar o animal! " << std::endl;
 	}
+
 	ArquivoTeste.close();
+
+	delete(reptil);
 }
 
 void Interfaces::anfibio(){
@@ -171,9 +183,10 @@ void Interfaces::anfibio(){
 	}else{
 		std::cout << " Não foi possivel cadastrar o animal! " << std::endl;
 	}
+
 	ArquivoTeste.close();
 	
-
+	delete(anfibio);
 }
 
 
@@ -203,13 +216,19 @@ void Interfaces::veterinario(){
 	ofstream ArquivoTeste1;
 	ArquivoTeste1.open("funcionarios.txt",ios::app);
 	if(ArquivoTeste1.is_open()){
+
 		std::cout << "Funcionario cadastrado!!" << std::endl;
 		ArquivoTeste1 << *v;
 		ArquivoTeste1 << " \n";
+
 	}else{
+
 		std::cout << " Não foi possivel cadastrar o funcionario! " << std::endl;
+
 	}
+
 	ArquivoTeste1.close();
 	
+	delete(v);
 
 }
