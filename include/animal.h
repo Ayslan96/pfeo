@@ -9,7 +9,7 @@ class Animal {
 
 private:
 
-virtual std::ostream& print(std::ostream&) const = 0;
+	virtual std::ostream& print(std::ostream&) const = 0;
 
 
 protected:

@@ -3,15 +3,28 @@
 
 #include <string>
 
-class AnimalNativo : public AnimalSilvestre{
+class AnimalNativo{
+
 private:
+
+	virtual std::ostream& print(std::ostream&) const = 0;
+
+protected:
 	std::string m_uf_origem;
-	std::string m_aturorizacao;
+	std::string m_autorizacao;
+	
 
 public:
 
-	AnimalNativo();
+	AnimalNativo(void);
+	AnimalNativo(string, string);
+	virtual ~AnimalNativo();
+	virtual void imprime();
 
-	~AnimalNativo();
+	friend std::ostream& operator << (std::ostream& os, const Animal& b) {
+		return b.print(os);
+	}
 
 };
+
+#endif

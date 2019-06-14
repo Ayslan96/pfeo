@@ -2,16 +2,27 @@
 #define AnimalExotico_H
 
 #include <string>
+#include <iostream>
 
-class AnimalExotico : public AnimalSilvestre{
+class AnimalExotico{
+
 private:
+
+	virtual std::ostream& print(std::ostream&) const = 0;
+
+protected:
+
 	std::string m_pais_origem;
-	
 
 public:
 
-	AnimalExotico();
+	AnimalExotico(void);
+	AnimalExotico(string);
+	virtual ~AnimalExotico();
+	virtual void imprime();
 
-	~AnimalExotico();
+ 	friend std::ostream& operator << (std::ostream& os, const Animal& b) {
+		return b.print(os);
+	}
 
 };
