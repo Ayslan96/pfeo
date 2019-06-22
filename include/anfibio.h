@@ -1,31 +1,42 @@
+/**
+* @file anfibio.h
+* @brief Classe Anfibio filha da classe base Animal
+*/
 #ifndef Anfibio_H
 #define Anfibio_H
 
+/** @brief Inclui a biblioteca animal.h */
 #include "animal.h"
+
+/** @brief Inclui a biblioteca date.h */
 #include "date.h"
 
 
 class Anfibio : public Animal {
 private:
-	
+
+	/** @brief Define a quantidade máxima de mudas */
 	int m_total_de_mudas;
+	/** @brief Define uma variável do tipo DATE para receber uma data */ 
 	Date m_ultima_muda;
-	
+	/** @brief Implementação do método virtual sobrecarga de impressão*/ 
 	std::ostream& print(std::ostream& os) const {
-		return os << "Id: " << m_id << ", Classe: " << m_classe << ", Nome Cientifico: " << m_nome_cientifico << ", Sexo: " << m_sexo 
-			  <<", Tamanho: " << m_tamanho <<", Dieta: "<< m_dieta <<", Nome de Batismo: "<< m_nome_batismo
-			  <<", Total de mudas: " << m_total_de_mudas << ", Última muda: " << m_ultima_muda << endl;
+		return os << m_id << ";" << m_classe << ";" << m_nome_cientifico << ";" << m_sexo 
+			  <<";" << m_tamanho <<";"<< m_dieta <<";"<< m_nome_batismo
+			  <<";" << m_total_de_mudas << ";" << m_ultima_muda << endl;
 	}
 	
 public:
-
+	/** @brief Definindo construtor padrão da classe anfibio para void, pois não utilizaremos*/ 
 	Anfibio(void);
-
+	/** @brief Definindo construtor padronizado da classe anfibio*/ 
 	Anfibio(int , string, string, char, int, string, string, int, Date);
+	/** @brief Definindo destrutor da classe anfibio*/ 
 	~Anfibio();
-
+	/** @brief Definindo função de impressão sem retorno*/ 
 	void imprime();
 
+	/** @brief Definindo setters de todos os atributos*/ 
 	void setM_id(int);
 	void setM_classe(string);
 	void setM_nome_cientifico(string);
@@ -36,6 +47,7 @@ public:
 	void setM_total_de_mudas(int);
 	//void setM_ultima_muda(Date);
 
+		/** @brief Definindo getters de todos os atributos*/ 
 	int getM_id();
 	string getM_classe();
 	string getM_nome_cientifico();

@@ -9,9 +9,9 @@ private:
 	std::string m_tipo_de_veneno;
 
 	std::ostream& print(std::ostream& os) const {
-		return os << "Id: " << m_id << ", Classe: " << m_classe << ", Nome Cientifico: " << m_nome_cientifico << ", Sexo: " << m_sexo 
-			  <<", Tamanho: " << m_tamanho <<", Dieta: "<< m_dieta <<", Nome de Batismo: "<< m_nome_batismo
-			  <<", Venenoso: " << m_venenoso << ", Tipo de veneno: " << m_tipo_de_veneno << endl;
+		return os << m_id << ";" << m_classe << ";" << m_nome_cientifico << ";" << m_sexo 
+			  <<";" << m_tamanho << ";" << m_dieta << ";" << m_nome_batismo
+			  << ";" << m_venenoso << ";" << m_tipo_de_veneno << endl;
 	}
 
 		

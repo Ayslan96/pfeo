@@ -45,6 +45,7 @@ void Interfaces::mamifero(){
 	classe = "mamifero";
 	Animal* mamifero = new Mamifero(id, classe, nome_cientifico, sexo, tamanho, dieta, nome_batismo, cor_do_pelo);
 	
+
 	ofstream ArquivoTeste;
 	ArquivoTeste.open("animais.txt",ios::app);
 	if(ArquivoTeste.is_open()){

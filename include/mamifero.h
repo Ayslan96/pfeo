@@ -8,9 +8,9 @@ private:
 	std::string m_cor_pelo;
 
 	std::ostream& print(std::ostream& os) const {
-		return os << "Id: " << m_id << ", Classe: " << m_classe << ", Nome Cientifico: " << m_nome_cientifico << ", Sexo: " << m_sexo 
-			  <<", Tamanho: " << m_tamanho <<", Dieta: "<< m_dieta <<", Nome de Batismo: "<< m_nome_batismo
-			  <<", Cor do pelo: " << m_cor_pelo << endl;
+		return os << m_id << ";" << m_classe << ";" << m_nome_cientifico << ";" << m_sexo 
+			  <<";" << m_tamanho <<";"<< m_dieta <<";"<< m_nome_batismo
+			  <<";" << m_cor_pelo << endl;
 	}
 
 		

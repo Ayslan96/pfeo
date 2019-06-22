@@ -21,6 +21,7 @@ private:
 	ifstream arquivoFuncionario;
 	ifstream arquivoAnimal;
 	std::string linha;
+	
 
 
 
