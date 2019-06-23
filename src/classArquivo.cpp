@@ -26,7 +26,7 @@ void Arquivo_Geral::leituraArquivo_Funcionario(){
 void Arquivo_Geral::cadastrar_Mamifero(Animal &m) {
 	arquivoAnimal_.open("animais.txt",ios::app);
 	if(arquivoAnimal_.is_open()){
-		//arquivoAnimal_ << teste.getM_id();
+
 		arquivoAnimal_ << "\n";
 	}else{
 		std::cout << " Não foi possivel cadastrar o animal! " << std::endl;
