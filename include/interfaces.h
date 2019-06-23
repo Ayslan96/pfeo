@@ -1,12 +1,30 @@
+/**
+* @file interfaces.h
+* @brief Classe Interfaces
+* @brief Definindo biblioteca interface.h
+*/
 #ifndef interfaces_h
 #define interfaces_h
 
+/** @brief Inclui a biblioteca mamifero.h  */
 #include "mamifero.h"
+
+/** @brief Inclui a biblioteca reptil.h  */
 #include "reptil.h"
+
+/** @brief Inclui a biblioteca anfibio.h  */
 #include "anfibio.h"
+
+/** @brief Inclui a biblioteca ave.h  */
 #include "ave.h"
+
+/** @brief Inclui a biblioteca animal.h  */
 #include "animal.h"
+
+/** @brief Inclui a biblioteca date.h  */
 #include "date.h"
+
+/** @brief Inclui a biblioteca mamifero.h  */
 #include "classArquivo.h"
 #include "funcionario.h"
 #include "veterinario.h"

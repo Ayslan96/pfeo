@@ -26,11 +26,11 @@ virtual std::ostream& print(std::ostream&) const = 0;
 
 
 protected:
-	/** @brief Define uma variável chamada m_id do tipo inteiro para um animal */
+	/** @brief Define uma variável chamada m_id do tipo inteiro para armazenar os ids dos animais */
 	int m_id;
-	/** @brief Define uma variável chamdada m_classe do tipo string para um animal */
+	/** @brief Define uma variável chamdada m_classe do tipo string para armazenar a classe dos animais */
 	std::string m_classe;
-	/** @brief Define uma variável chamada m_nome_cientifico do tipo string que recebe o nome cientifico 0 */
+	/** @brief Define uma variável chamada m_nome_cientifico do tipo string que recebe o nome cientifico */
 	std::string m_nome_cientifico;
 	/** @brief Define uma variável chamada m_sexo do tipo char que recebe o sexo de um animal */
 	char m_sexo;
@@ -43,7 +43,7 @@ protected:
 
 public:
 
-	/** @brief Define o construtor padrão de Animal com o parametro vois, pois não utilizaremos o construtor padrão */
+	/** @brief Define o construtor padrão de Animal com o parâmetro void, pois não utilizaremos o construtor padrão */
 	Animal(void);
 
 	/** @brief Define o construtor padronizado de Animal */
@@ -52,14 +52,18 @@ public:
 	/** @brief Define o destrutor de Animal como virtual */
 	virtual ~Animal();
 
+	/** @brief Definindo um método virtual puro */
 	virtual void imprime()=0;
+
     friend std::ostream& operator << (std::ostream& os, const Animal& b) {
 		return b.print(os);
 	}
 
+
 	static int total;
 	static int getTotal();
 
+	/** @brief Setters */
 	void setM_id(int);
 	void setM_classe(string);
 	void setM_nome_cientifico(string);
@@ -68,6 +72,7 @@ public:
 	void setM_dieta(string);
 	void setM_nome_batismo(string);
 
+	/** @brief Getters */
 	int getM_id();
 	string getM_classe();
 	string getM_nome_cientifico();

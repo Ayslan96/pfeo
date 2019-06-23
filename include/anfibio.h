@@ -11,7 +11,7 @@
 /** @brief Inclui a biblioteca date.h */
 #include "date.h"
 
-
+/** @brief Define a classe Anfibio que herda da classe Animal */
 class Anfibio : public Animal {
 private:
 
@@ -27,12 +27,15 @@ private:
 	}
 	
 public:
-	/** @brief Definindo construtor padrão da classe anfibio para void, pois não utilizaremos*/ 
+	/** @brief Definindo construtor padrão da classe Anfibio para void, pois não utilizaremos*/ 
 	Anfibio(void);
-	/** @brief Definindo construtor padronizado da classe anfibio*/ 
+
+	/** @brief Definindo construtor padronizado da classe Anfibio*/ 
 	Anfibio(int , string, string, char, int, string, string, int, Date);
-	/** @brief Definindo destrutor da classe anfibio*/ 
+
+	/** @brief Definindo destrutor da classe Anfibio*/ 
 	~Anfibio();
+	
 	/** @brief Definindo função de impressão sem retorno*/ 
 	void imprime();
 
