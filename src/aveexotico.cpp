@@ -58,11 +58,11 @@ AveExotico::~AveExotico(){}
 	void AveExotico::setM_tamanho_do_bico_cm(double tamanho_do_bico_cm){
 		m_tamanho_do_bico_cm = tamanho_do_bico_cm;
 	}
-	void AVeExotico::setM_envergadura_das_asas(double envergadura_das_asas){
+	void AveExotico::setM_envergadura_das_asas(double envergadura_das_asas){
 		m_envergadura_das_asas = envergadura_das_asas;
 	}
-	void setM_e(double envergadura_das_asas){
-		m_envergadura_das_asas = envergadura_das_asas;
+	void Ave::setM_pais_origem(string pais_origem){
+		m_pais_origem = pais_origem;
 	}
 
 
@@ -93,4 +93,7 @@ AveExotico::~AveExotico(){}
 	}
 	double AveExotico::getM_envergadura_das_asas(){
 		return m_envergadura_das_asas;
+	}
+	string AveExotico::getM_pais_origem(){
+		return m_pais_origem;
 	}
