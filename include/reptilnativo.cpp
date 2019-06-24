@@ -1,4 +1,4 @@
-#include "../include/reptilnativo.h"
+#include "reptilnativo.h"
 
 ReptilNativo::ReptilNativo(void){}
 

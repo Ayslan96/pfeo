@@ -2,19 +2,30 @@
 #define AnfibioExotico_H
 
 #include <string>
+#include "anfibio.h"
+#include "animalexotico.h"
+#include "date.h"
 
-class AnfibioExotico : public Anfibio {
+class AnfibioExotico : public Anfibio, public AnimalExotico  {
+
+private:
+	std::ostream& print(std::ostream& os) const {
+		return os << m_id << ";" << m_classe << ";" << m_nome_cientifico << ";" << m_sexo 
+			  <<";" << m_tamanho <<";"<< m_dieta <<";"<< m_nome_batismo
+			  <<";" << m_total_de_mudas << ";" << m_ultima_muda <<";" <<m_autorizacao_ibama <<";" <<m_pais_origem << endl;
+	}
 
 public:
 
-	AnfibioExotico();
+
+	AnfibioExotico(void);
+
+	AnfibioExotico(int,std::string,std::string,char,int,std::string,std::string,int,Date,std::string,std::string);
 
 	~AnfibioExotico();
 
+	void imprime();
+
 };
-
-anfibio,reptil,ave, mamifero herda de animal, estes podem ser
-nativos ou exoticos  que herdam de animal nativo ou animal exoticos
-que também herdam de animal silvestre.
-
+#endif
 

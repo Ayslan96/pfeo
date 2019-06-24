@@ -13,18 +13,17 @@
 
 
 class Anfibio : public Animal {
+
 private:
+	virtual std::ostream& print(std::ostream&) const = 0;
+
+protected:
 
 	/** @brief Define a quantidade máxima de mudas */
 	int m_total_de_mudas;
 	/** @brief Define uma variável do tipo DATE para receber uma data */ 
 	Date m_ultima_muda;
 	/** @brief Implementação do método virtual sobrecarga de impressão*/ 
-	std::ostream& print(std::ostream& os) const {
-		return os << m_id << ";" << m_classe << ";" << m_nome_cientifico << ";" << m_sexo 
-			  <<";" << m_tamanho <<";"<< m_dieta <<";"<< m_nome_batismo
-			  <<";" << m_total_de_mudas << ";" << m_ultima_muda << endl;
-	}
 	
 public:
 	/** @brief Definindo construtor padrão da classe anfibio para void, pois não utilizaremos*/ 
@@ -34,8 +33,11 @@ public:
 	/** @brief Definindo destrutor da classe anfibio*/ 
 	~Anfibio();
 	/** @brief Definindo função de impressão sem retorno*/ 
-	void imprime();
-
+	
+	virtual void imprime()=0;
+    friend std::ostream& operator << (std::ostream& os, const Anfibio& b) {
+		return b.print(os);
+	}
 	/** @brief Definindo setters de todos os atributos*/ 
 	void setM_id(int);
 	void setM_classe(string);
@@ -57,8 +59,6 @@ public:
 	string getM_nome_batismo();
 	int getM_total_de_mudas();
 	//Date getM_ultima_muda();
-
-
    
 };
 

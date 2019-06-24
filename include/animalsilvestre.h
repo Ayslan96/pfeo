@@ -4,7 +4,7 @@
 #include <iostream>
 #include <string>
 
-class AnimalSilvestre : public Animal : public {
+class AnimalSilvestre {
 private:
 
 	virtual std::ostream& print(std::ostream&) const = 0;
@@ -12,16 +12,14 @@ private:
 protected:
 	std::string m_autorizacao_ibama;
 	
-
 public:
 	AnimalSilvestre(void);
-	AnimalSilvestre(std::string m_autorizacao_ibama;);
+	AnimalSilvestre(std::string m_autorizacao_ibama);
 	~AnimalSilvestre();
 
 	virtual void imprime()=0;
-    friend std::ostream& operator << (std::ostream& os, const Animal& b) {
+    friend std::ostream& operator << (std::ostream& os, const AnimalSilvestre& b) {
 		return b.print(os);
 	}
-
-
 };
+#endif

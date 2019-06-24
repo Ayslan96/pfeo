@@ -2,8 +2,10 @@
 #define AnimalNativo_H
 
 #include <string>
+#include <iostream>
+#include "animalsilvestre.h"
 
-class AnimalNativo{
+class AnimalNativo : public AnimalSilvestre {
 
 private:
 
@@ -13,15 +15,14 @@ protected:
 	std::string m_uf_origem;
 	std::string m_autorizacao;
 	
-
 public:
 
 	AnimalNativo(void);
-	AnimalNativo(string, string);
+	AnimalNativo(std::string, std::string, std::string);
 	virtual ~AnimalNativo();
 	virtual void imprime();
 
-	friend std::ostream& operator << (std::ostream& os, const Animal& b) {
+	friend std::ostream& operator << (std::ostream& os, const AnimalNativo& b) {
 		return b.print(os);
 	}
 

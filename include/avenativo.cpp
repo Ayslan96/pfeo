@@ -1,4 +1,4 @@
-#include "../include/avenativo.h"
+#include "avenativo.h"
 
 AveNativo::AveNativo(void){}
 

@@ -1,4 +1,4 @@
-#include "../include/aveexotico.h"
+#include "aveexotico.h"
 
 AveExotico::AveExotico(void){}
 

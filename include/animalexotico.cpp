@@ -1,4 +1,4 @@
-#include "../include/animalexotico.h"
+#include "animalexotico.h"
 
 AnimalExotico::AnimalExotico(void){}
 

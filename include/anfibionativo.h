@@ -1,33 +1,31 @@
 #ifndef AnfibioNativo_H
 #define AnfibioNativo_H
-//vdc
+
 #include <string>
 #include "anfibio.h"
-#include "animal.h"
+#include "animalnativo.h"
 #include "date.h"
 
-
-class AnfibioNativo : public Anfibio {
+class AnfibioNativo : public Anfibio, public AnimalNativo  {
 
 private:
-	
-	int m_total_de_mudas;
-	Date m_ultima_muda;
-	
 	std::ostream& print(std::ostream& os) const {
-		return os << "Id: " << m_id << ", Classe: " << m_classe << ", Nome Cientifico: " << m_nome_cientifico << ", Sexo: " << m_sexo 
-			  <<", Tamanho: " << m_tamanho <<", Dieta: "<< m_dieta <<", Nome de Batismo: "<< m_nome_batismo
-			  <<", Total de mudas: " << m_total_de_mudas << ", Última muda: " << m_ultima_muda 
-			  <<", "<< endl;
+		return os << m_id << ";" << m_classe << ";" << m_nome_cientifico << ";" << m_sexo 
+			  <<";" << m_tamanho <<";"<< m_dieta <<";"<< m_nome_batismo
+			  <<";" << m_total_de_mudas << ";" << m_ultima_muda <<";" <<m_autorizacao_ibama 
+			  <<";" <<m_uf_origem <<";" <<m_autorizacao << endl;
 	}
-	
 
 public:
 
-Anfibio(void);
+	AnfibioNativo(void);
 
-	Anfibio(int , string, string, char, int, string, string, int, Date);
-	~Anfibio();
+	AnfibioNativo(int,std::string,std::string,char,int,std::string,std::string,int,Date,std::string,std::string,std::string);
+
+	~AnfibioNativo();
 
 	void imprime();
+
 };
+#endif
+

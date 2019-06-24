@@ -1,4 +1,4 @@
-#include "../include/mamiferonativo.h"
+#include "mamiferonativo.h"
 
 MamiferoNativo::MamiferoNativo(void){}
 

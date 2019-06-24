@@ -3,8 +3,9 @@
 
 #include <string>
 #include <iostream>
+#include "animalsilvestre.h"
 
-class AnimalExotico{
+class AnimalExotico: public AnimalSilvestre {
 
 private:
 
@@ -17,12 +18,13 @@ protected:
 public:
 
 	AnimalExotico(void);
-	AnimalExotico(string);
+	AnimalExotico(std::string, std::string);
 	virtual ~AnimalExotico();
 	virtual void imprime();
 
- 	friend std::ostream& operator << (std::ostream& os, const Animal& b) {
+ 	friend std::ostream& operator << (std::ostream& os, const AnimalExotico& b) {
 		return b.print(os);
 	}
 
 };
+#endif
