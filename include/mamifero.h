@@ -9,6 +9,10 @@
 /** @brief Inclui a biblioteca animal.h */
 #include "animal.h"
 
+using std::string;
+using std::cout;
+using std::endl;
+
 /** @brief Definindo a classe Ave que herda da classe Animal */
 class Mamifero : public Animal{
 private:
@@ -34,7 +38,7 @@ public:
 	/** @brief Definindo destrutor da classe Mamifero */ 
 	~Mamifero();
 
-	/** @brief Definindo função de impressão sem retorno */ 
+	/** @brief Definindo método de impressão sem retorno */ 
 	void imprime();
 
 };

@@ -9,6 +9,10 @@
 /** @brief Inclui a biblioteca animal.h */
 #include "animal.h"
 
+using std::string;
+using std::cout;
+using std::endl;
+
 /** @brief Definindo a classe Reptil que herda da classe Animal */
 class Reptil : public Animal{
 private:
@@ -37,7 +41,7 @@ public:
 	/** @brief Definindo destrutor da classe Reptil */ 
 	~Reptil();
 
-	/** @brief Definindo função de impressão sem retorno */ 
+	/** @brief Definindo método de impressão sem retorno */ 
 	void imprime();
 
 };

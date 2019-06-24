@@ -11,6 +11,11 @@
 /** @brief Inclui a biblioteca date.h */
 #include "date.h"
 
+using std::string;
+using std::cout;
+using std::endl;
+
+
 /** @brief Define a classe Anfibio que herda da classe Animal */
 class Anfibio : public Animal {
 private:
@@ -23,7 +28,7 @@ private:
 	std::ostream& print(std::ostream& os) const {
 		return os << m_id << ";" << m_classe << ";" << m_nome_cientifico << ";" << m_sexo 
 			  <<";" << m_tamanho <<";"<< m_dieta <<";"<< m_nome_batismo
-			  <<";" << m_total_de_mudas << ";" << m_ultima_muda << endl;
+			  <<";" << m_total_de_mudas << ";" << m_ultima_muda << ";" << endl;
 	}
 	
 public:
@@ -36,7 +41,7 @@ public:
 	/** @brief Definindo destrutor da classe Anfibio*/ 
 	~Anfibio();
 	
-	/** @brief Definindo função de impressão sem retorno*/ 
+	/** @brief Definindo método de impressão sem retorno*/ 
 	void imprime();
 
 	/** @brief Definindo setters de todos os atributos*/ 

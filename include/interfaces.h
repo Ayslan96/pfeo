@@ -24,15 +24,24 @@
 /** @brief Inclui a biblioteca date.h  */
 #include "date.h"
 
-/** @brief Inclui a biblioteca mamifero.h  */
+/** @brief Inclui a biblioteca classArquivo.h  */
 #include "classArquivo.h"
+
+/** @brief Inclui a biblioteca funcionario.h  */
 #include "funcionario.h"
+
+/** @brief Inclui a biblioteca veterinario.h  */
 #include "veterinario.h"
+
+/** @brief Inclui a biblioteca tratador.h  */
 #include "tratador.h"
 
+/** @brief Define a classe Interfaces */
 class Interfaces{
 
 private:
+	
+	/** @brief Atributos de animais.h e funcionarios.h  */
 	int id;
 	std::string classe;
 	std::string nome_cientifico;
@@ -40,7 +49,6 @@ private:
 	double tamanho;
 	std::string dieta;
 	std::string nome_batismo;
-	Arquivo_Geral geral; // objeto da calsse Arquivo_Geral apra chamar os métodos.
 	std::string m_nome;
 	std::string m_cpf;
 	int m_idade;
@@ -50,12 +58,23 @@ private:
 
 public:
 	//Interfaces(void);
-	//~Interfaces(); 
+	//~Interfaces();
+	/** @brief Define o método exibeNome()  */
 	void exibeNome();
+
+	/** @brief Define o método responsável por cadastrar um mamífero  */
 	void mamifero();
+
+	/** @brief Define o método responsável por cadastrar uma ave  */
 	void ave();
+
+	/** @brief Define o método responsável por cadastrar um réptil  */
 	void reptil();
+
+	/** @brief Define o método responsável por cadastrar um anfíbio  */
 	void anfibio();
+
+	/** @brief Define o método responsável por cadastrar um veterinário  */
 	void veterinario();
 	//void tratador();
 

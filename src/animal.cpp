@@ -1,7 +1,22 @@
+/**
+* @file animal.cpp
+* @brief Métodos da Classe Animal
+*/
+
+/** @brief Inclui a biblioteca animal.h */
 #include "../include/animal.h"
 
+/**
+* @brief Método construtor padrão.
+* @return Não possui retorno
+*/
 Animal::Animal(void){}
 
+/**
+* @brief Método construtor padronizado.
+* @param  m_id, m_classe, m_nome_cientifico, m_sexo, m_tamanho, m_dieta,  m_nome_batismo.
+* @return Não possui retorno
+*/
 Animal::Animal(int id, string classe, string nome_cientifico, char sexo, int tamanho, string dieta, string nome_batismo):
 m_id(id), m_classe(classe), m_nome_cientifico(nome_cientifico), m_sexo(sexo), m_tamanho(tamanho), 
 m_dieta(dieta), m_nome_batismo(nome_batismo) {
@@ -9,10 +24,14 @@ m_dieta(dieta), m_nome_batismo(nome_batismo) {
 	total++;
 }
 
+/**
+* @brief Método destrutor.
+* @return Não possui retorno
+*/
 Animal::~Animal(){}
 
 
-//setters
+/** @brief Setters */
 	void Animal::setM_id(int id){
 		m_id = id;
 	}
@@ -35,7 +54,7 @@ Animal::~Animal(){}
 		m_nome_batismo=nome_batismo;
 	}
 
-//getters
+/** @brief Getters */
 	int Animal::getM_id(){
 		return m_id;
 	}

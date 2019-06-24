@@ -1,5 +1,6 @@
 #include "../include/funcionario.h"
 
+
 Funcionario::Funcionario(void){}
 
 Funcionario::Funcionario(int id, string nome, string cpf, int idade, string tipo_sanguineo, char fator_rh, string especialidade):

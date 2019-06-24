@@ -28,7 +28,7 @@ private:
 	
 public:
 
-	/** @brief Definindo função de impressão sem retorno */ 
+	/** @brief Definindo método de impressão sem retorno */ 
 	void imprime();
 
 	/** @brief Definindo construtor padronizado da classe Tratador */

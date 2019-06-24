@@ -37,13 +37,13 @@ public:
 	Date(const int& dia_, const int& mes_, const int& ano_);
 
 
-	/** @brief Definindo função para validar o dia */ 
+	/** @brief Definindo método para validar o dia */ 
 	void validardia(int d);
 
-	/** @brief Definindo função para validar o mês */  
+	/** @brief Definindo método para validar o mês */  
 	void validarmes(int m);
 
-	/** @brief Definindo função para validar o ano */ 
+	/** @brief Definindo método para validar o ano */ 
 	void validarano(int a);
 
 	/** @brief Definindo destrutor da classe Date */ 

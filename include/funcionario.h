@@ -65,7 +65,11 @@ public:
 	return b.print(os);
 	}
 
+
 	/** @brief Setters */
+
+
+
 	/*void setM_id(int);
 	void setM_nome(string);
 	void setM_cpf(string);

@@ -19,13 +19,12 @@ using namespace std;
 /** @brief Define uma classe chamada Animal */
 class Animal {
 
-private:
+	private:
 
-/** @brief Definindo um método virtual puro de sobrecarga de impressão */
-virtual std::ostream& print(std::ostream&) const = 0;
-
-
-protected:
+	/** @brief Definindo um método virtual puro de sobrecarga de impressão */
+	virtual std::ostream& print(std::ostream&) const = 0;
+	
+	protected:
 	/** @brief Define uma variável chamada m_id do tipo inteiro para armazenar os ids dos animais */
 	int m_id;
 	/** @brief Define uma variável chamdada m_classe do tipo string para armazenar a classe dos animais */
@@ -41,7 +40,7 @@ protected:
 	/** @brief Define uma variável chamada m_tnome_batismo do tipo string que recebe o nome de um animal */
 	std::string m_nome_batismo;
 
-public:
+	public:
 
 	/** @brief Define o construtor padrão de Animal com o parâmetro void, pois não utilizaremos o construtor padrão */
 	Animal(void);
@@ -49,7 +48,11 @@ public:
 	/** @brief Define o construtor padronizado de Animal */
 	Animal(int id, string classe, string nome_cientifico, char sexo, int tamanho, string dieta, string nome_batismo);
 
+
 	/** @brief Define o destrutor de Animal como virtual */
+	virtual ~Animal();
+
+	/** @brief Definindo um método virtual puro */
 	virtual ~Animal();
 
 	/** @brief Definindo um método virtual puro */
@@ -60,8 +63,15 @@ public:
 	}
 
 
+
 	static int total;
 	static int getTotal();
+
+	/** @brief Setters */
+
+	static int total;
+	static int getTotal();
+
 
 	/** @brief Setters */
 	void setM_id(int);

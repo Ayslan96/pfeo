@@ -9,6 +9,11 @@
 /** @brief Inclui a biblioteca animal.h */
 #include "animal.h"
 
+using std::string;
+using std::cout;
+using std::endl;
+
+
 /** @brief Definindo a classe Ave que herda da classe Animal */
 class Ave : public Animal{
 private:
@@ -22,8 +27,8 @@ private:
 	/** @brief Implementação do método virtual sobrecarga de impressão */ 
 	std::ostream& print(std::ostream& os) const {
 		return os << m_id << ";" << m_classe << ";" << m_nome_cientifico << ";" << m_sexo 
-			  <<";" << m_tamanho <<";"<<m_dieta <<";"<<m_nome_batismo
-			  <<";" <<m_tamanho_do_bico_cm << ";" <<m_envergadura_das_asas << endl;
+			  <<";" << m_tamanho << ";" << m_dieta <<";"<< m_nome_batismo
+			  <<";" << m_tamanho_do_bico_cm << ";" << m_envergadura_das_asas << ";" << endl;
 	}
 
 		
@@ -37,11 +42,33 @@ public:
 	/** @brief Definindo destrutor da classe Ave */ 
 	~Ave();
 
-	/** @brief Definindo função de impressão sem retorno */ 
+	/** @brief Definindo método de impressão sem retorno */ 
 	void imprime();
 
-	
+
+ 
+	/** @brief Setters */
+	void setM_id(int);
+	void setM_classe(string);
+	void setM_nome_cientifico(string);
+	void setM_sexo(char);
+	void setM_tamanho(double);
+	void setM_dieta(string);
+	void setM_nome_batismo(string);
+	void setM_tamanho_do_bico_cm(double);
+	void setM_envergadura_das_asas(double);
+
+	/** @brief Getters */
+	int getM_id();
+	string getM_classe();
+	string getM_nome_cientifico();
+	char getM_sexo();
+	double getM_tamanho();
+	string getM_dieta();
+	string getM_nome_batismo();
+	double getM_tamanho_do_bico_cm();
+	double getM_envergadura_das_asas();
 
 };
- 
+
 #endif

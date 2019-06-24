@@ -46,6 +46,7 @@
 class Arquivo_Geral {
 private:
 
+
 	/** @brief Define a variável chamada arquivoFuncionario_ do tipo ofstream para leitura do arquivo funcionarios.txt*/
 	ofstream arquivoFuncionario_;
 
@@ -59,29 +60,24 @@ private:
 	ifstream arquivoAnimal;
 
 	/** @brief Define a variável chamada linha do tipo string para armazenar as linhas dos arquivos */
-	std::string linha;
-	
-
-
-
+	std::string linha;	
 
 public:
 
-	/** @brief Define função para ler o arquivo animais.txt*/ 
+
+	/** @brief Define método para ler o arquivo animais.txt*/ 
 	void leituraArquivo_Animal();
 
-	/** @brief Define função para ler o arquivo funcionarios.txt*/ 
+	/** @brief Define método para ler o arquivo funcionarios.txt*/ 
 	void leituraArquivo_Funcionario();
 
-	/** @brief Define função para sobrescrever arquivo animais.txt*/ 
+	/** @brief Define método para sobrescrever arquivo animais.txt*/ 
 	void fecharArquivo_Animal();
 
-	/** @brief Define função para sobrescrever arquivo funcionarios.txt*/ 
+	/** @brief Define método para sobrescrever arquivo funcionarios.txt*/ 
 	void fecharArquivo_Funcionario();
 
 };
-
-
 
 
 #endif
