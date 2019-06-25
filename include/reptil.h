@@ -15,7 +15,7 @@ using std::endl;
 
 /** @brief Definindo a classe Reptil que herda da classe Animal */
 class Reptil : public Animal{
-private:
+protected:
 	
 	/** @brief Define a variável chamada m_venenoso do tipo bool */
 	bool m_venenoso;

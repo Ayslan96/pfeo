@@ -1,4 +1,4 @@
-/**
+/*
 * @file funcionario.h
 * @brief Classe Funcionário
 * @brief Definindo biblioteca Funcionário
