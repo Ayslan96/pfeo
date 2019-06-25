@@ -25,10 +25,10 @@ private:
 
 	/** @brief Implementação do método virtual sobrecarga de impressão*/ 
 	std::ostream& print(std::ostream& os) const {
-		return os << m_id << ";" << m_classe << ";" << m_nome_cientifico << ";" << m_sexo 
+		return os << m_codigo << ";" << m_id << ";" << m_classe << ";" << m_nome_cientifico << ";" << m_sexo 
 			  <<";" << m_tamanho << ";" << m_dieta <<";"<< m_nome_batismo
-			  <<";" << m_tamanho_do_bico_cm << ";" << m_envergadura_das_asas << ";" << m_pais_origem << ";"
-			  << endl;
+			  <<";" << m_tamanho_do_bico_cm << ";" << m_envergadura_das_asas << ";" << m_autorizacao_ibama << ";" << m_pais_origem 
+			  <<";"<< endl;
 	}	
 
 public:
@@ -37,7 +37,7 @@ public:
 	AveExotico(void);
 
 	/** @brief Definindo construtor padronizado da classe AveExotico*/ 
-	AveExotico(int, string, string, char, int, string, string, double, double, string);
+	AveExotico(int, int, string, string, char, int, string, string, double, double, string, string);
 
 	/** @brief Definindo destrutor da classe AveExotico*/
 	~AveExotico();
@@ -45,6 +45,7 @@ public:
 
 
 	/** @brief Setters */
+	void setM_codigo(int);
 	void setM_id(int);
 	void setM_classe(string);
 	void setM_nome_cientifico(string);
@@ -57,6 +58,7 @@ public:
 	void setM_pais_origem(string);
 
 	/** @brief Getters */
+	int getM_codigo();
 	int getM_id();
 	string getM_classe();
 	string getM_nome_cientifico();

@@ -25,8 +25,9 @@ private:
 	virtual std::ostream& print(std::ostream&) const = 0;
 	
 protected:
+	/** @brief Define uma variável chamada codigo do tipo inteiro para um animal */
+	int m_codigo
 	/** @brief Define uma variável chamada m_id do tipo inteiro para um animal */
-
 	int m_id;
 	/** @brief Define uma variável chamdada m_classe do tipo string para armazenar a classe dos animais */
 	std::string m_classe;
@@ -47,7 +48,7 @@ protected:
 	Animal(void);
 
 	/** @brief Define o construtor padronizado de Animal */
-	Animal(int id, string classe, string nome_cientifico, char sexo, int tamanho, string dieta, string nome_batismo);
+	Animal(int, int , string, string , char , int, string , string);
 
 
 	/** @brief Definindo um método virtual puro */
@@ -67,6 +68,7 @@ protected:
 
 
 	/** @brief Setters */
+	void setM_codigo(int);
 	void setM_id(int);
 	void setM_classe(string);
 	void setM_nome_cientifico(string);
@@ -76,6 +78,7 @@ protected:
 	void setM_nome_batismo(string);
 
 	/** @brief Getters */
+	int getM_codigo();
 	int getM_id();
 	string getM_classe();
 	string getM_nome_cientifico();

@@ -24,10 +24,10 @@ private:
 	
 	/** @brief Implementação do método virtual sobrecarga de impressão*/ 
 	std::ostream& print(std::ostream& os) const {
-		return os << m_id << ";" << m_classe << ";" << m_nome_cientifico << ";" << m_sexo 
+		return os << m_codigo << ";" << m_id << ";" << m_classe << ";" << m_nome_cientifico << ";" << m_sexo 
 			  <<";" << m_tamanho << ";" << m_dieta <<";"<< m_nome_batismo
-			  <<";" << m_tamanho_do_bico_cm << ";" << m_envergadura_das_asas << ";" << m_uf_origem <<
-			  <<";" << m_autorizacao << ";" << endl;
+			  <<";" << m_tamanho_do_bico_cm << ";" << m_envergadura_das_asas << ";" << m_autorizacao_ibama 
+			  << ";"<< m_uf_origem <<";" << m_cidade_origem << ";" << endl;
 	}
 
 	
@@ -39,7 +39,7 @@ public:
 
 
 	/** @brief Definindo construtor padronizado da classe AveNativo*/
-	AveNativo(int, string, string, char, int, string, string, double, double, string, string);
+	AveNativo(int,int, string, string, char, int, string, string, double, double, string, string, string);
 	
 	/** @brief Definindo destrutor da classe AveNativo*/ 
 	~AveNativo();

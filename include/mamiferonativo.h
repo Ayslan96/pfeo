@@ -25,9 +25,10 @@ private:
 
 	/** @brief Implementação do método virtual sobrecarga de impressão */ 
 	std::ostream& print(std::ostream& os) const {
-		return os << m_id << ";" << m_classe << ";" << m_nome_cientifico << ";" << m_sexo 
+		return os << m_codigo << ";" << m_id << ";" << m_classe << ";" << m_nome_cientifico << ";" << m_sexo 
 			  <<";" << m_tamanho <<";"<< m_dieta <<";"<< m_nome_batismo
-			  <<";" << m_cor_pelo << ";" << m_uf_origem << ";" << m_autorizacao << ";" << endl;
+			  <<";" << m_cor_pelo << ";" << m_autorizacao_ibama << ";" << m_uf_origem << ";" << m_cidade_origem 
+			  << ";" << endl;
 	}
 	
 
@@ -38,7 +39,7 @@ public:
 
 
 	/** @brief Definindo construtor padronizado da classe MamiferoNativo*/ 
-	MamiferoNativo(int, string, string, char, int, string, string, string, string, string);
+	MamiferoNativo(int, int, string, string, char, int, string, string, string, string, string, string);
 
 	/** @brief Definindo destrutor da classe MamiferoNativo*/
 	~MamiferoNativo();

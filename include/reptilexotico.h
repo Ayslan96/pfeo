@@ -25,9 +25,9 @@ private:
 
 	/** @brief Implementação do método virtual sobrecarga de impressão */ 
 	std::ostream& print(std::ostream& os) const {
-		return os << m_id << ";" << m_classe << ";" << m_nome_cientifico << ";" << m_sexo 
+		return os << m_codigo << ";" << m_id << ";" << m_classe << ";" << m_nome_cientifico << ";" << m_sexo 
 			  <<";" << m_tamanho << ";" << m_dieta << ";" << m_nome_batismo
-			  << ";" << m_venenoso << ";" << m_tipo_de_veneno << ";" << m_pais_origem << ";" << endl;
+			  << ";" << m_venenoso << ";" << m_tipo_de_veneno << ";" << m_autorizacao_ibama << ";" << m_pais_origem << ";" << endl;
 	}
 	
 
@@ -37,7 +37,7 @@ public:
 	ReptilExotico(void);
 
 	/** @brief Definindo construtor padronizado da classe ReptilExotico*/ 
-	ReptilExotico(int, string, string, char, int, string, string, bool, string, string);
+	ReptilExotico(int, int, string, string, char, int, string, string, bool, string, string);
 
 
 
