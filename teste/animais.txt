@@ -1,0 +1,14 @@
+
+11;32;ave;averus;m;0,5;peixe;xuxu;0,2;0,7;3534;RN;4324;
+12;122;ave;averus;f;0,1;inseto;bona;0,3;0,4;43543;brazil;
+21;324;anfibio;afibius;m;0,1;inseto;teteu;3;01/06/1999;1212;RN;3221;
+22;2131;anfibio;anfibius;f;0.2;peixinho;ricardo;2;06/01/2011;13212;brazil;
+21;3213;reptil;reptiuss;m;0,1;planta;cadu;1;doi;2312;RN;123121;
+22;513;reptil;reptiuss;f;0,1;planta;caxu;1;doi;2312;Brazil;
+41;34123;mamifero;mamiferos;m;0,3;carne;fidu;marrom;2132131;RN;23134;
+42;23;mamifero;mamiferos;f;0,3;carne;alex;caramelo;2132131;Brazil;
+
+
+
+
+
