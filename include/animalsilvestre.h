@@ -3,7 +3,6 @@
 * @brief Classe AnimalSilvestre filha da classe base Animal
 */
 
-
 #ifndef AnimalSilvestre_H
 #define AnimalSilvestre_H
 
@@ -11,35 +10,29 @@
 #include "animalNativo.h"
 #include "animalExotico.h"
 
-<<<<<<< HEAD
 using std::string;
 
-/** @brief Define a classe AnimalSilvestre que herda da classe Animal */
-template <class T>
-class AnimalSilvestre : public T {
-=======
+/** @brief Define a classe AnimalExotico*/
 class AnimalSilvestre {
->>>>>>> ayslan
-private:
-
-	virtual std::ostream& print(std::ostream&) const = 0;
 
 protected:
-	std::string m_autorizacao_ibama;
+
+	/** @brief codigo de autorização do ibama */
+	string m_autorizacao_ibama;
 	
 public:
+
+	/** @brief Definindo construtor padrão da classe AnimalExotico para void, pois não utilizaremos*/
 	AnimalSilvestre(void);
-	AnimalSilvestre(std::string m_autorizacao_ibama);
+
+	AnimalSilvestre(string);
+
+	/** @brief Definindo destrutor da classe AnimalExotico*/
 	~AnimalSilvestre();
 
-	virtual void imprime()=0;
-    friend std::ostream& operator << (std::ostream& os, const AnimalSilvestre& b) {
-		return b.print(os);
-	}
 };
-<<<<<<< HEAD
+
 
 #endif
-=======
-#endif
->>>>>>> ayslan
+
+

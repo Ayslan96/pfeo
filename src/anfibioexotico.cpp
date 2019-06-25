@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 /**
 * @file anfibioexotico.cpp
 * @brief Métodos da Classe AnfibioExotico filha da classe base Anfibio
