@@ -55,6 +55,11 @@ private:
 	std::string m_tipo_sanguineo;
 	char m_fator_rh;
 	std::string m_especialidade;
+	int nivel_de_seguranca;
+	std::string pais_de_origem;
+	std::string uf_origem;
+	std::string autorizacao;
+	std::string autorizacao_ibama;
 
 public:
 	//Interfaces(void);
@@ -62,21 +67,35 @@ public:
 	/** @brief Define o método exibeNome()  */
 	void exibeNome();
 
-	/** @brief Define o método responsável por cadastrar um mamífero  */
-	void mamifero();
+	/** @brief Define o método responsável por cadastrar um mamífero exótico  */
+	void mamiferoE();
 
-	/** @brief Define o método responsável por cadastrar uma ave  */
-	void ave();
+	/** @brief Define o método responsável por cadastrar um mamífero nativo */
+	void mamiferoN();
 
-	/** @brief Define o método responsável por cadastrar um réptil  */
-	void reptil();
+	/** @brief Define o método responsável por cadastrar uma ave exótica */
+	void aveE();
 
-	/** @brief Define o método responsável por cadastrar um anfíbio  */
-	void anfibio();
+	/** @brief Define o método responsável por cadastrar uma ave nativa */
+	void aveN();
+
+	/** @brief Define o método responsável por cadastrar um réptil exótico */
+	void reptilE();
+
+	/** @brief Define o método responsável por cadastrar um réptil  nativo */
+	void reptilN();
+
+	/** @brief Define o método responsável por cadastrar um anfíbio exótico */
+	void anfibioE();
+
+	/** @brief Define o método responsável por cadastrar um anfíbio nativo */
+	void anfibioN();
 
 	/** @brief Define o método responsável por cadastrar um veterinário  */
 	void veterinario();
-	//void tratador();
+
+	/** @brief Define o método responsável por cadastrar um tratador  */
+	void tratador();
 
 };
 

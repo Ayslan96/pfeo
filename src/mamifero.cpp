@@ -10,7 +10,7 @@ Mamifero::~Mamifero(){}
 
 void Mamifero::imprime(){
 
-	cout << m_id << m_classe << m_nome_cientifico << m_sexo << m_tamanho
-	<< m_dieta << m_nome_batismo << m_cor_pelo << endl;
+	std::cout << m_id << m_classe << m_nome_cientifico << m_sexo << m_tamanho
+	<< m_dieta << m_nome_batismo << m_cor_pelo << std::endl;
 
 }

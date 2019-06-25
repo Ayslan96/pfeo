@@ -28,7 +28,7 @@ private:
 		return os << m_id << ";" << m_classe << ";" << m_nome_cientifico << ";" << m_sexo 
 			  <<";" << m_tamanho << ";" << m_dieta <<";"<< m_nome_batismo
 			  <<";" << m_tamanho_do_bico_cm << ";" << m_envergadura_das_asas << ";" << m_pais_origem << ";"
-			  << endl;
+			  << "|" << endl;
 	}	
 
 public:

@@ -1,5 +1,6 @@
 #include "../include/veterinario.h"
 
+Veterinario::Veterinario(void){}
 Veterinario::Veterinario(int m_id, string m_nome, string m_cpf, int m_idade, 
 				   string m_tipo_sanguineo, char m_fator_rh, string m_especialidade,
 				   string m_crmv):Funcionario(m_id, m_nome, m_cpf,

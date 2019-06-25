@@ -27,7 +27,7 @@ private:
 	std::ostream& print(std::ostream& os) const {
 		return os << m_id << ";" << m_classe << ";" << m_nome_cientifico << ";" << m_sexo 
 			  <<";" << m_tamanho <<";"<< m_dieta <<";"<< m_nome_batismo
-			  <<";" << m_cor_pelo << ";" << m_pais_origem << ";" << endl;
+			  <<";" << m_cor_pelo << ";" << m_pais_origem << ";" << "|" << endl;
 	}
 	
 

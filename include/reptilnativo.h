@@ -28,7 +28,7 @@ private:
 		return os << m_id << ";" << m_classe << ";" << m_nome_cientifico << ";" << m_sexo 
 			  <<";" << m_tamanho << ";" << m_dieta << ";" << m_nome_batismo
 			  << ";" << m_venenoso << ";" << m_tipo_de_veneno << ";" << m_uf_origem << ";" << m_autorizacao 
-			  << ";" << endl;
+			  << ";" << "|" << endl;
 	}
 	
 
