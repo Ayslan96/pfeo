@@ -25,7 +25,9 @@ private:
 	std::ostream& print(std::ostream& os) const {
 		return os << m_codigo << ";" << m_id << ";" << m_classe << ";" << m_nome_cientifico << ";" << m_sexo 
 			  <<";" << m_tamanho <<";"<< m_dieta <<";"<< m_nome_batismo
+
 			  <<";" << m_total_de_mudas << ";" << m_ultima_muda << ";" << m_autorizacao_ibama << ";" << m_pais_origem << ";" << endl;
+
 	}
 	
 
@@ -65,7 +67,7 @@ public:
 	string getM_nome_batismo();
 	int getM_total_de_mudas();
 	//Date getM_ultima_muda();
-	string getM_pais_origem()
+	string getM_pais_origem();
 
 };
 #endif

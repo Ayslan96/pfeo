@@ -16,7 +16,7 @@ using std::endl;
 
 /** @brief Definindo a classe Ave que herda da classe Animal */
 class Ave : public Animal{
-private:
+protected:
 
 	/** @brief Define a variável chamada m_tamanho_do_bico_cm do tipo double */
 	double m_tamanho_do_bico_cm;
@@ -28,7 +28,7 @@ private:
 	std::ostream& print(std::ostream& os) const {
 		return os << m_codigo << ";" << m_id << ";" << m_classe << ";" << m_nome_cientifico << ";" << m_sexo 
 			  <<";" << m_tamanho << ";" << m_dieta <<";"<< m_nome_batismo
-			  <<";" << m_tamanho_do_bico_cm << ";" << m_envergadura_das_asas << ";" << endl;
+			  <<";" << m_tamanho_do_bico_cm << ";" << m_envergadura_das_asas << ";" << "|" << endl;
 	}
 
 		

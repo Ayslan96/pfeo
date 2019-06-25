@@ -1,2 +1,4 @@
-Id: 12, Nome: dasdas, CPF: 15515, Idade: 45, Tipo Sanguineo: a, Fator RH: -, Especialidade: sasasa, CRMV: sasasa
+13;dasdas;dasdsad;45;dadsa;+;dsad;dasds
+ 
+45;dasdsa;dsad;75;dsadds;-;dasdsa;12|
  

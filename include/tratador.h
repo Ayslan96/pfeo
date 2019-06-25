@@ -23,16 +23,19 @@ private:
 	std::ostream& print(std::ostream& os) const {
 	return os << m_id << ";" << m_nome << ";" << m_cpf << ";" << m_idade << ";" << m_tipo_sanguineo 
 			  << ";" << m_fator_rh << ";" << m_especialidade << ";" << m_nivel_de_seguranca
-			  <<std::endl;
+			  << "|" << std::endl;
 }
 	
 public:
 
+	/** @brief Definindo construtor padrãodo tipo void da classe Tratador, pois não utilizaremos */
+	Tratador(void);
+	
 	/** @brief Definindo método de impressão sem retorno */ 
 	void imprime();
 
 	/** @brief Definindo construtor padronizado da classe Tratador */
-	Tratador(int,string,string,short,short,char,string,int);
+	Tratador(int,string,string,int,string,char,string,int);
 
 	/** @brief Definindo destrutor da classe Tratador */ 
 	~Tratador();

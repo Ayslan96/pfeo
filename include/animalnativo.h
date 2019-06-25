@@ -22,7 +22,7 @@ protected:
 	string m_uf_origem;
 	
 	/** @brief Define se o animal tem autorização */
-	string m_autorizacao;
+	string m_cidade_origem;
 	
 public:
 

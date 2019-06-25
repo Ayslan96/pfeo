@@ -22,10 +22,12 @@ private:
 	/** @brief Implementação do método virtual sobrecarga de impressão */
 	std::ostream& print(std::ostream& os) const {
 	return os << m_id << ";" << m_nome << ";" << m_cpf << ";" << m_idade << ";" << m_tipo_sanguineo 
-			  << ";" << m_fator_rh << ";" << m_especialidade << ";" << m_crmv
-			  << std::endl;
+			  << ";" << m_fator_rh << ";" << m_especialidade << ";" << m_crmv << "|" << std::endl;
 	}
 public:
+
+	/** @brief Definindo construtor padrãodo tipo void da classe Tratador, pois não utilizaremos */
+	Veterinario(void);
 
 	/** @brief Definindo função de impressão sem retorno */ 
 	void imprime();

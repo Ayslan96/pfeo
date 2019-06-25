@@ -19,9 +19,6 @@ using std::endl;
 /** @brief Define a classe Anfibio que herda da classe Animal */
 class Anfibio : public Animal {
 
-private:
-	virtual std::ostream& print(std::ostream&) const = 0;
-
 protected:
 
 	/** @brief Define a quantidade máxima de mudas */
@@ -31,9 +28,9 @@ protected:
 	/** @brief Implementação do método virtual sobrecarga de impressão*/ 
 
 	std::ostream& print(std::ostream& os) const {
-		return os << m_id << ";" << m_classe << ";" << m_nome_cientifico << ";" << m_sexo 
+		return os << m_codigo << ";" << m_id << ";" << m_classe << ";" << m_nome_cientifico << ";" << m_sexo 
 			  <<";" << m_tamanho <<";"<< m_dieta <<";"<< m_nome_batismo
-			  <<";" << m_total_de_mudas << ";" << m_ultima_muda << ";" << endl;
+			  <<";" << m_total_de_mudas << ";" << m_ultima_muda << ";" << "|" << endl;
 	}
 
 	
@@ -42,17 +39,16 @@ public:
 	Anfibio(void);
 
 	/** @brief Definindo construtor padronizado da classe Anfibio*/ 
-	Anfibio(int , string, string, char, int, string, string, int, Date);
-
-	/** @brief Definindo função de impressão sem retorno*/ 
+	Anfibio(int, int , string, string, char, int, string, string, int, Date);
+ 
 	
-	virtual void imprime()=0;
-
-    friend std::ostream& operator << (std::ostream& os, const Anfibio& b) {
-		return b.print(os);
-	}
+	/** @brief Definindo destrutor da classe Anfibio*/
+	~Anfibio();
+	/** @brief Definindo método de impressão sem retorno */ 
+	void imprime();
 
 	/** @brief Definindo setters de todos os atributos*/ 
+	void setM_codigo(int);
 	void setM_id(int);
 	void setM_classe(string);
 	void setM_nome_cientifico(string);
@@ -64,6 +60,7 @@ public:
 	//void setM_ultima_muda(Date);
 
 	/** @brief Definindo getters de todos os atributos*/ 
+	int getM_codigo();
 	int getM_id();
 	string getM_classe();
 	string getM_nome_cientifico();

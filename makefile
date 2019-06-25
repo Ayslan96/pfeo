@@ -2,7 +2,7 @@ PROG = petfera
 CC = g++
 IDIR = /include
 CPPFLAGS = -I $(IDIR)-O0 -g -Wall -std=c++11 
-OBJS = main.o animal.o anfibio.o date.o ave.o reptil.o mamifero.o classArquivo.o menu.o interfaces.o veterinario.o funcionario.o
+OBJS = main.o animal.o anfibio.o date.o ave.o reptil.o mamifero.o classArquivo.o menu.o interfaces.o veterinario.o funcionario.o tratador.o
 
 
 $(PROG) : $(OBJS)
@@ -43,8 +43,8 @@ veterinario.o:
 
 funcionario.o:
 	$(CC) $(CPPFLAGS) -c src/funcionario.cpp
-#tratador.o:
-#	$(CC) $(CPPFLAGS) -c src/veterinario.cpp
+tratador.o:
+	$(CC) $(CPPFLAGS) -c src/tratador.cpp
 
 clean:
 	rm -f core $(PROG) $(OBJS)

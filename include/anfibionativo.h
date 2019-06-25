@@ -6,7 +6,6 @@
 #ifndef AnfibioNativo_H
 #define AnfibioNativo_H
 
-<<<<<<< HEAD
 /** @brief Inclui a biblioteca anfibio.h */
 #include "anfibio.h"
 
@@ -29,7 +28,7 @@ private:
 			  <<";" << m_tamanho <<";"<< m_dieta <<";"<< m_nome_batismo
 			  <<";" << m_total_de_mudas << ";" << m_ultima_muda << ";" << m_autorizacao_ibama << ";" << m_uf_origem << ";" << m_cidade_origem 
 			  <<";" << endl;
-	}
+
 
 public:
 

@@ -87,23 +87,60 @@ void Menu::cadastrarAnimal(){
 	switch(op){
 
 	case 1:
-		cout << "Estamos na opcao " << op;
-		classe.mamifero();
+		cout << "Estamos na opcao " << op << endl;
+		cout<<"1. Mamifero Exótico" << endl;
+		cout<<"2. Mamifero Nativo" << endl;
+		cout<<"ENTRE COM A OPCAO DESEJADA: " << endl;
+		cin>>op;
+		if(op == 1){
+			classe.mamiferoE();
+		}
+		else{
+			classe.mamiferoN();
+		}
+	
 		menuM();
 		break;
 	case 2:
-		cout << "Estamos na opcao " << op;
-		classe.ave();
+		cout << "Estamos na opcao " << op << endl;
+		cout<<"1. Ave Exótica" << endl;
+		cout<<"2. Ave Nativa" << endl;
+		cout<<"ENTRE COM A OPCAO DESEJADA: " << endl;
+		cin>>op;
+		if(op == 1){
+			classe.aveE();
+		}
+		else{
+			classe.aveN();
+		}
 		menuM();
 		break;
 	case 3:
-		cout << "Estamos na opcao " << op;
-		classe.anfibio();
+		cout << "Estamos na opcao " << op << endl;
+		cout<<"1. Anfíbio Exótico" << endl;
+		cout<<"2. Anfíbio Nativo" << endl;
+		cout<<"ENTRE COM A OPCAO DESEJADA: " << endl;
+		cin>>op;
+		if(op == 1){
+			classe.anfibioE();
+		}
+		else{
+			classe.anfibioN();
+		}
 		menuM();
 		break;
 	case 4:
-		cout << "Estamos na opcao " << op;
-		classe.reptil();
+		cout << "Estamos na opcao " << op << endl;
+		cout<<"1. Réptil Exótico" << endl;
+		cout<<"2. Réptil Nativo" << endl;
+		cout<<"ENTRE COM A OPCAO DESEJADA: " << endl;
+		cin>>op;
+		if(op == 1){
+			classe.reptilE();
+		}
+		else{
+			classe.reptilN();
+		}
 		menuM();
 		break;
 	default: 
@@ -128,15 +165,15 @@ void Menu::cadastrarFuncionario(){
 	switch(op){
 
 	case 1:
-		cout << "Estamos na opcao " << op;
+		cout << "Estamos na opcao " << op << endl;
 		classe.veterinario();
 		break;
 	case 2:
-		cout << "Estamos na opcao " << op;
-		//classe.tratador();
+		cout << "Estamos na opcao " << op << endl;
+		classe.tratador();
 		break;
 	default: 
-		cout << "Opcao " << op << " invalida. ";
+		cout << "Opcao " << op << " invalida. " << endl;
 		return cadastrarFuncionario();
 		break;
 		
