@@ -19,9 +19,6 @@ using std::endl;
 /** @brief Define a classe Anfibio que herda da classe Animal */
 class Anfibio : public Animal {
 
-private:
-	virtual std::ostream& print(std::ostream&) const = 0;
-
 protected:
 
 	/** @brief Define a quantidade máxima de mudas */
@@ -43,14 +40,12 @@ public:
 
 	/** @brief Definindo construtor padronizado da classe Anfibio*/ 
 	Anfibio(int , string, string, char, int, string, string, int, Date);
-
-	/** @brief Definindo função de impressão sem retorno*/ 
+ 
 	
-	virtual void imprime()=0;
-
-    friend std::ostream& operator << (std::ostream& os, const Anfibio& b) {
-		return b.print(os);
-	}
+	/** @brief Definindo destrutor da classe Anfibio*/
+	~Anfibio();
+	/** @brief Definindo método de impressão sem retorno */ 
+	void imprime();
 
 	/** @brief Definindo setters de todos os atributos*/ 
 	void setM_id(int);

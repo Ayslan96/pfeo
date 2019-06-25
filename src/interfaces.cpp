@@ -60,25 +60,6 @@ void Interfaces::mamifero(){
 	delete(mamifero);
 
 
-	
-
-	ofstream ArquivoTeste;
-	ArquivoTeste.open("animais.txt",ios::app);
-	if(ArquivoTeste.is_open()){
-		std::cout << "Animal cadastrado!!" << std::endl;
-		ArquivoTeste << *mamifero;
-		ArquivoTeste << "\n";
-	}else{
-		std::cout << " Não foi possivel cadastrar o animal! " << std::endl;
-	}
-
-	ArquivoTeste.close();
-
-	delete(mamifero);
-
-
-	
-
 }
 
 void Interfaces::ave(){

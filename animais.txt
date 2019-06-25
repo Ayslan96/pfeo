@@ -21,3 +21,5 @@ Id: 34, Classe: ave, Nome Cientifico: qqq, Sexo: d, Tamanho: 1, Dieta: rerere, N
 
 Id: 3, Classe: ave, Nome Cientifico: wqwq, Sexo: r, Tamanho: 6, Dieta: 1, Nome de Batismo: fafafa, Tamanho do Bico em cm: 3, Envergadura das Asas: 8
 
+45;mamifero;anreliisss;f;2;frango;andre;rosa
+

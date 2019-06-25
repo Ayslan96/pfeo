@@ -76,7 +76,7 @@ public:
 	void setM_idade(int);
 	void setM_tipo_sanguineo(string);
 	void setM_fator_rh(char);
-	void setM_especialidade(string);
+	void setM_especialidade(string);*/
 
 	/** @brief Getters */
 	/*

@@ -16,7 +16,7 @@ using std::endl;
 
 /** @brief Definindo a classe Ave que herda da classe Animal */
 class Ave : public Animal{
-private:
+protected:
 
 	/** @brief Define a variável chamada m_tamanho_do_bico_cm do tipo double */
 	double m_tamanho_do_bico_cm;
