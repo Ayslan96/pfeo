@@ -20,7 +20,8 @@ m_tamanho_do_bico_cm, m_envergadura_das_asas, m_pais_origem
 AveNativo::AveNativo(int m_codigo, int m_id, string m_classe, string m_nome_cientifico, char m_sexo, int m_tamanho, string m_dieta, 
 	string m_nome_batismo, double m_tamanho_do_bico_cm, double m_envergadura_das_asas, string m_pais_origem ):
 	Ave(m_id, m_classe, m_nome_cientifico, m_sexo, m_tamanho, m_dieta, m_nome_batismo, m_tamanho_do_bico_cm, m_envergadura_das_asas):
-	AniamlNativo(m_pais_origem){}
+	AnimalExotico(m_autorizacao_ibama, m_pais_origem) {}
+	
 	
 /**
 * @brief Método destrutor.
@@ -64,10 +65,15 @@ AveNativo::~AveNativo(){}
 	void AveNativo::setM_envergadura_das_asas(double envergadura_das_asas){
 		m_envergadura_das_asas = envergadura_das_asas;
 	}
-	void Ave::setM_pais_origem(string pais_origem){
-		m_pais_origem = pais_origem;
+	void AveNativo::setM_autorizacao_ibama(string autorizacao_ibama){
+		m_autorizacao_ibama = autorizacao_ibama;
 	}
-
+	void AveNativo::setM_uf_origem(string uf_origem){
+		m_uf_origem = uf_origem;
+	}
+	void AveNativo::setM_cidade_origem(string cidade_origem){
+		m_cidade_origem = cidade_origem;
+	}
 
 /** @brief Getters */
 	int AveNativo::getM_codigo(){
@@ -100,7 +106,13 @@ AveNativo::~AveNativo(){}
 	double AveNativo::getM_envergadura_das_asas(){
 		return m_envergadura_das_asas;
 	}
-	string AveNativo::getM_pais_origem(){
-		return m_pais_origem;
+	string AveNativo::getM_autorizacao_ibama(){
+		return m_autorizacao_ibama;
+	}
+	string AveNativo::getM_uf_origem(){
+		return m_uf_origem;
+	}
+	string AveNativo::getM_cidade_origem(){
+		return m_cidade_origem;
 	}
 

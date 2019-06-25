@@ -15,12 +15,12 @@ AnfibioNativo::AnfibioNativo(void){}
 /**
 * @brief Método construtor padronizado.
 * @param  m_id, m_classe, m_nome_cientifico, m_sexo, m_tamanho, m_dieta,  m_nome_batismo,
-m_total_de_mudas, m_ultima_muda, m_uf_origem, m_autorizacao.
+m_total_de_mudas, m_ultima_muda, m_uf_origem, m_cidade_origem.
 */
 AnfibioNativo::AnfibioNativo(int m_codigo, int m_id, string m_classe, string m_nome_cientifico, char m_sexo, int m_tamanho, string m_dieta, string m_nome_batismo,
-		int m_total_de_mudas, Date m_ultima_muda, string m_uf_origem, string m_autorizacao):
+		int m_total_de_mudas, Date m_ultima_muda, string m_uf_origem, string m_cidade_origem):
 	Anfibio(m_id, m_classe, m_nome_cientifico, m_sexo, m_tamanho, m_dieta, m_nome_batismo, m_total_de_mudas, m_ultima_muda):
-	AnimalNativo(m_uf_origem, m_autorizacao){}
+	AnimalNativo(m_uf_origem, m_cidade_origem){}
 	
 /**
 * @brief Método destrutor.
@@ -64,8 +64,14 @@ AnfibioNativo::~AnfibioNativo(){}
 	//void setM_ultima_muda(Date ultima_muda){
 		//m_ultima_muda = ultima_muda;
 	//}
-	void AnfibioNativo::setM_pais_origem(string pais_origem){
-		m_pais_origem = pais_origem;
+	void AnfibioNativo::setM_autorizacao_ibama(string autorizacao_ibama){
+		m_autorizacao_ibama = autorizacao_ibama;
+	}
+	void AnfibioNativo::setM_uf_origem(string uf_origem){
+		m_uf_origem = uf_origem;
+	}
+	void AnfibioNativo::setM_cidade_origem(string cidade_origem){
+		m_cidade_origem = cidade_origem;
 	}
 
 
@@ -103,7 +109,13 @@ AnfibioNativo::~AnfibioNativo(){}
 		//return m_ultima_muda;
 	//}
 
-	string AnfibioNativo::getM_pais_origem(){
-		return m_pais_origem;
+	string AnfibioNativo::getM_autorizacao_ibama(){
+		return m_autorizacao_ibama;
+	}
+	string AnfibioNativo::getM_uf_origem(){
+		return m_uf_origem;
+	}
+	string AnfibioNativo::getM_cidade_origem(){
+		return m_cidade_origem;
 	}
 

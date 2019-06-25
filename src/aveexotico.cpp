@@ -20,7 +20,7 @@ m_tamanho_do_bico_cm, m_envergadura_das_asas, m_pais_origem
 AveExotico::AveExotico(int m_codigo,int m_id, string m_classe, string m_nome_cientifico, char m_sexo, int m_tamanho, string m_dieta, 
 	string m_nome_batismo, double m_tamanho_do_bico_cm, double m_envergadura_das_asas, string m_pais_origem ):
 	Ave(m_id, m_classe, m_nome_cientifico, m_sexo, m_tamanho, m_dieta, m_nome_batismo, m_tamanho_do_bico_cm, m_envergadura_das_asas):
-	AniamlExotico(m_pais_origem){}
+	AnimalExotico(m_autorizacao_ibama, m_pais_origem) {}
 	
 /**
 * @brief Método destrutor.
@@ -64,6 +64,9 @@ AveExotico::~AveExotico(){}
 	void AveExotico::setM_envergadura_das_asas(double envergadura_das_asas){
 		m_envergadura_das_asas = envergadura_das_asas;
 	}
+	void AveExotico::setM_autorizacao_ibama(string autorizacao_ibama){
+		m_autorizacao_ibama = autorizacao_ibama;
+	}
 	void Ave::setM_pais_origem(string pais_origem){
 		m_pais_origem = pais_origem;
 	}
@@ -99,6 +102,9 @@ AveExotico::~AveExotico(){}
 	}
 	double AveExotico::getM_envergadura_das_asas(){
 		return m_envergadura_das_asas;
+	}
+	string AveExotico::getM_autorizacao_ibama(){
+		return m_autorizacao_ibama;
 	}
 	string AveExotico::getM_pais_origem(){
 		return m_pais_origem;
