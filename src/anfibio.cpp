@@ -17,7 +17,7 @@ Anfibio::Anfibio(void){}
 * @param  m_id, m_classe, m_nome_cientifico, m_sexo, m_tamanho, m_dieta,  m_nome_batismo,
 m_total_de_mudas, m_ultima_mudaNumero.
 */
-Anfibio::Anfibio(int m_id, string m_classe, string m_nome_cientifico, char m_sexo, int m_tamanho, string m_dieta, string m_nome_batismo,
+Anfibio::Anfibio(int m_codigo, int m_id, string m_classe, string m_nome_cientifico, char m_sexo, int m_tamanho, string m_dieta, string m_nome_batismo,
 
 		int m_total_de_mudas, Date m_ultima_muda):
 	Animal(m_id, m_classe, m_nome_cientifico, m_sexo, m_tamanho, m_dieta, m_nome_batismo),
@@ -36,12 +36,15 @@ Anfibio::~Anfibio(){}
 */
 void Anfibio::imprime(){
 
-	cout << m_id << m_classe << m_nome_cientifico << m_sexo << m_tamanho
+	cout << m_codigo << m_id << m_classe << m_nome_cientifico << m_sexo << m_tamanho
 	<< m_dieta << m_nome_batismo << m_total_de_mudas << m_ultima_muda << endl;
 
 }
 
 	/** @brief Setters */
+	void Anfibio::setM_id(int codigo){
+		m_codigo = codigo;
+	}
 	void Anfibio::setM_id(int id){
 		m_id = id;
 	}
@@ -71,6 +74,9 @@ void Anfibio::imprime(){
 	//}
 
 	/** @brief Getters */
+	int Anfibio::getM_codigo(){
+		return m_codigo;
+	}
 	int Anfibio::getM_id(){
 		return m_id;
 	}

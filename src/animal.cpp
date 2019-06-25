@@ -17,7 +17,7 @@ Animal::Animal(void){}
 * @param  m_id, m_classe, m_nome_cientifico, m_sexo, m_tamanho, m_dieta,  m_nome_batismo.
 * @return Não possui retorno
 */
-Animal::Animal(int id, string classe, string nome_cientifico, char sexo, int tamanho, string dieta, string nome_batismo):
+Animal::Animal(int m_codigo, int m_id, string m_classe, string nome_cientifico, char sexo, int tamanho, string dieta, string nome_batismo):
 m_id(id), m_classe(classe), m_nome_cientifico(nome_cientifico), m_sexo(sexo), m_tamanho(tamanho), 
 m_dieta(dieta), m_nome_batismo(nome_batismo) {
 
@@ -32,6 +32,9 @@ Animal::~Animal(){}
 
 
 /** @brief Setters */
+	void Animal::setM_codigo(int codigo){
+		m_codigo = codigo;
+	}
 	void Animal::setM_id(int id){
 		m_id = id;
 	}
@@ -55,6 +58,9 @@ Animal::~Animal(){}
 	}
 
 /** @brief Getters */
+	int Animal::getM_codigo(){
+		return m_codigo;
+	}
 	int Animal::getM_id(){
 		return m_id;
 	}

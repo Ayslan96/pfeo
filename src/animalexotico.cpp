@@ -16,9 +16,9 @@ AnimalExotico::AnimalExotico(void){}
 * @brief Método construtor padronizado.
 * @param  m_id, m_classe, m_nome_cientifico, m_sexo, m_tamanho, m_dieta,  m_nome_batismo.
 */
-AnimalExotico::AnimalExotico(int id, string classe, string nome_cientifico, char sexo, 
-	int tamanho, string dieta, string nome_batismo, string pais_origem):
-Animal(m_id, m_classe, m_nome_cientifico, m_sexo, m_tamanho, 
+AnimalExotico::AnimalExotico(int m_codigo,int m_id, string m_classe, string m_nome_cientifico, char m_sexo, 
+	int m_tamanho, string m_dieta, string m_nome_batismo, string m_pais_origem):
+Animal(m_codigo,m_id, m_classe, m_nome_cientifico, m_sexo, m_tamanho, 
 	m_dieta, m_nome_batismo), m_pais_origem(m_pais_origem){}
 
 /**

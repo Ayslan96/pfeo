@@ -18,7 +18,7 @@ Ave::Ave(void){}
  m_envergadura_das_asas
 * @return Não possui retorno
 */
-Ave::Ave(int m_id, string m_classe, string m_nome_cientifico, char m_sexo, int m_tamanho, 
+Ave::Ave(int m_codigo, int m_id, string m_classe, string m_nome_cientifico, char m_sexo, int m_tamanho, 
 	string m_dieta, string m_nome_batismo,
 		double m_tamanho_do_bico_cm, double m_envergadura_das_asas):
 	Animal(m_id, m_classe, m_nome_cientifico, m_sexo, m_tamanho, m_dieta, m_nome_batismo),
@@ -33,13 +33,16 @@ Ave::~Ave(){}
 /** @brief Implementação do método de impressão de uma ave*/
 void Ave::imprime(){
 
-	cout <<m_id <<m_classe <<m_nome_cientifico <<m_sexo <<m_tamanho
+	cout <<m_codigo<<m_id <<m_classe <<m_nome_cientifico <<m_sexo <<m_tamanho
 	<<m_dieta <<m_nome_batismo <<m_tamanho_do_bico_cm <<m_envergadura_das_asas << endl;
 
 }
 
 
 /** @brief Setters */
+	void Ave::setM_id(int codigo){
+		m_codigo = codigo;
+	}
 	void Ave::setM_id(int id){
 		m_id = id;
 	}
@@ -69,6 +72,9 @@ void Ave::imprime(){
 	}
 
 /** @brief Getters */
+	int Ave::getM_codigo(){
+		return m_codigo;
+	}
 	int Ave::getM_id(){
 		return m_id;
 	}

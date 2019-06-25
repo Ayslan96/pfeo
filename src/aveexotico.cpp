@@ -17,7 +17,7 @@ AveExotico::AveExotico(void){}
 * @param  m_id, m_classe, m_nome_cientifico, m_sexo, m_tamanho, m_dieta,  m_nome_batismo,
 m_tamanho_do_bico_cm, m_envergadura_das_asas, m_pais_origem
 */
-AveExotico::AveExotico(int m_id, string m_classe, string m_nome_cientifico, char m_sexo, int m_tamanho, string m_dieta, 
+AveExotico::AveExotico(int m_codigo,int m_id, string m_classe, string m_nome_cientifico, char m_sexo, int m_tamanho, string m_dieta, 
 	string m_nome_batismo, double m_tamanho_do_bico_cm, double m_envergadura_das_asas, string m_pais_origem ):
 	Ave(m_id, m_classe, m_nome_cientifico, m_sexo, m_tamanho, m_dieta, m_nome_batismo, m_tamanho_do_bico_cm, m_envergadura_das_asas):
 	AniamlExotico(m_pais_origem){}
@@ -34,6 +34,9 @@ AveExotico::~AveExotico(){}
 */
 
 /** @brief Setters */
+	void AveExotico::setM_id(int codigo){
+		m_codigo = codigo;
+	}
 	void AveExotico::setM_id(int id){
 		m_id = id;
 	}
@@ -67,6 +70,9 @@ AveExotico::~AveExotico(){}
 
 
 /** @brief Getters */
+	int AveExotico::getM_codigo(){
+		return m_codigo;
+	}
 	int AveExotico::getM_id(){
 		return m_id;
 	}

@@ -18,7 +18,7 @@ AnfibioExotico::AnfibioExotico(void){}
 * @param  m_id, m_classe, m_nome_cientifico, m_sexo, m_tamanho, m_dieta,  m_nome_batismo,
 m_total_de_mudas, m_ultima_muda
 */
-AnfibioExotico::AnfibioExotico(int m_id, string m_classe, string m_nome_cientifico, char m_sexo, int m_tamanho, string m_dieta, string m_nome_batismo,
+AnfibioExotico::AnfibioExotico(int m_codigo, int m_id, string m_classe, string m_nome_cientifico, char m_sexo, int m_tamanho, string m_dieta, string m_nome_batismo,
 		int m_total_de_mudas, Date m_ultima_muda, string m_pais_origem):
 	Anfibio(m_id, m_classe, m_nome_cientifico, m_sexo, m_tamanho, m_dieta, m_nome_batismo, m_total_de_mudas, m_ultima_muda):
 	AnimalExotico(m_pais_origem){}
@@ -35,6 +35,9 @@ AnfibioExotico::~AnfibioExotico(){}
 */
 
 	/** @brief Setters */
+	void AnfibioExotico::setM_id(int codigo){
+		m_codigo = codigo;
+	}
 	void AnfibioExotico::setM_id(int id){
 		m_id = id;
 	}
@@ -68,6 +71,9 @@ AnfibioExotico::~AnfibioExotico(){}
 
 
 	/** @brief Getters */
+	int AnfibioExotico::getM_codigo(){
+		return m_codigo;
+	}
 	int AnfibioExotico::getM_id(){
 		return m_id;
 	}
