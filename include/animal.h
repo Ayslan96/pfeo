@@ -19,17 +19,11 @@ using namespace std;
 /** @brief Define uma classe chamada Animal */
 class Animal {
 
-	private:
+private:
 
 	/** @brief Definindo um método virtual puro de sobrecarga de impressão */
 	virtual std::ostream& print(std::ostream&) const = 0;
 	
-	protected:
-	/** @brief Define uma variável chamada m_id do tipo inteiro para armazenar os ids dos animais */
-
-/** @brief Definindo um método virtual puro de sobrecarga de impressão */
-virtual std::ostream& print(std::ostream&) const = 0;
-
 protected:
 	/** @brief Define uma variável chamada m_id do tipo inteiro para um animal */
 
@@ -56,9 +50,6 @@ protected:
 	Animal(int id, string classe, string nome_cientifico, char sexo, int tamanho, string dieta, string nome_batismo);
 
 
-	/** @brief Define o destrutor de Animal como virtual */
-	virtual ~Animal();
-
 	/** @brief Definindo um método virtual puro */
 	virtual ~Animal();
 
@@ -68,11 +59,6 @@ protected:
     friend std::ostream& operator << (std::ostream& os, const Animal& b) {
 		return b.print(os);
 	}
-
-
-
-	static int total;
-	static int getTotal();
 
 	/** @brief Setters */
 

@@ -55,7 +55,7 @@ void Arquivo_Geral::leituraArquivo_Funcionario(){
 	}else{
 		std::cout << " Não foi possivel abrir o arquivo! " << std::endl;
 	}
-}
+}}
 
 void Arquivo_Geral::fecharArquivo_Funcionario(){
 	arquivoFuncionario_.close();
@@ -67,7 +67,9 @@ void Arquivo_Geral::fecharArquivo_Animal(){
 	arquivoAnimal.close();
 } 
 
-	arquivoFuncionario_.open("funcionarios.txt",ios::app);
+void Arquivo_Geral::cadastrar_Funcionario(Funcionario &t) {
+
+arquivoFuncionario_.open("funcionarios.txt",ios::app);
 	if(arquivoFuncionario_.is_open()){
 		arquivoFuncionario_ << t;
 		arquivoFuncionario_ << "\n";

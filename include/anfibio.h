@@ -44,15 +44,10 @@ public:
 	/** @brief Definindo construtor padronizado da classe Anfibio*/ 
 	Anfibio(int , string, string, char, int, string, string, int, Date);
 
-	/** @brief Definindo destrutor da classe Anfibio*/ 
-	~Anfibio();
-	
-	/** @brief Definindo método de impressão sem retorno*/ 
-	void imprime();
-
 	/** @brief Definindo função de impressão sem retorno*/ 
 	
 	virtual void imprime()=0;
+
     friend std::ostream& operator << (std::ostream& os, const Anfibio& b) {
 		return b.print(os);
 	}
@@ -68,7 +63,7 @@ public:
 	void setM_total_de_mudas(int);
 	//void setM_ultima_muda(Date);
 
-		/** @brief Definindo getters de todos os atributos*/ 
+	/** @brief Definindo getters de todos os atributos*/ 
 	int getM_id();
 	string getM_classe();
 	string getM_nome_cientifico();

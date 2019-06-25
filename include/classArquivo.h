@@ -58,14 +58,6 @@ private:
 
 	/** @brief Define a variável chamada arquivoAnimal do tipo ofstream para sobrescrita do arquivo animais.txt */
 	ifstream arquivoAnimal;
-<<<<<<< HEAD
-=======
-	std::string linha;
-<<<<<<< HEAD
-=======
-	
->>>>>>> origin/master
->>>>>>> ayslan
 
 	/** @brief Define a variável chamada linha do tipo string para armazenar as linhas dos arquivos */
 	std::string linha;	
