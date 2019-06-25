@@ -26,6 +26,13 @@ class Animal {
 	
 	protected:
 	/** @brief Define uma variável chamada m_id do tipo inteiro para armazenar os ids dos animais */
+
+/** @brief Definindo um método virtual puro de sobrecarga de impressão */
+virtual std::ostream& print(std::ostream&) const = 0;
+
+protected:
+	/** @brief Define uma variável chamada m_id do tipo inteiro para um animal */
+
 	int m_id;
 	/** @brief Define uma variável chamdada m_classe do tipo string para armazenar a classe dos animais */
 	std::string m_classe;

@@ -6,6 +6,7 @@
 #ifndef AveExotico_H
 #define AveExotico_H
 
+<<<<<<< HEAD
 /** @brief Inclui a biblioteca Ave.h */
 #include "Ave.h"
 
@@ -37,10 +38,34 @@ public:
 
 	/** @brief Definindo construtor padronizado da classe AveExotico*/ 
 	AveExotico(int, string, string, char, int, string, string, double, double, string);
+=======
+#include <string>
+#include "ave.h"
+#include "animalexotico.h"
+
+
+class AveExotico : public Ave, public AnimalExotico  {
+
+private:
+	std::ostream& print(std::ostream& os) const {
+		return os << m_id << ";" << m_classe << ";" << m_nome_cientifico << ";" << m_sexo 
+			  <<";" << m_tamanho <<";"<< m_dieta <<";"<< m_nome_batismo
+			  <<";" <<m_tamanho_do_bico_cm << ";" <<m_envergadura_das_asas
+			  <<";" <<m_autorizacao_ibama <<";" <<m_pais_origem << endl;
+	}
+
+public:
+
+
+	AveExotico(void);
+
+	AveExotico(int, string, string, char, int, string, string, double, double,std::string,std::string);
+>>>>>>> ayslan
 
 	/** @brief Definindo destrutor da classe AveExotico*/
 	~AveExotico();
 
+<<<<<<< HEAD
 
 	/** @brief Setters */
 	void setM_id(int);
@@ -71,3 +96,10 @@ public:
 #endif
 
 
+=======
+	void imprime();
+
+};
+#endif
+
+>>>>>>> ayslan

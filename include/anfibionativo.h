@@ -6,6 +6,7 @@
 #ifndef AnfibioNativo_H
 #define AnfibioNativo_H
 
+<<<<<<< HEAD
 /** @brief Inclui a biblioteca anfibio.h */
 #include "anfibio.h"
 
@@ -29,9 +30,9 @@ private:
 			  <<";" << m_total_de_mudas << ";" << m_ultima_muda << ";" << m_uf_origem << ";" << m_autorizacao 
 			  <<";" << endl;
 	}
-	
 
 public:
+
 
 	/** @brief Definindo construtor padrão da classe AnfibioNativo para void, pois não utilizaremos*/ 
 	AnfibioNativo(void);
@@ -40,8 +41,12 @@ public:
 	AnfibioNativo(int , string, string, char, int, string, string, int, Date);
 	
 	/** @brief Definindo destrutor da classe AnfibioNativo*/ 
+
 	~AnfibioNativo();
 
 	/** @brief Definindo função de impressão sem retorno*/ 
 	void imprime();
+
 };
+#endif
+

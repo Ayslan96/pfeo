@@ -6,6 +6,7 @@
 #ifndef MamiferoExotico_H
 #define MamiferoExotico_H
 
+<<<<<<< HEAD
 /** @brief Inclui a biblioteca Mamifero.h */
 #include "Mamifero.h"
 
@@ -34,6 +35,28 @@ public:
 
 	/** @brief Definindo construtor padrão da classe MamiferoExotico para void, pois não utilizaremos*/
 	MamiferoExotico(void);
+=======
+#include <string>
+#include "mamifero.h"
+#include "animalexotico.h"
+
+
+class MamiferoExotico : public Mamifero, public AnimalExotico  {
+
+private:
+	std::ostream& print(std::ostream& os) const {
+		return os << m_id << ";" << m_classe << ";" << m_nome_cientifico << ";" << m_sexo 
+			  <<";" << m_tamanho <<";"<< m_dieta <<";"<< m_nome_batismo
+			  <<";" << m_cor_pelo <<";" <<m_autorizacao_ibama <<";" <<m_pais_origem << endl;
+	}
+
+public:
+
+
+	MamiferoExotico(void);
+
+	MamiferoExotico(int, string, string, char, int, string, string, string,std::string,std::string);
+>>>>>>> ayslan
 
 	/** @brief Definindo construtor padronizado da classe MamiferoExotico*/ 
 	MamiferoExotico(int, string, string, char, int, string, string, string, string);
@@ -41,6 +64,7 @@ public:
 	/** @brief Definindo destrutor da classe MamiferoExotico*/
 	~MamiferoExotico();
 
+<<<<<<< HEAD
 
 
 };
@@ -48,3 +72,10 @@ public:
 #endif
 
 
+=======
+	void imprime();
+
+};
+#endif
+
+>>>>>>> ayslan

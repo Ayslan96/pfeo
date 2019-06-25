@@ -6,8 +6,16 @@
 #ifndef AnimalNativo_H
 #define AnimalNativo_H
 
+<<<<<<< HEAD
 /** @brief Inclui a biblioteca animal.h */
 #include "animal.h"
+=======
+#include <string>
+#include <iostream>
+#include "animalsilvestre.h"
+
+class AnimalNativo : public AnimalSilvestre {
+>>>>>>> ayslan
 
 using std::string;
 
@@ -26,15 +34,25 @@ public:
 
 	/** @brief Definindo construtor padrão da classe AnimalNativo para void, pois não utilizaremos*/
 	AnimalNativo(void);
+<<<<<<< HEAD
 
 	/** @brief Definindo construtor padronizado da classe AnimalNativo*/ 
 	AnimalNativo(int, string, string, char , int, string , string, string, string);
 
 	/** @brief Definindo destrutor da classe AnimalNativo*/
+=======
+	AnimalNativo(std::string, std::string, std::string);
+>>>>>>> ayslan
 	virtual ~AnimalNativo();
 
+<<<<<<< HEAD
 	/** @brief Definindo método de impressão sem retorno*/
 	virtual void imprime() = 0;
+=======
+	friend std::ostream& operator << (std::ostream& os, const AnimalNativo& b) {
+		return b.print(os);
+	}
+>>>>>>> ayslan
 
 };
 

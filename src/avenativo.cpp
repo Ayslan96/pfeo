@@ -97,3 +97,4 @@ AveNativo::~AveNativo(){}
 	string AveNativo::getM_pais_origem(){
 		return m_pais_origem;
 	}
+

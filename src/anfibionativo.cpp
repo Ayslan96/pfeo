@@ -100,3 +100,4 @@ AnfibioNativo::~AnfibioNativo(){}
 	string AnfibioNativo::getM_pais_origem(){
 		return m_pais_origem;
 	}
+

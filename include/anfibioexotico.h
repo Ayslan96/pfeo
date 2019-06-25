@@ -64,8 +64,7 @@ public:
 	int getM_total_de_mudas();
 	//Date getM_ultima_muda();
 	string getM_pais_origem()
+
 };
-
 #endif
-
 

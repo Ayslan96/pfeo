@@ -1,39 +1,16 @@
-/**
-* @file anfibio.cpp
-* @brief Métodos da Classe Anfibio filha da classe base Animal
-*/
+#include "anfibio.h"
 
-/** @brief Inclui a biblioteca anfibio.h */
-#include "../include/anfibio.h"
-
-/**
-* @brief Método construtor padrão.
-* @return Não possui retorno
-*/
 Anfibio::Anfibio(void){}
 
-/**
-* @brief Método construtor padronizado.
-* @param  m_id, m_classe, m_nome_cientifico, m_sexo, m_tamanho, m_dieta,  m_nome_batismo,
-m_total_de_mudas, m_ultima_mudaNumero.
-*/
 Anfibio::Anfibio(int m_id, string m_classe, string m_nome_cientifico, char m_sexo, int m_tamanho, string m_dieta, string m_nome_batismo,
-
-		int m_total_de_mudas, Date m_ultima_muda):
-	Animal(m_id, m_classe, m_nome_cientifico, m_sexo, m_tamanho, m_dieta, m_nome_batismo),
-	m_total_de_mudas(m_total_de_mudas), m_ultima_muda(m_ultima_muda) {}
-
+				int m_total_de_mudas, Date m_ultima_muda):
+				Animal(m_id, m_classe, m_nome_cientifico, m_sexo, m_tamanho, m_dieta, m_nome_batismo),
+				m_total_de_mudas(m_total_de_mudas), m_ultima_muda(m_ultima_muda) {}
 	
-/**
-* @brief Método destrutor.
-* @return Não possui retorno
-*/
+
+
 Anfibio::~Anfibio(){}
 
-/**
-* @brief Método de impressão de um anfíbio.
-* @return Não possui retorno
-*/
 void Anfibio::imprime(){
 
 	cout << m_id << m_classe << m_nome_cientifico << m_sexo << m_tamanho
@@ -41,7 +18,7 @@ void Anfibio::imprime(){
 
 }
 
-	/** @brief Setters */
+//setters
 	void Anfibio::setM_id(int id){
 		m_id = id;
 	}
@@ -70,7 +47,7 @@ void Anfibio::imprime(){
 		//m_ultima_muda = ultima_muda;
 	//}
 
-	/** @brief Getters */
+//getters
 	int Anfibio::getM_id(){
 		return m_id;
 	}

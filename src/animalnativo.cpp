@@ -21,6 +21,7 @@ AnimalNativo::AnimalNativo(int id, string classe, string nome_cientifico, char s
 Animal(m_id, m_classe, m_nome_cientifico, m_sexo, m_tamanho, 
 	m_dieta, m_nome_batismo), m_uf_origem(m_uf_origem), m_autorizacao(m_autorizacao){}
 
+
 /**
 * @brief Método destrutor.
 * @return Não possui retorno
