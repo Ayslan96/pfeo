@@ -28,7 +28,8 @@ void Interfaces::exibeNome(){
 void Interfaces::mamiferoE(){
 	string cor_do_pelo;
 
-
+	cout << " Digite o Codigo do animal: " << endl;
+	cin>> codigo;
 	cout << " Digite o id do animal " << endl;
 	cin>> id;
 	cout<< " Digite o nome do animal do batismo: " << endl;
@@ -47,7 +48,7 @@ void Interfaces::mamiferoE(){
 	cin >> pais_de_origem;
 
 	classe = "mamifero";
-	Animal* mamiferoE = new Mamifero(id, classe, nome_cientifico, sexo, tamanho, dieta, nome_batismo, cor_do_pelo);
+	Animal* mamiferoE = new Mamifero(codigo, id, classe, nome_cientifico, sexo, tamanho, dieta, nome_batismo, cor_do_pelo);
 	
 	ofstream ArquivoTeste;
 	ArquivoTeste.open("animais.txt",ios::app);
@@ -71,7 +72,8 @@ void Interfaces::mamiferoE(){
 void Interfaces::mamiferoN(){
 	string cor_do_pelo;
 
-
+	cout << " Digite o Codigo do animal: " << endl;
+	cin>> codigo;
 	cout << " Digite o id do animal " << endl;
 	cin>> id;
 	cout<< " Digite o nome do animal do batismo: " << endl;
@@ -92,7 +94,7 @@ void Interfaces::mamiferoN(){
 	cin >> autorizacao;
 
 	classe = "mamifero";
-	Animal* mamiferoN = new Mamifero(id, classe, nome_cientifico, sexo, tamanho, dieta, nome_batismo, cor_do_pelo);
+	Animal* mamiferoN = new Mamifero(codigo, id, classe, nome_cientifico, sexo, tamanho, dieta, nome_batismo, cor_do_pelo);
 	
 	ofstream ArquivoTeste;
 	ArquivoTeste.open("animais.txt",ios::app);
@@ -116,7 +118,9 @@ void Interfaces::mamiferoN(){
 void Interfaces::aveE(){
 	double tamanho_do_bico;
 	double envergadura_das_asas;
-
+	
+	cout << " Digite o Codigo do animal " << endl;
+	cin>> codigo;
 	cout<< " Digite o id do animal: " << endl;
 	cin >> id;
 
@@ -138,7 +142,7 @@ void Interfaces::aveE(){
 	cin >> pais_de_origem;
 
 	classe = "ave";
-	Animal* aveE = new Ave(id, classe, nome_cientifico, sexo, tamanho, dieta, nome_batismo ,tamanho_do_bico, envergadura_das_asas);
+	Animal* aveE = new Ave(codigo, id, classe, nome_cientifico, sexo, tamanho, dieta, nome_batismo ,tamanho_do_bico, envergadura_das_asas);
 
 	ofstream ArquivoTeste;
 	ArquivoTeste.open("animais.txt",ios::app);
@@ -161,6 +165,8 @@ void Interfaces::aveN(){
 	double tamanho_do_bico;
 	double envergadura_das_asas;
 
+	cout << " Digite o Codigo do animal: " << endl;
+	cin>> codigo;
 	cout<< " Digite o id do animal: " << endl;
 	cin >> id;
 
@@ -184,7 +190,7 @@ void Interfaces::aveN(){
 	cin >> autorizacao;
 
 	classe = "ave";
-	Animal* aveN = new Ave(id, classe, nome_cientifico, sexo, tamanho, dieta, nome_batismo ,tamanho_do_bico, envergadura_das_asas);
+	Animal* aveN = new Ave(codigo, id, classe, nome_cientifico, sexo, tamanho, dieta, nome_batismo ,tamanho_do_bico, envergadura_das_asas);
 
 	ofstream ArquivoTeste;
 	ArquivoTeste.open("animais.txt",ios::app);
@@ -206,7 +212,9 @@ void Interfaces::aveN(){
 void Interfaces::reptilE(){
 	bool venenoso;
 	string tipo_veneno;
-
+	
+	cout << " Digite o Codigo do animal: " << endl;
+	cin>> codigo;
 	cout<< " Digite o id do animal: " << endl;
 	cin >> id;
 	cout<< " Digite o nome cientifico: " << endl;
@@ -227,7 +235,7 @@ void Interfaces::reptilE(){
 	cin >> pais_de_origem;
 
 	classe = "reptil";
-	Animal* reptilE = new Reptil(id, classe, nome_cientifico, sexo, tamanho, dieta, nome_batismo, venenoso, tipo_veneno);
+	Animal* reptilE = new Reptil(codigo, id, classe, nome_cientifico, sexo, tamanho, dieta, nome_batismo, venenoso, tipo_veneno);
 
 	ofstream ArquivoTeste;
 	ArquivoTeste.open("animais.txt",ios::app);
@@ -249,7 +257,9 @@ void Interfaces::reptilE(){
 void Interfaces::reptilN(){
 	bool venenoso;
 	string tipo_veneno;
-
+	
+	cout << " Digite o Codigo do animal: " << endl;
+	cin>> codigo;
 	cout<< " Digite o id do animal: " << endl;
 	cin >> id;
 	cout<< " Digite o nome cientifico: " << endl;
@@ -272,7 +282,7 @@ void Interfaces::reptilN(){
 	cin >> autorizacao;
 
 	classe = "reptil";
-	Animal* reptilN = new Reptil(id, classe, nome_cientifico, sexo, tamanho, dieta, nome_batismo, venenoso, tipo_veneno);
+	Animal* reptilN = new Reptil(codigo, id, classe, nome_cientifico, sexo, tamanho, dieta, nome_batismo, venenoso, tipo_veneno);
 
 	ofstream ArquivoTeste;
 	ArquivoTeste.open("animais.txt",ios::app);
@@ -293,7 +303,8 @@ void Interfaces::reptilN(){
 void Interfaces::anfibioE(){
 	int total_de_muda, dia, mes, ano;
 
-
+	cout << " Digite o Codigo do animal: " << endl;
+	cin>> codigo;
 	cout<< " Digite o id do animal: " << endl;
 	cin >> id;
 	cout<< " Digite o nome cientifico: " << endl;
@@ -320,7 +331,7 @@ void Interfaces::anfibioE(){
 	Date ultima_muda(dia,mes,ano);
 
 	classe = "anfibio";
-	Animal* anfibioE = new Anfibio(id, classe, nome_cientifico, sexo, tamanho, dieta, nome_batismo , total_de_muda, ultima_muda);
+	Animal* anfibioE = new Anfibio(codigo, id, classe, nome_cientifico, sexo, tamanho, dieta, nome_batismo , total_de_muda, ultima_muda);
 
 	ofstream ArquivoTeste;
 	ArquivoTeste.open("animais.txt",ios::app);
@@ -342,7 +353,9 @@ void Interfaces::anfibioE(){
 void Interfaces::anfibioN(){
 	int total_de_muda, dia, mes, ano;
 
-
+	
+	cout << " Digite o Codigo do animal: " << endl;
+	cin>> codigo;
 	cout<< " Digite o id do animal: " << endl;
 	cin >> id;
 	cout<< " Digite o nome cientifico: " << endl;
@@ -371,7 +384,7 @@ void Interfaces::anfibioN(){
 	Date ultima_muda(dia,mes,ano);
 
 	classe = "anfibio";
-	Animal* anfibioN = new Anfibio(id, classe, nome_cientifico, sexo, tamanho, dieta, nome_batismo , total_de_muda, ultima_muda);
+	Animal* anfibioN = new Anfibio(codigo, id, classe, nome_cientifico, sexo, tamanho, dieta, nome_batismo , total_de_muda, ultima_muda);
 
 	ofstream ArquivoTeste;
 	ArquivoTeste.open("animais.txt",ios::app);
@@ -394,7 +407,9 @@ void Interfaces::anfibioN(){
 void Interfaces::veterinario(){
 	
 	std::string cnmv;
-
+	
+	cout << " Digite o Codigo do Veternario: " << endl;
+	cin>> codigo;
 	cout<< " Digite o id do veterinário: " << endl;
 	cin >> id;
 	cout<< " Digite o nome do veterinário: " << endl;
@@ -412,7 +427,7 @@ void Interfaces::veterinario(){
 	cout<< " Digite o código do CRMV: " << endl;
 	cin >> cnmv;
 
-	Funcionario* v = new Veterinario(id, m_nome, m_cpf, m_idade,m_tipo_sanguineo, m_fator_rh, m_especialidade, cnmv);
+	Funcionario* v = new Veterinario(codigo,id, m_nome, m_cpf, m_idade,m_tipo_sanguineo, m_fator_rh, m_especialidade, cnmv);
 
 	ofstream ArquivoTeste1;
 	ArquivoTeste1.open("funcionarios.txt",ios::app);
@@ -438,7 +453,9 @@ void Interfaces::veterinario(){
 void Interfaces::tratador(){
 	
 	std::string cnmv;
-
+	
+	cout << " Digite o Codigo do tratador: " << endl;
+	cin>> codigo;
 	cout<< " Digite o id do veterinário: " << endl;
 	cin >> id;
 	cout<< " Digite o nome do veterinário: " << endl;
@@ -456,7 +473,7 @@ void Interfaces::tratador(){
 	cout<< " Digite o nivel de segurança: " << endl;
 	cin >> nivel_de_seguranca;
 
-	Funcionario* t = new Tratador(id, m_nome, m_cpf, m_idade,m_tipo_sanguineo, m_fator_rh, m_especialidade, nivel_de_seguranca);
+	Funcionario* t = new Tratador(codigo, id, m_nome, m_cpf, m_idade,m_tipo_sanguineo, m_fator_rh, m_especialidade, nivel_de_seguranca);
 
 	ofstream ArquivoTeste1;
 	ArquivoTeste1.open("funcionarios.txt",ios::app);

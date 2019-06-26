@@ -19,7 +19,7 @@ m_venenoso, m_tipo_de_veneno.
 */
 Reptil::Reptil(int m_codigo,int m_id, string m_classe, string m_nome_cientifico, char m_sexo, int m_tamanho, string m_dieta, string m_nome_batismo,
 		bool m_venenoso, string m_tipo_de_veneno):
-	Animal(m_id, m_classe, m_nome_cientifico, m_sexo, m_tamanho, m_dieta, m_nome_batismo),
+	Animal(m_codigo, m_id, m_classe, m_nome_cientifico, m_sexo, m_tamanho, m_dieta, m_nome_batismo),
 	m_venenoso(m_venenoso), m_tipo_de_veneno(m_tipo_de_veneno) {}
 
 	
@@ -41,7 +41,7 @@ void Reptil::imprime(){
 }
 
 	/** @brief Setters */
-void Reptil::setM_id(int codigo){
+void Reptil::setM_codigo(int codigo){
 		m_codigo = codigo;
 	}
 	void Reptil::setM_id(int id){
@@ -66,9 +66,9 @@ void Reptil::setM_id(int codigo){
 		m_nome_batismo= nome_batismo;
 	}
 	void Reptil::setM_venenoso(bool venenoso){
-		m_venenoso = m_venenoso;
+		m_venenoso = venenoso;
 	}
-	void setM_tipo_de_veneno(string tipo_de_veneno){
+	void Reptil::setM_tipo_de_veneno(string tipo_de_veneno){
 		m_tipo_de_veneno = tipo_de_veneno;
 	}
 

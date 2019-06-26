@@ -3,7 +3,7 @@
 Mamifero::Mamifero(void){}
 
 Mamifero::Mamifero(int m_codigo,int m_id, string m_classe, string m_nome_cientifico, char m_sexo, int m_tamanho, string m_dieta, string m_nome_batismo,
-		string m_cor_pelo):Animal(m_id, m_classe, m_nome_cientifico, m_sexo, m_tamanho, m_dieta, m_nome_batismo),
+		string m_cor_pelo):Animal(m_codigo, m_id, m_classe, m_nome_cientifico, m_sexo, m_tamanho, m_dieta, m_nome_batismo),
 		m_cor_pelo(m_cor_pelo) {}
 
 Mamifero::~Mamifero(){}
@@ -16,7 +16,7 @@ void Mamifero::imprime(){
 }
 
 /** @brief Setters */
-	void Mamifero::setM_id(int codigo){
+	void Mamifero::setM_codigo(int codigo){
 		m_codigo = codigo;
 	}
 	void Mamifero::setM_id(int id){
@@ -40,8 +40,8 @@ void Mamifero::imprime(){
 	void Mamifero::setM_nome_batismo(string nome_batismo){
 		m_nome_batismo = nome_batismo;
 	}
-	void Mamifero::setM_cor_do_pelo(string cor_do_pelo){
-		m_cor_do_pelo = cor_do_pelo;
+	void Mamifero::setM_cor_pelo(string cor_pelo){
+		m_cor_pelo = cor_pelo;
 	}
 
 
@@ -70,7 +70,7 @@ void Mamifero::imprime(){
 	string Mamifero::getM_nome_batismo(){
 		return m_nome_batismo;
 	}
-	string Mamifero::getM_cor_do_pelo(){
-		return m_cor_do_pelo;
+	string Mamifero::getM_cor_pelo(){
+		return m_cor_pelo;
 	}
 

@@ -22,7 +22,9 @@ private:
 virtual std::ostream& print(std::ostream&) const = 0;
 
 protected:
-
+	
+	/** @brief Define uma variável chamada m_codigo do tipo inteiro para os ids dos funcionário */
+	int m_codigo;
 	/** @brief Define uma variável chamada m_id do tipo inteiro para os ids dos funcionário */
 	int m_id;
 
@@ -50,7 +52,7 @@ public:
 	Funcionario(void);
 
 	/** @brief Define o construtor padronizado de Animal */
-	Funcionario(int m_id, string m_nome, string m_cpf, 
+	Funcionario(int m_codigo, int m_id, string m_nome, string m_cpf, 
 				int m_idade, string m_tipo_sanguineo, 
 				char m_fator_rh, string m_especialidade);
 

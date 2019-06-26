@@ -42,6 +42,7 @@ class Interfaces{
 private:
 	
 	/** @brief Atributos de animais.h e funcionarios.h  */
+	int codigo;
 	int id;
 	std::string classe;
 	std::string nome_cientifico;

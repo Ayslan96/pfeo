@@ -17,7 +17,7 @@ Animal::Animal(void){}
 * @param  m_id, m_classe, m_nome_cientifico, m_sexo, m_tamanho, m_dieta,  m_nome_batismo.
 * @return Não possui retorno
 */
-Animal::Animal(int m_codigo, int m_id, string m_classe, string nome_cientifico, char sexo, int tamanho, string dieta, string nome_batismo):
+Animal::Animal(int codigo, int id, string classe, string nome_cientifico, char sexo, int tamanho, string dieta, string nome_batismo):
 m_id(id), m_classe(classe), m_nome_cientifico(nome_cientifico), m_sexo(sexo), m_tamanho(tamanho), 
 m_dieta(dieta), m_nome_batismo(nome_batismo) {
 

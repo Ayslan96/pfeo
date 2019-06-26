@@ -21,7 +21,7 @@ Ave::Ave(void){}
 Ave::Ave(int m_codigo, int m_id, string m_classe, string m_nome_cientifico, char m_sexo, int m_tamanho, 
 	string m_dieta, string m_nome_batismo,
 		double m_tamanho_do_bico_cm, double m_envergadura_das_asas):
-	Animal(m_id, m_classe, m_nome_cientifico, m_sexo, m_tamanho, m_dieta, m_nome_batismo),
+	Animal(m_codigo,m_id, m_classe, m_nome_cientifico, m_sexo, m_tamanho, m_dieta, m_nome_batismo),
 		m_tamanho_do_bico_cm(m_tamanho_do_bico_cm),m_envergadura_das_asas(m_envergadura_das_asas) {}
 
 /**
@@ -40,7 +40,7 @@ void Ave::imprime(){
 
 
 /** @brief Setters */
-	void Ave::setM_id(int codigo){
+	void Ave::setM_codigo(int codigo){
 		m_codigo = codigo;
 	}
 	void Ave::setM_id(int id){

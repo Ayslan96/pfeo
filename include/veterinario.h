@@ -21,7 +21,7 @@ private:
 	
 	/** @brief Implementação do método virtual sobrecarga de impressão */
 	std::ostream& print(std::ostream& os) const {
-	return os << m_id << ";" << m_nome << ";" << m_cpf << ";" << m_idade << ";" << m_tipo_sanguineo 
+	return os << m_codigo << m_id << ";" << m_nome << ";" << m_cpf << ";" << m_idade << ";" << m_tipo_sanguineo 
 			  << ";" << m_fator_rh << ";" << m_especialidade << ";" << m_crmv << "|" << std::endl;
 	}
 public:
@@ -33,7 +33,7 @@ public:
 	void imprime();
 
 	/** @brief Definindo construtor padronizado da classe Veterinario */
-	Veterinario(int,string,string,int,string,char,string,string);
+	Veterinario(int,int,string,string,int,string,char,string,string);
 	
 	/** @brief Definindo destrutor da classe Veterinario */ 
 	~Veterinario();

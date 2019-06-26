@@ -21,7 +21,7 @@ private:
 
 	/** @brief Implementação do método virtual sobrecarga de impressão */
 	std::ostream& print(std::ostream& os) const {
-	return os << m_id << ";" << m_nome << ";" << m_cpf << ";" << m_idade << ";" << m_tipo_sanguineo 
+	return os << m_codigo <<m_id << ";" << m_nome << ";" << m_cpf << ";" << m_idade << ";" << m_tipo_sanguineo 
 			  << ";" << m_fator_rh << ";" << m_especialidade << ";" << m_nivel_de_seguranca
 			  << "|" << std::endl;
 }
@@ -35,7 +35,7 @@ public:
 	void imprime();
 
 	/** @brief Definindo construtor padronizado da classe Tratador */
-	Tratador(int,string,string,int,string,char,string,int);
+	Tratador(int,int,string,string,int,string,char,string,int);
 
 	/** @brief Definindo destrutor da classe Tratador */ 
 	~Tratador();

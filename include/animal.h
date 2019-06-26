@@ -26,7 +26,7 @@ private:
 	
 protected:
 	/** @brief Define uma variável chamada codigo do tipo inteiro para um animal */
-	int m_codigo
+	int m_codigo;
 	/** @brief Define uma variável chamada m_id do tipo inteiro para um animal */
 	int m_id;
 	/** @brief Define uma variável chamdada m_classe do tipo string para armazenar a classe dos animais */

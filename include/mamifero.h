@@ -40,6 +40,30 @@ public:
 
 	/** @brief Definindo método de impressão sem retorno */ 
 	void imprime();
+	
+	
+/** @brief Setters */
+	void setM_codigo(int);
+	void setM_id(int);
+	void setM_classe(string);
+	void setM_nome_cientifico(string);
+	void setM_sexo(char);
+	void setM_tamanho(double);
+	void setM_dieta(string);
+	void setM_nome_batismo(string);
+	void setM_cor_pelo(string);
+	
+/** @brief Getters */
+	int getM_codigo();
+	int getM_id();
+	string getM_classe();
+	string getM_nome_cientifico();
+	char getM_sexo();
+	double getM_tamanho();
+	string getM_dieta();
+	string getM_nome_batismo();
+	string getM_cor_pelo();
+
 
 };
  
