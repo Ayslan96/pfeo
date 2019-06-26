@@ -9,14 +9,14 @@ MamiferoNativo::MamiferoNativo(int m_codigo, int m_id, std::string m_classe, std
 		AnimalNativo(m_autorizacao_ibama, m_uf_origem, m_cidade_origem) {}
 	
 MamiferoNativo::~MamiferoNativo(){}
-/*
+
 void MamiferoNativo::imprime(){
 
 	cout << m_codigo << m_id << m_classe << m_nome_cientifico << m_sexo << m_tamanho
 	<< m_dieta << m_nome_batismo << m_cor_pelo 
 	<<m_autorizacao_ibama <<m_uf_origem <<m_cidade_origem << endl;
 
-}*/
+}
 
 /** @brief Setters */
 	void MamiferoNativo::setM_codigo(int codigo){

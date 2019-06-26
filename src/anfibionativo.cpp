@@ -33,6 +33,14 @@ AnfibioNativo::~AnfibioNativo(){}
 * @brief Método de impressão de um anfíbio.
 * @return Não possui retorno
 */
+void AnfibioNativo::imprime(){
+
+	cout << m_codigo << m_id << m_classe << m_nome_cientifico << m_sexo << m_tamanho
+	<< m_dieta << m_nome_batismo <<m_total_de_mudas <<m_ultima_muda
+	<<m_autorizacao_ibama <<m_uf_origem <<m_cidade_origem << endl;
+
+}
+
 
 	/** @brief Setters */
 	void AnfibioNativo::setM_codigo(int codigo){
