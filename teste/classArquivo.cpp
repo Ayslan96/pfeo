@@ -33,56 +33,71 @@ if (!arquivoDeEntrada)
 		{
 			/*!<Enquanto houverem separadores ',' as instruções do laço serão executadas*/
 			principal.push_back(token); /*!<Pega o numero no formato de string, converte e insere na memória*/
+			if(token=="/"){
+							
+
+				switch (stoi(principal[0])){
+
+				case 11:
+				cout<<principal.size();
+					std::cout << "11 " << (stoi(principal[1])) <<" " <<principal[2] <<" "<<principal[3] <<" "<<principal[4] <<" "<<stoi((principal[5])) <<" " <<principal[6] <<" "
+					<<principal[7]<<" " <<(stod(principal[8]))<<" " <<(stod(principal[9])) <<" "<<principal[10] <<" "<<principal[11]<<" "<<" "<<principal[12]<<std::endl;
+					/*AveNativo(11,stoi (principal[1]), principal[2], principal[3], principal[4], stoi(principal[5]), principal[6], 
+					principal[7], stod(principal[8]), stod(principal[9]),principal[10], principal[11] );*/
+					principal.clear();
+					
+				/*case "12":
+					AveExotico(12, principal[1], principal[2], principal[3], stoi(principal[4]), principal[5], 
+					principal[6], stod (principal[7]), stod(principal[8]), principal[9],principal[10] );
+					principal.clear();
+
+				case "21": 
+
+					AnfibioNativo(21, principal[1], principal[2], principal[3], stoi(principal[4]), principal[5], principal[6],
+					stoi(principal[7]), principal[8], principal[9], principal[10], principal[11]);
+					principal.clear();
+					
+				case '22':
+				
+					AnfibioExotico(22, principal[1], principal[2], principal[3],stoi(principal[4]), principal[5],principal[6],
+					stoi(principal[7]), principal[8], principal[9], principal[10]);
+					principal.clear();
+				*/
+				case 31:
+					cout<<principal.size();
+					std::cout << "31 " << stoi(principal[1]) <<" " <<principal[2] <<" "<<principal[3] <<" "<<principal[4] <<" "<<stoi(principal[5])<<" " <<principal[6] <<" "
+					<<principal[7]<<" " <<principal[8]<<" " <<stod(principal[9]) <<" "<<principal[10] <<" "<<" "<<principal[11] <<std::endl;
+					/*MamiferoNativo(31, principal[1], principal[2], principal[3], stoi(principal[4]), principal[5], principal[6],
+					principal[7], principal[8], principal[9], principal[10]);*/
+					principal.clear();
+					
+				case 32:
+					cout<<principal.size();
+					std::cout << "32 " << stoi(principal[1]) <<" " <<principal[2] <<" "<<principal[3] <<" "<<principal[4] <<" "<<stoi(principal[5])<<" " <<principal[6] <<" "
+					<<principal[7]<<" " <<principal[8]<<" " <<stod(principal[9]) <<" "<<principal[10] <<" " <<std::endl;
+					
+					/*MamiferoExotico(31, principal[1], principal[2], principal[3], stoi(principal[4]), principal[5], principal[6],
+					principal[7], principal[8], principal[9]);*/
+					principal.clear();/*
+					
+				case "41":
+					ReptilNativo(41, principal[1], principal[2], principal[3], stoi(principal[4]), principal[5], principal[6],
+					bool m_venenoso(principal[7]), principal[8], principal[9], principal[10], principal[11]);
+					principal.clear();
+					
+				case "42":
+					ReptilExotico(41, principal[1], principal[2], principal[3], stoi(principal[4]), principal[5], principal[6],
+					bool m_venenoso(principal[7]), principal[8], principal[9], principal[10]);
+					principal.clear();*/
+				}}
+			
 			
 		}
 }
 
-	for (int i = 0; i< principal.size();i++){
+	/*for (int i = 0; i< principal.size();i++){
 		cout<<principal[i]<<" ";
-	}
+	}*/
 	arquivoDeEntrada.close();/*!<Fecha o arquivo.txt*/
 }
 
-
-//switch principal[0]:
-
-//case "11":
-
-/*
-AveNativo::AveNativo(int m_id, string m_classe, string m_nome_cientifico, char m_sexo, int m_tamanho, string m_dieta, 
-	string m_nome_batismo, double m_tamanho_do_bico_cm, double m_envergadura_das_asas, string m_pais_origem ):11
-*/
-//case "12":
-/*AveExotico::AveExotico(int m_id, string m_classe, string m_nome_cientifico, char m_sexo, int m_tamanho, string m_dieta, 
-	string m_nome_batismo, double m_tamanho_do_bico_cm, double m_envergadura_das_asas, string m_pais_origem ):10
-*/	
-
-//case "21": 
-
-/*AnfibioNativo::AnfibioNativo(int m_id, string m_classe, string m_nome_cientifico, char m_sexo, int m_tamanho, string m_dieta, string m_nome_batismo,
-		int m_total_de_mudas, Date m_ultima_muda, string m_uf_origem, string m_autorizacao) 12
-*/
-//case "22":
-/*
-AnfibioExotico::AnfibioExotico(int m_id, string m_classe, string m_nome_cientifico, char m_sexo, int m_tamanho, string m_dieta, string m_nome_batismo,
-		int m_total_de_mudas, Date m_ultima_muda, string m_pais_origem): 11
-*/
-
-//case "31":
-/*MamiferoNativo::MamiferoNativo(int m_id, std::string m_classe, std::string m_nome_cientifico, char m_sexo, int m_tamanho, std::string m_dieta, std::string m_nome_batismo,
-		std::string m_cor_pelo, std::string m_autorizacao_ibama, std::string m_uf_origem, std::string m_autorizacao):11
-*/		
-
-//case "32":
-/*MamiferoExotico::MamiferoExotico(int m_id, std::string m_classe, std::string m_nome_cientifico, char m_sexo, int m_tamanho, std::string m_dieta, std::string m_nome_batismo,
-		std::string m_cor_pelo, std::string m_autorizacao_ibama, std::string m_pais_origem):10
-*/
-
-//case "41":
-/*ReptilNativo::ReptilNativo(int m_id, std::string m_classe, std::string m_nome_cientifico, char m_sexo, int m_tamanho, std::string m_dieta, std::string m_nome_batismo,
-		bool m_venenoso, std::string m_tipo_de_veneno, std::string m_autorizacao_ibama, std::string m_uf_origem, std::string m_autorizacao):12
-*/
-//case "42":
-/*ReptilExotico::ReptilExotico(int m_id, std::string m_classe, std::string m_nome_cientifico, char m_sexo, int m_tamanho, std::string m_dieta, std::string m_nome_batismo,
-		bool m_venenoso, std::string m_tipo_de_veneno, std::string m_autorizacao_ibama, std::string m_pais_origem):11
-*/
