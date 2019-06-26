@@ -6,8 +6,6 @@
 #ifndef AnimalNativo_H
 #define AnimalNativo_H
 
-
-#include <string>
 #include <iostream>
 #include "animalsilvestre.h"
 

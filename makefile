@@ -2,7 +2,7 @@ PROG = petfera
 CC = g++
 IDIR = /include
 CPPFLAGS = -I $(IDIR)-O0 -g -Wall -std=c++11 
-OBJS = main.o animal.o animalnativo.o animalexotico.o anfibio.o anfibionativo.o anfibioexotico.o date.o ave.o avenativo.o aveexotico.o reptil.o reptilnativo.o reptilexotico.o mamifero.o mamiferonativo.o mamiferoexotico.o classArquivo.o menu.o interfaces.o veterinario.o funcionario.o tratador.o
+OBJS = main.o animal.o animalnativo.o animalexotico.o animalsilvestre.o anfibio.o anfibionativo.o anfibioexotico.o date.o ave.o avenativo.o aveexotico.o reptil.o reptilnativo.o reptilexotico.o mamifero.o mamiferonativo.o mamiferoexotico.o classArquivo.o menu.o interfaces.o veterinario.o funcionario.o tratador.o
 
 
 $(PROG) : $(OBJS)

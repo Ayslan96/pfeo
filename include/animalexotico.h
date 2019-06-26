@@ -1,17 +1,14 @@
-/**
-* @file animalexotico.h
-* @brief Classe AnimalExotico filha da classe base Animal
-*/
-
 #ifndef AnimalExotico_H
 #define AnimalExotico_H
 
-
-#include <string>
 #include <iostream>
 #include "animalsilvestre.h"
 
 using std::string;
+/**
+* @file animalexotico.h
+* @brief Classe AnimalExotico filha da classe base Animal
+*/
 
 /** @brief Define a classe AnimalExotico que herda da classe AnimalSilvestre */
 class AnimalExotico: public AnimalSilvestre {

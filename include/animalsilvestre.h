@@ -2,9 +2,11 @@
 * @file animalsilvestre.h
 * @brief Classe AnimalSilvestre filha da classe base Animal
 */
-
 #ifndef AnimalSilvestre_H
 #define AnimalSilvestre_H
+
+#include <string>
+#include <iostream>
 
 using std::string;
 
@@ -27,8 +29,6 @@ public:
 	~AnimalSilvestre();
 
 };
-
-
 #endif
 
 

@@ -5,7 +5,7 @@
 
 /** @brief Inclui a biblioteca AnimalExotico.h */
 #include "../include/animalexotico.h"
-
+#include "../include/animalsilvestre.h"
 /**
 * @brief Método construtor padrão.
 * @return Não possui retorno

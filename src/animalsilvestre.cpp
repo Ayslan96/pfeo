@@ -2,6 +2,6 @@
 
 AnimalSilvestre::AnimalSilvestre(void){}
 
-AnimalSilvestre::AnimalSilvestre(std::string m_autorizacao_ibama):m_autorizacao_ibama(m_autorizacao_ibama){}
+AnimalSilvestre::AnimalSilvestre(string autorizacao_ibama):m_autorizacao_ibama(m_autorizacao_ibama){}
 
 AnimalSilvestre::~AnimalSilvestre(){}
