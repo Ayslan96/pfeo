@@ -3,10 +3,10 @@
 MamiferoDomestico::MamiferoDomestico(void){}
 
 MamiferoDomestico::MamiferoDomestico(int m_codigo, int m_id, std::string m_classe, std::string m_nome_cientifico, char m_sexo, int m_tamanho, std::string m_dieta, std::string m_nome_batismo,
-		std::string m_cor_pelo, std::string m_autorizacao_ibama, std::string m_uf_origem, std::string m_cidade_origem):
+		std::string m_cor_pelo, std::string m_uf_origem, std::string m_cidade_origem):
 		Mamifero
 	(m_codigo, m_id, m_classe, m_nome_cientifico, m_sexo, m_tamanho, m_dieta, m_nome_batismo, m_cor_pelo),
-		AnimalDomestico(m_autorizacao_ibama, m_uf_origem, m_cidade_origem) {}
+		AnimalDomestico(m_uf_origem, m_cidade_origem) {}
 	
 MamiferoDomestico::~MamiferoDomestico(){}
 /*
@@ -46,9 +46,6 @@ void MamiferoDomestico::imprime(){
 	void MamiferoDomestico::setM_cor_pelo(string cor_pelo){
 		m_cor_pelo = cor_pelo;
 	}
-	void MamiferoDomestico::setM_autorizacao_ibama(string autorizacao_ibama){
-		m_autorizacao_ibama = autorizacao_ibama;
-	}
 	void MamiferoDomestico::setM_uf_origem(string uf_origem){
 		m_uf_origem = uf_origem;
 	}
@@ -85,9 +82,6 @@ void MamiferoDomestico::imprime(){
 	}
 	string MamiferoDomestico::getM_cor_pelo(){
 		return m_cor_pelo;
-	}
-	string MamiferoDomestico::getM_autorizacao_ibama(){
-		return m_autorizacao_ibama;
 	}
 	string MamiferoDomestico::getM_uf_origem(){
 		return m_uf_origem;

@@ -9,6 +9,7 @@
 /** @brief Inclui a biblioteca Ave.h */
 #include "ave.h"
 
+#include "animaldomestico.h"
 
 using std::string;
 using std::cout;
@@ -16,7 +17,7 @@ using std::endl;
 
 
 /** @brief Define a classe AveDomestico que herda da classe Ave */
-class AveDomestico : public Ave {
+class AveDomestico : public Ave, public AnimalDomestico {
 
 private:
 	
@@ -24,7 +25,7 @@ private:
 	//std::ostream& print(std::ostream& os) const {
 		//return os << m_codigo << ";" << m_id << ";" << m_classe << ";" << m_nome_cientifico << ";" << m_sexo 
 			//  <<";" << m_tamanho << ";" << m_dieta <<";"<< m_nome_batismo
-			  //<<";" << m_tamanho_do_bico_cm << ";" << m_envergadura_das_asas << ";" << m_autorizacao_ibama 
+			  //<<";" << m_tamanho_do_bico_cm << ";" << m_envergadura_das_asas
 			  //<< ";"<< m_uf_origem <<";" << m_cidade_origem << ";" << endl;
 
 
@@ -37,7 +38,7 @@ public:
 
 
 	/** @brief Definindo construtor padronizado da classe AveDomestico*/
-	AveDomestico(int,int, string, string, char, int, string, string, double, double, string, string, string);
+	AveDomestico(int,int, string, string, char, int, string, string, double, double, string, string);
 	
 	/** @brief Definindo destrutor da classe AveDomestico*/ 
 	~AveDomestico();
@@ -57,7 +58,6 @@ public:
 	void setM_nome_batismo(string);
 	void setM_tamanho_do_bico_cm(double);
 	void setM_envergadura_das_asas(double);
-	void setM_autorizacao_ibama(string);
 	void setM_uf_origem(string);
 	void setM_cidade_origem(string);
 
@@ -72,7 +72,6 @@ public:
 	string getM_nome_batismo();
 	double getM_tamanho_do_bico_cm();
 	double getM_envergadura_das_asas();
-	string getM_autorizacao_ibama();
 	string getM_uf_origem();
 	string getM_cidade_origem();
 };

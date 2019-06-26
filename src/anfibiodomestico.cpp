@@ -21,8 +21,8 @@ m_total_de_mudas, m_ultima_muda, m_uf_origem, m_cidade_origem.
 AnfibioDomestico::AnfibioDomestico(int m_codigo, int m_id, string m_classe, string m_nome_cientifico, char m_sexo, int m_tamanho, string m_dieta, string m_nome_batismo,
 int m_total_de_mudas, Date m_ultima_muda, string m_autorizacao_ibama, string m_uf_origem, string m_cidade_origem):
 	Anfibio(m_codigo,m_id, m_classe, m_nome_cientifico, m_sexo, m_tamanho, m_dieta, m_nome_batismo, m_total_de_mudas, m_ultima_muda),
-	AnimalDomestico(m_autorizacao_ibama, m_uf_origem, m_cidade_origem){}
-	
+	AnimalDomestico(m_uf_origem, m_cidade_origem){}
+
 /**
 * @brief Método destrutor.
 * @return Não possui retorno
@@ -65,9 +65,6 @@ AnfibioDomestico::~AnfibioDomestico(){}
 	//void setM_ultima_muda(Date ultima_muda){
 		//m_ultima_muda = ultima_muda;
 	//}
-	void AnfibioDomestico::setM_autorizacao_ibama(string autorizacao_ibama){
-		m_autorizacao_ibama = autorizacao_ibama;
-	}
 	void AnfibioDomestico::setM_uf_origem(string uf_origem){
 		m_uf_origem = uf_origem;
 	}
@@ -109,10 +106,6 @@ AnfibioDomestico::~AnfibioDomestico(){}
 	//Date AnfibioDomestico::getM_ultima_muda(){
 		//return m_ultima_muda;
 	//}
-
-	string AnfibioDomestico::getM_autorizacao_ibama(){
-		return m_autorizacao_ibama;
-	}
 	string AnfibioDomestico::getM_uf_origem(){
 		return m_uf_origem;
 	}

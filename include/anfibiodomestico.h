@@ -9,6 +9,8 @@
 /** @brief Inclui a biblioteca anfibio.h */
 #include "anfibio.h"
 
+#include "animaldomestico.h"
+
 using std::string;
 using std::cout;
 using std::endl;
@@ -16,7 +18,7 @@ using std::endl;
 
 /** @brief Define a classe AnfibioDomestico que herda da classe Anfibio */
 
-class AnfibioDomestico : public Anfibio {
+class AnfibioDomestico : public Anfibio, public AnimalDomestico {
 
 private:
 	
@@ -24,7 +26,7 @@ private:
 	//std::ostream& print(std::ostream& os) const {
 		//return os << m_codigo << ";" << m_id << ";" << m_classe << ";" << m_nome_cientifico << ";" << m_sexo 
 			//  <<";" << m_tamanho <<";"<< m_dieta <<";"<< m_nome_batismo
-			//  <<";" << m_total_de_mudas << ";" << m_ultima_muda << ";" << m_autorizacao_ibama << ";" << m_uf_origem << ";" << m_cidade_origem 
+			//  <<";" << m_total_de_mudas << ";" << m_ultima_muda  << ";" << m_uf_origem << ";" << m_cidade_origem 
 			//  <<";" << endl;
 
 public:
@@ -34,7 +36,7 @@ public:
 	AnfibioDomestico(void);
 
 	/** @brief Definindo construtor padronizado da classe AnfibioDomestico*/
-	AnfibioDomestico(int,int,string,string,char,int,string,string,int,Date,string,string,string);
+	AnfibioDomestico(int,int,string,string,char,int,string,string,int,Date,string,string);
 	
 	/** @brief Definindo destrutor da classe AnfibioDomestico*/ 
 
@@ -55,7 +57,6 @@ public:
 	//void setM_ultima_muda(Date ultima_muda){
 		//m_ultima_muda = ultima_muda;
 	//}
-	void setM_autorizacao_ibama(string);
 	void setM_uf_origem(string);
 	void setM_cidade_origem(string);
 
@@ -74,8 +75,6 @@ public:
 	//Date AnfibioDomestico::getM_ultima_muda(){
 		//return m_ultima_muda;
 	//}
-
-	string getM_autorizacao_ibama();
 	string getM_uf_origem();
 	string getM_cidade_origem();
 };
