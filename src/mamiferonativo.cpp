@@ -5,21 +5,21 @@ MamiferoNativo::MamiferoNativo(void){}
 MamiferoNativo::MamiferoNativo(int m_codigo, int m_id, std::string m_classe, std::string m_nome_cientifico, char m_sexo, int m_tamanho, std::string m_dieta, std::string m_nome_batismo,
 		std::string m_cor_pelo, std::string m_autorizacao_ibama, std::string m_uf_origem, std::string m_cidade_origem):
 		Mamifero
-	(m_id, m_classe, m_nome_cientifico, m_sexo, m_tamanho, m_dieta, m_nome_batismo, m_cor_pelo),
+	(m_codigo, m_id, m_classe, m_nome_cientifico, m_sexo, m_tamanho, m_dieta, m_nome_batismo, m_cor_pelo),
 		AnimalNativo(m_autorizacao_ibama, m_uf_origem, m_cidade_origem) {}
 	
 MamiferoNativo::~MamiferoNativo(){}
-
+/*
 void MamiferoNativo::imprime(){
 
 	cout << m_codigo << m_id << m_classe << m_nome_cientifico << m_sexo << m_tamanho
 	<< m_dieta << m_nome_batismo << m_cor_pelo 
 	<<m_autorizacao_ibama <<m_uf_origem <<m_cidade_origem << endl;
 
-}
+}*/
 
 /** @brief Setters */
-	void MamiferoNativo::setM_id(int codigo){
+	void MamiferoNativo::setM_codigo(int codigo){
 		m_codigo = codigo;
 	}
 	void MamiferoNativo::setM_id(int id){
@@ -43,8 +43,8 @@ void MamiferoNativo::imprime(){
 	void MamiferoNativo::setM_nome_batismo(string nome_batismo){
 		m_nome_batismo = nome_batismo;
 	}
-	void MamiferoNativo::setM_cor_do_pelo(string cor_do_pelo){
-		m_cor_do_pelo = cor_do_pelo;
+	void MamiferoNativo::setM_cor_pelo(string cor_pelo){
+		m_cor_pelo = cor_pelo;
 	}
 	void MamiferoNativo::setM_autorizacao_ibama(string autorizacao_ibama){
 		m_autorizacao_ibama = autorizacao_ibama;
@@ -83,8 +83,8 @@ void MamiferoNativo::imprime(){
 	string MamiferoNativo::getM_nome_batismo(){
 		return m_nome_batismo;
 	}
-	string MamiferoNativo::getM_cor_do_pelo(){
-		return m_cor_do_pelo;
+	string MamiferoNativo::getM_cor_pelo(){
+		return m_cor_pelo;
 	}
 	string MamiferoNativo::getM_autorizacao_ibama(){
 		return m_autorizacao_ibama;

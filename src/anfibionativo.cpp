@@ -4,7 +4,7 @@
 */
 
 /** @brief Inclui a biblioteca AnfibioNativo.h */
-#include "../include/AnfibioNativo.h"
+#include "../include/anfibionativo.h"
 
 /**
 * @brief Método construtor padrão.
@@ -17,10 +17,11 @@ AnfibioNativo::AnfibioNativo(void){}
 * @param  m_id, m_classe, m_nome_cientifico, m_sexo, m_tamanho, m_dieta,  m_nome_batismo,
 m_total_de_mudas, m_ultima_muda, m_uf_origem, m_cidade_origem.
 */
+
 AnfibioNativo::AnfibioNativo(int m_codigo, int m_id, string m_classe, string m_nome_cientifico, char m_sexo, int m_tamanho, string m_dieta, string m_nome_batismo,
-		int m_total_de_mudas, Date m_ultima_muda, string m_uf_origem, string m_cidade_origem):
-	Anfibio(m_id, m_classe, m_nome_cientifico, m_sexo, m_tamanho, m_dieta, m_nome_batismo, m_total_de_mudas, m_ultima_muda):
-	AnimalNativo(m_uf_origem, m_cidade_origem){}
+int m_total_de_mudas, Date m_ultima_muda, string m_autorizacao_ibama, string m_uf_origem, string m_cidade_origem):
+	Anfibio(m_codigo,m_id, m_classe, m_nome_cientifico, m_sexo, m_tamanho, m_dieta, m_nome_batismo, m_total_de_mudas, m_ultima_muda),
+	AnimalNativo(m_autorizacao_ibama, m_uf_origem, m_cidade_origem){}
 	
 /**
 * @brief Método destrutor.
@@ -34,7 +35,7 @@ AnfibioNativo::~AnfibioNativo(){}
 */
 
 	/** @brief Setters */
-	void AnfibioNativo::setM_id(int codigo){
+	void AnfibioNativo::setM_codigo(int codigo){
 		m_codigo = codigo;
 	}
 	void AnfibioNativo::setM_id(int id){

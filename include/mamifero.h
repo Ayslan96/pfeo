@@ -17,8 +17,7 @@ using std::endl;
 class Mamifero : public Animal{
 private:
 	
-	/** @brief Define a variável chamada m_cor_pelo do tipo string */
-	std::string m_cor_pelo;
+
 
 	/** @brief Implementação do método virtual sobrecarga de impressão */ 
 	std::ostream& print(std::ostream& os) const {
@@ -26,7 +25,9 @@ private:
 			  <<";" << m_tamanho <<";"<< m_dieta <<";"<< m_nome_batismo
 			  <<";" << m_cor_pelo << "|" << endl;
 	}
-
+protected:
+	/** @brief Define a variável chamada m_cor_pelo do tipo string */
+	std::string m_cor_pelo;
 		
 public:
 	/** @brief Definindo construtor padrão da classe Mamifero para void, pois não utilizaremos */

@@ -16,10 +16,8 @@ AnimalNativo::AnimalNativo(void){}
 * @brief Método construtor padronizado.
 * @param  m_id, m_classe, m_nome_cientifico, m_sexo, m_tamanho, m_dieta,  m_nome_batismo.
 */
-AnimalNativo::AnimalNativo(int id, string classe, string nome_cientifico, char sexo, 
-	int tamanho, string dieta, string nome_batismo, string uf_oriegm, string autorizacao):
-Animal(m_id, m_classe, m_nome_cientifico, m_sexo, m_tamanho, 
-	m_dieta, m_nome_batismo), m_uf_origem(m_uf_origem), m_autorizacao(m_autorizacao){}
+AnimalNativo::AnimalNativo(string m_autorizacao_ibama, string m_uf_origem, string m_cidade_origem):
+						  AnimalSilvestre(m_autorizacao_ibama),m_uf_origem(m_uf_origem), m_cidade_origem(m_cidade_origem){}
 
 
 /**

@@ -10,7 +10,7 @@
 #include "anfibio.h"
 
 /** @brief Inclui a biblioteca AnimalExotico.h */
-#include "animalExotico.h"
+#include "animalexotico.h"
 
 using std::string;
 using std::cout;
@@ -25,7 +25,6 @@ private:
 	std::ostream& print(std::ostream& os) const {
 		return os << m_codigo << ";" << m_id << ";" << m_classe << ";" << m_nome_cientifico << ";" << m_sexo 
 			  <<";" << m_tamanho <<";"<< m_dieta <<";"<< m_nome_batismo
-
 			  <<";" << m_total_de_mudas << ";" << m_ultima_muda << ";" << m_autorizacao_ibama << ";" << m_pais_origem << ";" << endl;
 
 	}
@@ -54,6 +53,7 @@ public:
 	void setM_nome_batismo(string);
 	void setM_total_de_mudas(int);
 	//void setM_ultima_muda(Date);
+	void setM_autorizacao_ibama(string);
 	void setM_pais_origem(string);
 
 	/** @brief Definindo getters de todos os atributos*/ 
@@ -67,6 +67,7 @@ public:
 	string getM_nome_batismo();
 	int getM_total_de_mudas();
 	//Date getM_ultima_muda();
+	string getM_autorizacao_ibama();
 	string getM_pais_origem();
 
 };

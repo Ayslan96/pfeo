@@ -8,10 +8,10 @@
 
 
 /** @brief Inclui a biblioteca Ave.h */
-#include "Ave.h"
+#include "ave.h"
 
 /** @brief Inclui a biblioteca AnimalExotico.h */
-#include "animalExotico.h"
+#include "animalexotico.h"
 
 using std::string;
 using std::cout;
@@ -57,6 +57,7 @@ public:
 	void setM_nome_batismo(string);
 	void setM_tamanho_do_bico_cm(double);
 	void setM_envergadura_das_asas(double);
+	void setM_autorizacao_ibama(string);
 	void setM_pais_origem(string);
 
 	/** @brief Getters */
@@ -70,7 +71,8 @@ public:
 	string getM_nome_batismo();
 	double getM_tamanho_do_bico_cm();
 	double getM_envergadura_das_asas();
-	string getM_pais_origem()
+	string getM_autorizacao_ibama();
+	string getM_pais_origem();
 
 };
 

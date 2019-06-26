@@ -6,10 +6,6 @@
 #ifndef AnimalSilvestre_H
 #define AnimalSilvestre_H
 
-/** @brief Inclui a biblioteca animal.h */
-#include "animalNativo.h"
-#include "animalExotico.h"
-
 using std::string;
 
 /** @brief Define a classe AnimalExotico*/
