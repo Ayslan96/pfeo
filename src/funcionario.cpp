@@ -1,11 +1,29 @@
+/**
+* @file funcionario.cpp
+* @brief Métodos da Classe Funcionario
+*/
+
+/** @brief Inclui a biblioteca funcionario.h */
 #include "../include/funcionario.h"
 
-
+/**
+* @brief Método construtor padrão.
+* @return Não possui retorno
+*/
 Funcionario::Funcionario(void){}
 
+/**
+* @brief Método construtor padronizado.
+* @param  dia_, mes_, ano_.
+* @return Não possui retorno.
+*/
 Funcionario::Funcionario(int codigo, int id, string nome, string cpf, int idade, string tipo_sanguineo, char fator_rh, string especialidade):
 m_id(id), m_nome(nome), m_cpf(cpf), m_idade(idade), m_tipo_sanguineo(tipo_sanguineo), m_fator_rh(fator_rh), m_especialidade(especialidade){}
 
+/**
+* @brief Método destrutor.
+* @return Não possui retorno
+*/
 Funcionario::~Funcionario(){}
 
 //setters

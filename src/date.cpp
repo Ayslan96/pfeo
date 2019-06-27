@@ -1,7 +1,24 @@
+/**
+* @file date.cpp
+* @brief Métodos da Classe Date
+*/
+
+/** @brief Inclui a biblioteca date.h */
 #include "../include/date.h"
+
+
+/**
+* @brief Método construtor padrão.
+* @return Não possui retorno
+*/
 
 Date::Date(void){}
 
+/**
+* @brief Método construtor padronizado.
+* @param  dia_, mes_, ano_.
+* @return Não possui retorno.
+*/
 Date::Date(const int& dia_, const int& mes_, const int& ano_){
 	if(dia_>31 || dia_< 1){
 		validardia(dia_);
@@ -25,6 +42,11 @@ Date::Date(const int& dia_, const int& mes_, const int& ano_){
 
 }
 
+/**
+* @brief Método que verifica se o dia é válido.
+* @param  Rcebe um valor inteiro chamado "d" que armazena o dia.
+* @return Não possui retorno.
+*/
 void Date::validardia(int d){
 	cout << " -Digite o dia correto, é necessario ser menor ou igual a 31 e não pode ser menor que 1 !" << endl;
 	cin >> d;
@@ -37,6 +59,11 @@ void Date::validardia(int d){
 
 }
 
+/**
+* @brief Método que verifica se o mês é válido.
+* @param  Recebe um valor inteiro chamado "m" que armazena o mês.
+* @return Não possui retorno.
+*/
 void Date::validarmes(int m){
 	cout << " -Digite o mês correto, é necessario ser menor ou igual a 12 e não pode ser menor que 1 !" << endl;
 	cin >> m;
@@ -48,7 +75,11 @@ void Date::validarmes(int m){
 	}
 }
 
-
+/**
+* @brief Método que verifica se o ano é válido.
+* @param  Recebe um valor inteiro chamado "a" que armazena o ano.
+* @return Não possui retorno.
+*/
 void Date::validarano(int a){
 	cout << " -Digite o ano correto, é necessario ter 4 digitos e ser no minimo 2019 até 2022 !" << endl;
 	cin >> a;
@@ -60,4 +91,8 @@ void Date::validarano(int a){
 	}
 }
 
+/**
+* @brief Método destrutor.
+* @return Não possui retorno
+*/
 Date::~Date(){}

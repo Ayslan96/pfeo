@@ -1,3 +1,9 @@
+/**
+* @file classArquivo.cpp
+* @brief Métodos da Classe Arquivo_Geral
+*/
+
+/** @brief Inclui a biblioteca classArquivo.h */
 #include "../include/classArquivo.h"
 
 /*
@@ -10,8 +16,13 @@
 #include <vector>
 */
 
+/**
+* @brief Método leituraArquivo_Animal, abre o arquivo animais.txt e armazena na String linha para imprimir na tela.
+* @param Não tem
+* @return Não possui retorno
+*/
 void Arquivo_Geral::leituraArquivo_Animal(){
-	arquivoAnimal.open("animais.txt");
+	arquivoAnimal.open("animais.txt ");
 	if(arquivoAnimal.is_open()){
 		while(getline(arquivoAnimal,linha)){
 			std::cout << linha << std::endl;
@@ -21,7 +32,11 @@ void Arquivo_Geral::leituraArquivo_Animal(){
 	}
 }
 
-
+/**
+* @brief Método leituraArquivo_Funcionario, abre o arquivo funcionarios.txt e caso esteja aberto armazena na String linha para imprimir na tela, caso contrário envia amensagem de alerta.
+* @param Não tem
+* @return Não possui retorno
+*/
 void Arquivo_Geral::leituraArquivo_Funcionario(){
 	arquivoFuncionario.open("funcionarios.txt");
 	if(arquivoFuncionario.is_open()){
@@ -33,11 +48,21 @@ void Arquivo_Geral::leituraArquivo_Funcionario(){
 	}
 }
 
+/**
+* @brief Método fecharArquivo_Funcionario, utiliza método close para fechar as operações referentes ao arquivo funcionarios.txt.
+* @param Não tem
+* @return Não possui retorno
+*/
 void Arquivo_Geral::fecharArquivo_Funcionario(){
 	arquivoFuncionario_.close();
 	arquivoFuncionario.close();
 } 
 
+/**
+* @brief Método fecharArquivo_Animal, utiliza método close para fechar as operações referentes ao arquivo animais.txt.
+* @param Não tem
+* @return Não possui retorno
+*/
 void Arquivo_Geral::fecharArquivo_Animal(){
 	arquivoAnimal_.close();
 	arquivoAnimal.close();
