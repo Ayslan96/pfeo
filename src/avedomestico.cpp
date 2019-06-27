@@ -30,9 +30,18 @@ AveDomestico::AveDomestico(int m_codigo, int m_id, string m_classe, string m_nom
 AveDomestico::~AveDomestico(){}
 
 /**
-* @brief Método de impressão de um anfíbio.
+* @brief Método de impressão de um ave domestico.
 * @return Não possui retorno
 */
+
+void AveDomestico::imprime(){
+
+	cout << m_codigo << m_id << m_classe << m_nome_cientifico << m_sexo << m_tamanho
+	<< m_dieta << m_nome_batismo <<m_tamanho_do_bico_cm  <<m_envergadura_das_asas
+	<<m_uf_origem <<m_cidade_origem << endl;
+
+}
+
 
 /** @brief Setters */
 	void AveDomestico::setM_codigo(int codigo){
