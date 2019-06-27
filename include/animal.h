@@ -84,6 +84,8 @@ protected:
 	void setM_nome_batismo(string);
 	void setM_veterinario(bool);
 	void setM_funcionario(bool);
+	void setM_tratador(bool);
+
 
 	/** @brief Getters */
 	int getM_codigo();
