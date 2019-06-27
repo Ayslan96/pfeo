@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /**
 * @file tratador.cpp
 * @brief Métodos da Classe Tratador filha da classe base Funcionario
@@ -32,12 +31,6 @@ Tratador::Tratador(int m_codigo, int m_id, string m_nome, string m_cpf, int m_id
 Tratador::~Tratador(){}
 
 	
-/**
-* @brief Método destrutor.
-* @return Não possui retorno
-*/
-Tratador::~Tratador(){}
-
 /**
 * @brief Método de impressão de um Tratador.
 * @return Não possui retorno
