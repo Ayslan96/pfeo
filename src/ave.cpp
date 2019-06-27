@@ -19,9 +19,9 @@ Ave::Ave(void){}
 * @return Não possui retorno
 */
 Ave::Ave(int m_codigo, int m_id, string m_classe, string m_nome_cientifico, char m_sexo, int m_tamanho, 
-	string m_dieta, string m_nome_batismo,
+	string m_dieta, string m_nome_batismo, bool m_veterinario, bool m_tratador ,
 		double m_tamanho_do_bico_cm, double m_envergadura_das_asas):
-	Animal(m_codigo,m_id, m_classe, m_nome_cientifico, m_sexo, m_tamanho, m_dieta, m_nome_batismo),
+	Animal(m_codigo,m_id, m_classe, m_nome_cientifico, m_sexo, m_tamanho, m_dieta, m_nome_batismo, m_veterinario, m_tratador),
 		m_tamanho_do_bico_cm(m_tamanho_do_bico_cm),m_envergadura_das_asas(m_envergadura_das_asas) {}
 
 /**
@@ -70,6 +70,12 @@ void Ave::imprime(){
 	void Ave::setM_envergadura_das_asas(double envergadura_das_asas){
 		m_envergadura_das_asas = envergadura_das_asas;
 	}
+	void Ave::setM_veterinario(bool veterinario){
+		m_veterinario = veterinario;
+	}
+	void Ave::setM_funcionario(bool tratador){
+		m_tratador = tratador;
+	}
 
 /** @brief Getters */
 	int Ave::getM_codigo(){
@@ -101,4 +107,11 @@ void Ave::imprime(){
 	}
 	double Ave::getM_envergadura_das_asas(){
 		return m_envergadura_das_asas;
+	}
+	bool Ave::getM_veterinario(){
+		return m_veterinario;
+	}
+
+	bool Ave::getM_tratador(){
+		return m_tratador;
 	}

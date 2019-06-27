@@ -26,8 +26,7 @@ private:
 	/** @brief Implementação do método virtual sobrecarga de impressão*/ 
 	std::ostream& print(std::ostream& os) const {
 		return os << m_codigo << ";" << m_id << ";" << m_classe << ";" << m_nome_cientifico << ";" << m_sexo 
-			  <<";" << m_tamanho << ";" << m_dieta <<";"<< m_nome_batismo
-
+			  <<";" << m_tamanho << ";" << m_dieta <<";"<< m_nome_batismo << ";" << m_veterinario << ";" << m_tratador
 			  <<";" << m_tamanho_do_bico_cm << ";" << m_envergadura_das_asas << ";" << m_autorizacao_ibama << ";" << m_pais_origem 
 			  <<";"<< endl;
 
@@ -39,7 +38,7 @@ public:
 	AveExotico(void);
 
 	/** @brief Definindo construtor padronizado da classe AveExotico*/ 
-	AveExotico(int, int, string, string, char, int, string, string, double, double, string, string);
+	AveExotico(int, int, string, string, char, int, string, string, bool, bool, double, double, string, string);
 
 	/** @brief Definindo destrutor da classe AveExotico*/
 	~AveExotico();

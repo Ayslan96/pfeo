@@ -18,8 +18,8 @@ AveNativo::AveNativo(void){}
 m_tamanho_do_bico_cm, m_envergadura_das_asas, m_pais_origem
 */
 AveNativo::AveNativo(int m_codigo, int m_id, string m_classe, string m_nome_cientifico, char m_sexo, int m_tamanho, string m_dieta, 
-	string m_nome_batismo, double m_tamanho_do_bico_cm, double m_envergadura_das_asas,string m_autorizacao_ibama, string m_uf_origem, string m_cidade_origem ):
-	Ave(m_codigo,m_id, m_classe, m_nome_cientifico, m_sexo, m_tamanho, m_dieta, m_nome_batismo, m_tamanho_do_bico_cm, m_envergadura_das_asas),
+	string m_nome_batismo, bool m_veterinario, bool m_tratador, double m_tamanho_do_bico_cm, double m_envergadura_das_asas,string m_autorizacao_ibama, string m_uf_origem, string m_cidade_origem ):
+	Ave(m_codigo,m_id, m_classe, m_nome_cientifico, m_sexo, m_tamanho, m_dieta, m_nome_batismo, m_veterinario, m_tratador, m_tamanho_do_bico_cm, m_envergadura_das_asas),
 	AnimalNativo(m_autorizacao_ibama, m_uf_origem, m_cidade_origem) {}
 	
 	

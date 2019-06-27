@@ -28,7 +28,7 @@ protected:
 	std::ostream& print(std::ostream& os) const {
 
 		return os << m_codigo << ";" << m_id << ";" << m_classe << ";" << m_nome_cientifico << ";" << m_sexo 
-			  <<";" << m_tamanho << ";" << m_dieta << ";" << m_nome_batismo
+			  <<";" << m_tamanho << ";" << m_dieta << ";" << m_nome_batismo << ";" << m_veterinario << ";" << m_tratador
 			  << ";" << m_venenoso << ";" << m_tipo_de_veneno << endl;
 
 	}
@@ -40,7 +40,7 @@ public:
 
 
 		/** @brief Definindo construtor padronizado da classe Reptil */ 
-	Reptil(int, int, string, string, char, int, string, string, bool, string);
+	Reptil(int, int, string, string, char, int, string, string, bool, bool, bool, string);
 
 
 	/** @brief Definindo destrutor da classe Ave */ 

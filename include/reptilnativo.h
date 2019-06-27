@@ -26,7 +26,7 @@ private:
 	/** @brief Implementação do método virtual sobrecarga de impressão */ 
 	std::ostream& print(std::ostream& os) const {
 		return os << m_id << ";" << m_classe << ";" << m_nome_cientifico << ";" << m_sexo 
-			  <<";" << m_tamanho << ";" << m_dieta << ";" << m_nome_batismo
+			  <<";" << m_tamanho << ";" << m_dieta << ";" << m_nome_batismo << ";" << m_veterinario << ";" << m_tratador
 			  << ";" << m_venenoso << ";" << m_tipo_de_veneno << ";" << m_autorizacao_ibama << ";" << m_uf_origem << ";" << m_cidade_origem
 			  << ";" << "|" << endl;
 	}
@@ -38,7 +38,7 @@ public:
 	ReptilNativo(void);
 
 	/** @brief Definindo construtor padronizado da classe ReptilNativo*/ 
-	ReptilNativo(int, int, string, string, char, int, string, string, bool, string, string, string, string);
+	ReptilNativo(int, int, string, string, char, int, string, string, bool, bool, bool, string, string, string, string);
 
 
 	/** @brief Definindo destrutor da classe ReptilNativo*/

@@ -29,8 +29,8 @@ protected:
 
 	std::ostream& print(std::ostream& os) const {
 		return os << m_codigo << ";" << m_id << ";" << m_classe << ";" << m_nome_cientifico << ";" << m_sexo 
-			  <<";" << m_tamanho <<";"<< m_dieta <<";"<< m_nome_batismo
-			  <<";" << m_total_de_mudas << ";" << m_ultima_muda << ";" << "|" << endl;
+			  << ";" << m_tamanho <<";"<< m_dieta <<";"<< m_nome_batismo
+			  << ";" << m_veterinario << ";" << m_tratador << ";" << m_total_de_mudas << ";" << m_ultima_muda << ";" << "|" << endl;
 	}
 
 	
@@ -39,7 +39,7 @@ public:
 	Anfibio(void);
 
 	/** @brief Definindo construtor padronizado da classe Anfibio*/ 
-	Anfibio(int, int , string, string, char, int, string, string, int, Date);
+	Anfibio(int, int , string, string, char, int, string, string, bool, bool int, Date);
  
 	
 	/** @brief Definindo destrutor da classe Anfibio*/
@@ -58,6 +58,8 @@ public:
 	void setM_nome_batismo(string);
 	void setM_total_de_mudas(int);
 	//void setM_ultima_muda(Date);
+	void setM_veterinario(bool);
+	void setM_nome_tratador(bool);
 
 	/** @brief Definindo getters de todos os atributos*/ 
 	int getM_codigo();
@@ -70,6 +72,8 @@ public:
 	string getM_nome_batismo();
 	int getM_total_de_mudas();
 	//Date getM_ultima_muda();
+	bool getM_veterinario();
+	bool getM_tratador();
    
 };
 

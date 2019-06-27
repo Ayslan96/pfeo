@@ -17,9 +17,9 @@ Reptil::Reptil(void){}
 * @param  m_id, m_classe, m_nome_cientifico, m_sexo, m_tamanho, m_dieta,  m_nome_batismo,
 m_venenoso, m_tipo_de_veneno.
 */
-Reptil::Reptil(int m_codigo,int m_id, string m_classe, string m_nome_cientifico, char m_sexo, int m_tamanho, string m_dieta, string m_nome_batismo,
-		bool m_venenoso, string m_tipo_de_veneno):
-	Animal(m_codigo, m_id, m_classe, m_nome_cientifico, m_sexo, m_tamanho, m_dieta, m_nome_batismo),
+Reptil::Reptil(int m_codigo,int m_id, string m_classe, string m_nome_cientifico, char m_sexo, int m_tamanho, string m_dieta, string m_nome_batismo, bool m_veterinario,
+	bool m_tratador, bool m_venenoso, string m_tipo_de_veneno):
+	Animal(m_codigo, m_id, m_classe, m_nome_cientifico, m_sexo, m_tamanho, m_dieta, m_nome_batismo, m_veterinario, m_tratador),
 	m_venenoso(m_venenoso), m_tipo_de_veneno(m_tipo_de_veneno) {}
 
 	

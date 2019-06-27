@@ -24,7 +24,7 @@ private:
 	/** @brief Implementação do método virtual sobrecarga de impressão*/ 
 	std::ostream& print(std::ostream& os) const {
 		return os << m_codigo << ";" << m_id << ";" << m_classe << ";" << m_nome_cientifico << ";" << m_sexo 
-			  <<";" << m_tamanho <<";"<< m_dieta <<";"<< m_nome_batismo
+			  <<";" << m_tamanho <<";"<< m_dieta <<";"<< m_nome_batismo << ";" << m_veterinario << ";" << m_tratador
 			  <<";" << m_total_de_mudas << ";" << m_ultima_muda << ";" << m_autorizacao_ibama << ";" << m_pais_origem << ";" << endl;
 
 	}
@@ -36,7 +36,7 @@ public:
 	AnfibioExotico(void);
 
 	/** @brief Definindo construtor padronizado da classe AnfibioExotico*/ 
-	AnfibioExotico(int, int, string, string, char , int, string , string, int, Date, string, string);
+	AnfibioExotico(int, int, string, string, char , int, string , string, bool, bool int, Date, string, string);
 
 	/** @brief Definindo destrutor da classe AnfibioExotico*/
 	~AnfibioExotico();
@@ -55,6 +55,8 @@ public:
 	//void setM_ultima_muda(Date);
 	void setM_autorizacao_ibama(string);
 	void setM_pais_origem(string);
+		void setM_veterinario(bool);
+	void setM_nome_tratador(bool)
 
 	/** @brief Definindo getters de todos os atributos*/ 
 	int getM_codigo();
@@ -69,6 +71,8 @@ public:
 	//Date getM_ultima_muda();
 	string getM_autorizacao_ibama();
 	string getM_pais_origem();
+	bool getM_veterinario();
+	bool getM_tratador();
 
 };
 #endif

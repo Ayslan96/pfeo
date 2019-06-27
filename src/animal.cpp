@@ -17,9 +17,9 @@ Animal::Animal(void){}
 * @param  m_id, m_classe, m_nome_cientifico, m_sexo, m_tamanho, m_dieta,  m_nome_batismo.
 * @return Não possui retorno
 */
-Animal::Animal(int codigo, int id, string classe, string nome_cientifico, char sexo, int tamanho, string dieta, string nome_batismo):
+Animal::Animal(int codigo, int id, string classe, string nome_cientifico, char sexo, int tamanho, string dieta, string nome_batismo, bool veterinario, bool tratador):
 m_id(id), m_classe(classe), m_nome_cientifico(nome_cientifico), m_sexo(sexo), m_tamanho(tamanho), 
-m_dieta(dieta), m_nome_batismo(nome_batismo) {
+m_dieta(dieta), m_nome_batismo(nome_batismo), m_veterinario(veterinario), m_tratador(tratador) {
 
 	total++;
 }
@@ -56,6 +56,12 @@ Animal::~Animal(){}
 	void Animal::setM_nome_batismo(string nome_batismo){
 		m_nome_batismo=nome_batismo;
 	}
+	void Animal::setM_veterinario(bool veterinario){
+		m_veterinario = veterinario;
+	}
+	void Animal::setM_funcionario(bool tratador){
+		m_tratador = tratador;
+	}
 
 /** @brief Getters */
 	int Animal::getM_codigo(){
@@ -82,5 +88,12 @@ Animal::~Animal(){}
 	string Animal::getM_nome_batismo(){
 		return m_nome_batismo;
 	}
+	bool Animal::getM_veterinario(){
+		return m_veterinario;
+	}
+	bool Animal::getM_tratador(){
+		return m_tratador;
+	}
+
 
 	int Animal::getTotal(){return total;}

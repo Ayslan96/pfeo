@@ -27,7 +27,7 @@ protected:
 	/** @brief Implementação do método virtual sobrecarga de impressão */ 
 	std::ostream& print(std::ostream& os) const {
 		return os << m_codigo << ";" << m_id << ";" << m_classe << ";" << m_nome_cientifico << ";" << m_sexo 
-			  <<";" << m_tamanho << ";" << m_dieta <<";"<< m_nome_batismo
+			  <<";" << m_tamanho << ";" << m_dieta <<";"<< m_nome_batismo << ";" << m_veterinario << ";" << m_tratador
 			  <<";" << m_tamanho_do_bico_cm << ";" << m_envergadura_das_asas << ";" << "|" << endl;
 	}
 
@@ -37,7 +37,7 @@ public:
 	Ave(void);
 
 	/** @brief Definindo construtor padronizado da classe Ave */ 
-	Ave(int, int, string, string, char, int, string, string, double, double);
+	Ave(int, int, string, string, char, int, string, string, bool, bool, double, double);
 
 	/** @brief Definindo destrutor da classe Ave */ 
 	~Ave();
@@ -58,6 +58,8 @@ public:
 	void setM_nome_batismo(string);
 	void setM_tamanho_do_bico_cm(double);
 	void setM_envergadura_das_asas(double);
+	void setM_veterinario(bool);
+	void setM_nome_tratador(bool);
 
 	/** @brief Getters */
 	int getM_codigo();
@@ -70,6 +72,8 @@ public:
 	string getM_nome_batismo();
 	double getM_tamanho_do_bico_cm();
 	double getM_envergadura_das_asas();
+	bool getM_veterinario();
+	bool getM_tratador();
 
 };
 

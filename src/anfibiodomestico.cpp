@@ -19,8 +19,8 @@ m_total_de_mudas, m_ultima_muda, m_uf_origem, m_cidade_origem.
 */
 
 AnfibioDomestico::AnfibioDomestico(int m_codigo, int m_id, string m_classe, string m_nome_cientifico, char m_sexo, int m_tamanho, string m_dieta, string m_nome_batismo,
-int m_total_de_mudas, Date m_ultima_muda, string m_autorizacao_ibama, string m_uf_origem, string m_cidade_origem):
-	Anfibio(m_codigo,m_id, m_classe, m_nome_cientifico, m_sexo, m_tamanho, m_dieta, m_nome_batismo, m_total_de_mudas, m_ultima_muda),
+bool m_veterinario, bool m_tratador, int m_total_de_mudas, Date m_ultima_muda, string m_autorizacao_ibama, string m_uf_origem, string m_cidade_origem):
+	Anfibio(m_codigo,m_id, m_classe, m_nome_cientifico, m_sexo, m_tamanho, m_dieta, m_nome_batismo, m_veterinario, m_tratador, m_total_de_mudas, m_ultima_muda),
 	AnimalDomestico(m_uf_origem, m_cidade_origem){}
 
 /**
@@ -71,6 +71,13 @@ AnfibioDomestico::~AnfibioDomestico(){}
 	void AnfibioDomestico::setM_cidade_origem(string cidade_origem){
 		m_cidade_origem = cidade_origem;
 	}
+	void AnfibioDomestico::setM_veterinario(bool veterinario){
+		m_veterinario = veterinario;
+	}
+	void AnfibioDomestico::setM_funcionario(bool tratador){
+		m_tratador = tratador;
+	}
+
 
 
 	/** @brief Getters */
@@ -112,5 +119,11 @@ AnfibioDomestico::~AnfibioDomestico(){}
 	string AnfibioDomestico::getM_cidade_origem(){
 		return m_cidade_origem;
 	}
+	bool AnfibioDomestico::getM_veterinario(){
+		return m_veterinario;
+	}
 
+	bool AnfibioDomestico::getM_tratador(){
+		return m_tratador;
+	}
 

@@ -22,7 +22,7 @@ private:
 	/** @brief Implementação do método virtual sobrecarga de impressão */ 
 	std::ostream& print(std::ostream& os) const {
 		return os << m_codigo << ";" << m_id << ";" << m_classe << ";" << m_nome_cientifico << ";" << m_sexo 
-			  <<";" << m_tamanho <<";"<< m_dieta <<";"<< m_nome_batismo
+			  <<";" << m_tamanho <<";"<< m_dieta <<";"<< m_nome_batismo << ";" << m_veterinario << ";" << m_tratador
 			  <<";" << m_cor_pelo << "|" << endl;
 	}
 protected:
@@ -34,7 +34,7 @@ public:
 	Mamifero(void);
 
 	/** @brief Definindo construtor padronizado da classe Mamifero */ 
-	Mamifero(int, int, string, string, char, int, string, string, string);
+	Mamifero(int, int, string, string, char, int, string, string, bool, bool, string);
 
 	/** @brief Definindo destrutor da classe Mamifero */ 
 	~Mamifero();

@@ -39,8 +39,14 @@ protected:
 	double m_tamanho;
 	/** @brief Define uma variável chamada m_dieta tipo string que recebe a dieta de um animal */
 	std::string m_dieta;
-	/** @brief Define uma variável chamada m_tnome_batismo do tipo string que recebe o nome de um animal */
+	/** @brief Define uma variável chamada m_nome_batismo do tipo string que recebe o nome de um animal */
 	std::string m_nome_batismo;
+
+	/** @brief Define uma variável chamada m_veterinariodo tipo bool que recebe 0 ou 1 */
+	bool m_veterinario;
+
+	/** @brief Define uma variável chamada m_tratador do tipo bool que recebe 0 ou 1 */
+	bool m_tratador;
 
 	public:
 
@@ -48,7 +54,7 @@ protected:
 	Animal(void);
 
 	/** @brief Define o construtor padronizado de Animal */
-	Animal(int, int , string, string , char , int, string , string);
+	Animal(int, int , string, string , char , int, string , string, bool, bool);
 
 
 	/** @brief Definindo um método virtual puro */
@@ -76,6 +82,8 @@ protected:
 	void setM_tamanho(double);
 	void setM_dieta(string);
 	void setM_nome_batismo(string);
+	void setM_veterinario(bool);
+	void setM_nome_tratador(bool);
 
 	/** @brief Getters */
 	int getM_codigo();
@@ -86,6 +94,8 @@ protected:
 	double getM_tamanho();
 	string getM_dieta();
 	string getM_nome_batismo();
+	bool getM_veterinario();
+	bool getM_tratador();
 
 };
 
