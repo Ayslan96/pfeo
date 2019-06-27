@@ -14,7 +14,7 @@ Funcionario::Funcionario(void){}
 
 /**
 * @brief Método construtor padronizado.
-* @param  dia_, mes_, ano_.
+* @param  codigo, id, nome, cpf, idade, tipo_sanguineo, fator_rh, especialidade
 * @return Não possui retorno.
 */
 Funcionario::Funcionario(int codigo, int id, string nome, string cpf, int idade, string tipo_sanguineo, char fator_rh, string especialidade):

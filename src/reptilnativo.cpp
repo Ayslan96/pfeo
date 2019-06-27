@@ -1,14 +1,37 @@
+/**
+* @file reptilnativo.cpp
+* @brief Métodos da Classe ReptilNativo filha da classe base Reptil
+*/
+
+/** @brief Inclui a biblioteca reptilnativo.h */
 #include "../include/reptilnativo.h"
 
+/**
+* @brief Método construtor padrão.
+* @return Não possui retorno
+*/
 ReptilNativo::ReptilNativo(void){}
 
+/**
+* @brief Método construtor padronizado.
+* @param  m_id, m_classe, m_nome_cientifico, m_sexo, m_tamanho, m_dieta,  m_nome_batismo,
+m_venenoso, m_tipo_de_veneno.
+*/
 ReptilNativo::ReptilNativo(int m_codigo, int m_id, std::string m_classe, std::string m_nome_cientifico, char m_sexo, int m_tamanho, std::string m_dieta, std::string m_nome_batismo,
 		bool m_veterinario, bool m_tratador, bool m_venenoso, std::string m_tipo_de_veneno, std::string m_autorizacao_ibama, std::string m_uf_origem, std::string m_cidade_origem):
 		Reptil(m_codigo, m_id, m_classe, m_nome_cientifico, m_sexo, m_tamanho, m_dieta, m_nome_batismo, m_veterinario, m_tratador, m_venenoso, m_tipo_de_veneno),
 		AnimalNativo(m_autorizacao_ibama, m_uf_origem, m_cidade_origem) {}
-	
+
+/**
+* @brief Método destrutor.
+* @return Não possui retorno
+*/	
 ReptilNativo::~ReptilNativo(){}
 
+/**
+* @brief Método de impressão de um ReptilNativo.
+* @return Não possui retorno
+*/
 void ReptilNativo::imprime(){
 
 	cout << m_codigo << m_id << m_classe << m_nome_cientifico << m_sexo << m_tamanho

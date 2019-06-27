@@ -3,7 +3,7 @@
 * @brief Métodos da Classe Ave
 */
 
-/** @brief Inclui a biblioteca animal.h */
+/** @brief Inclui a biblioteca ave.h */
 #include "../include/ave.h"
 
 /**
