@@ -17,16 +17,10 @@ Anfibio::Anfibio(void){}
 * @param  m_id, m_classe, m_nome_cientifico, m_sexo, m_tamanho, m_dieta,  m_nome_batismo,
 m_total_de_mudas, m_ultima_mudaNumero.
 */
-<<<<<<< HEAD
 Anfibio::Anfibio(int m_codigo, int m_id, string m_classe, string m_nome_cientifico, char m_sexo, int m_tamanho, string m_dieta, string m_nome_batismo, 
 	bool m_veterinario, bool m_tratador, int m_total_de_mudas, Date m_ultima_muda):
 	Animal(m_codigo,m_id, m_classe, m_nome_cientifico, m_sexo, m_tamanho, m_dieta, m_nome_batismo, m_veterinario, m_tratador),
-=======
-Anfibio::Anfibio(int m_codigo, int m_id, string m_classe, string m_nome_cientifico, char m_sexo, int m_tamanho, string m_dieta, string m_nome_batismo, int m_total_de_mudas, Date m_ultima_muda):
-	Animal(m_codigo,m_id, m_classe, m_nome_cientifico, m_sexo, m_tamanho, m_dieta, m_nome_batismo),
->>>>>>> 554f94f41d46f9e90bb43b070ea727fe56d00fcf
-	m_total_de_mudas(m_total_de_mudas), m_ultima_muda(m_ultima_muda) {}
-
+	m_total_de_mudas(m_total_de_mudas), m_ultima_muda(m_ultima_muda){}
 	
 /**
 * @brief Método destrutor.
@@ -73,22 +67,17 @@ void Anfibio::imprime(){
 	void Anfibio::setM_total_de_mudas(int total_de_mudas){
 		m_total_de_mudas= total_de_mudas;
 	}
-<<<<<<< HEAD
-	//void setM_ultima_muda(Date ultima_muda){
-		//m_ultima_muda = ultima_muda;
-	//}
+
 	void Anfibio::setM_veterinario(bool veterinario){
 		m_veterinario = veterinario;
 	}
 	void Anfibio::setM_funcionario(bool tratador){
 		m_tratador = tratador;
 	}
-
-=======
 	void setM_ultima_muda(Date m_ultima_muda){
 		m_ultima_muda = m_ultima_muda;
 	}
->>>>>>> 554f94f41d46f9e90bb43b070ea727fe56d00fcf
+
 
 	/** @brief Getters */
 	int Anfibio::getM_codigo(){
@@ -120,10 +109,9 @@ void Anfibio::imprime(){
 		return m_total_de_mudas;
 	}
 
-<<<<<<< HEAD
-	//Date Anfibio::getM_ultima_muda(){
-		//return m_ultima_muda;
-	//}
+	Date Anfibio::getM_ultima_muda(){
+		return m_ultima_muda;
+	}
 
 	bool Anfibio::getM_veterinario(){
 		return m_veterinario;
@@ -132,9 +120,3 @@ void Anfibio::imprime(){
 	bool Anfibio::getM_tratador(){
 		return m_tratador;
 	}
-
-=======
-	Date Anfibio::getM_ultima_muda(){
-		return m_ultima_muda;
-	}
->>>>>>> 554f94f41d46f9e90bb43b070ea727fe56d00fcf

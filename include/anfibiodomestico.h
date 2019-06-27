@@ -58,7 +58,7 @@ public:
 	void setM_uf_origem(string);
 	void setM_cidade_origem(string);
 	void setM_veterinario(bool);
-	void setM_nome_tratador(bool);
+	void setM_funcionario(bool);
 
 	/** @brief Getters */
 	int getM_codigo();

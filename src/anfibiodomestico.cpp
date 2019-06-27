@@ -18,9 +18,8 @@ AnfibioDomestico::AnfibioDomestico(void){}
 m_total_de_mudas, m_ultima_muda, m_uf_origem, m_cidade_origem.
 */
 
-<<<<<<< HEAD
 AnfibioDomestico::AnfibioDomestico(int m_codigo, int m_id, string m_classe, string m_nome_cientifico, char m_sexo, int m_tamanho, string m_dieta, string m_nome_batismo,
-bool m_veterinario, bool m_tratador, int m_total_de_mudas, Date m_ultima_muda, string m_autorizacao_ibama, string m_uf_origem, string m_cidade_origem):
+bool m_veterinario, bool m_tratador, int m_total_de_mudas, Date m_ultima_muda, string m_uf_origem, string m_cidade_origem):
 	Anfibio(m_codigo,m_id, m_classe, m_nome_cientifico, m_sexo, m_tamanho, m_dieta, m_nome_batismo, m_veterinario, m_tratador, m_total_de_mudas, m_ultima_muda),AnimalDomestico(m_uf_origem, m_cidade_origem){}
 
 /**
@@ -127,7 +126,7 @@ void AnfibioDomestico::imprimir() {
 	string AnfibioDomestico::getM_cidade_origem(){
 		return m_cidade_origem;
 	}
-<<<<<<< HEAD
+
 	bool AnfibioDomestico::getM_veterinario(){
 		return m_veterinario;
 	}
@@ -136,5 +135,3 @@ void AnfibioDomestico::imprimir() {
 		return m_tratador;
 	}
 
-=======
->>>>>>> 554f94f41d46f9e90bb43b070ea727fe56d00fcf

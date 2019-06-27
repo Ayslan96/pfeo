@@ -59,7 +59,7 @@ public:
 	void setM_tamanho_do_bico_cm(double);
 	void setM_envergadura_das_asas(double);
 	void setM_veterinario(bool);
-	void setM_nome_tratador(bool);
+	void setM_funcionario(bool);
 
 	/** @brief Getters */
 	int getM_codigo();

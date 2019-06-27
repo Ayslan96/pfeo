@@ -36,7 +36,7 @@ public:
 	AnfibioExotico(void);
 
 	/** @brief Definindo construtor padronizado da classe AnfibioExotico*/ 
-	AnfibioExotico(int, int, string, string, char , int, string , string, bool, bool int, Date, string, string);
+	AnfibioExotico(int, int, string, string, char , int, string , string, bool, bool, int, Date, string, string);
 
 	/** @brief Definindo destrutor da classe AnfibioExotico*/
 	~AnfibioExotico();
@@ -56,7 +56,7 @@ public:
 	void setM_autorizacao_ibama(string);
 	void setM_pais_origem(string);
 		void setM_veterinario(bool);
-	void setM_nome_tratador(bool)
+	void setM_funcionario(bool);
 
 	/** @brief Definindo getters de todos os atributos*/ 
 	int getM_codigo();

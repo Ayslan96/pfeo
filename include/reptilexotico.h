@@ -39,7 +39,7 @@ public:
 	ReptilExotico(void);
 
 	/** @brief Definindo construtor padronizado da classe ReptilExotico*/ 
-	ReptilExotico(int, int, string, string, char, int, string, string, bool, string, string, string);
+	ReptilExotico(int, int, string, string, char, int, string, string,bool, bool, bool, string, string, string);
 
 
 

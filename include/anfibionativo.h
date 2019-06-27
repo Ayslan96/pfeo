@@ -59,7 +59,7 @@ public:
 		//m_ultima_muda = ultima_muda;
 	//}
 	void setM_veterinario(bool);
-	void setM_nome_tratador(bool);
+	void setM_funcionario(bool);
 	void setM_autorizacao_ibama(string);
 	void setM_uf_origem(string);
 	void setM_cidade_origem(string);

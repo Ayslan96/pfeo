@@ -40,7 +40,7 @@ public:
 	Anfibio(void);
 
 	/** @brief Definindo construtor padronizado da classe Anfibio*/ 
-	Anfibio(int, int , string, string, char, int, string, string, bool, bool int, Date);
+	Anfibio(int, int , string, string, char, int, string, string, bool, bool, int, Date);
  
 	
 	/** @brief Definindo destrutor da classe Anfibio*/
@@ -58,11 +58,8 @@ public:
 	void setM_dieta(string);
 	void setM_nome_batismo(string);
 	void setM_total_de_mudas(int);
-
-	//void setM_ultima_muda(Date);
 	void setM_veterinario(bool);
-	void setM_nome_tratador(bool);
-
+	void setM_funcionario(bool);
 	void setM_ultima_muda(Date);
 
 
@@ -77,7 +74,6 @@ public:
 	string getM_nome_batismo();
 	int getM_total_de_mudas();
 
-	//Date getM_ultima_muda();
 	bool getM_veterinario();
 	bool getM_tratador();
 
