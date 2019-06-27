@@ -83,7 +83,7 @@ protected:
 	void setM_dieta(string);
 	void setM_nome_batismo(string);
 	void setM_veterinario(bool);
-	void setM_nome_tratador(bool);
+	void setM_tratador(bool);
 
 	/** @brief Getters */
 	int getM_codigo();

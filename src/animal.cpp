@@ -59,7 +59,7 @@ Animal::~Animal(){}
 	void Animal::setM_veterinario(bool veterinario){
 		m_veterinario = veterinario;
 	}
-	void Animal::setM_funcionario(bool tratador){
+	void Animal::setM_tratador(bool tratador){
 		m_tratador = tratador;
 	}
 
