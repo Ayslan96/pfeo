@@ -40,7 +40,7 @@ public:
 	Anfibio(void);
 
 	/** @brief Definindo construtor padronizado da classe Anfibio*/ 
-	Anfibio(int, int , string, string, char, int, string, string, bool, bool int, Date);
+	Anfibio(int, int , string, string, char, int, string, string, bool, bool, int, Date);
  
 	
 	/** @brief Definindo destrutor da classe Anfibio*/
