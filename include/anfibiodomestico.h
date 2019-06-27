@@ -8,7 +8,6 @@
 
 /** @brief Inclui a biblioteca anfibio.h */
 #include "anfibio.h"
-
 #include "animaldomestico.h"
 
 using std::string;
@@ -42,7 +41,7 @@ public:
 
 	~AnfibioDomestico();
 
-	/** @brief Definindo função de impressão sem retorno*/ 
+
 	void imprime();
 	
 	void setM_codigo(int);
@@ -53,10 +52,10 @@ public:
 	void setM_tamanho(double);
 	void setM_dieta(string);
 	void setM_nome_batismo(string);
-	void setM_total_de_mudas(int);
-	//void setM_ultima_muda(Date ultima_muda){
-		//m_ultima_muda = ultima_muda;
-	//}
+	/*void setM_total_de_mudas(int);
+	void setM_ultima_muda(Date ultima_muda){
+		m_ultima_muda = ultima_muda;
+	}*/
 	void setM_uf_origem(string);
 	void setM_cidade_origem(string);
 
@@ -70,11 +69,11 @@ public:
 	double getM_tamanho();
 	string getM_dieta();
 	string getM_nome_batismo();
-	int getM_total_de_mudas();
+	/*int getM_total_de_mudas();
 
-	//Date AnfibioDomestico::getM_ultima_muda(){
-		//return m_ultima_muda;
-	//}
+	Date AnfibioDomestico::getM_ultima_muda(){
+		return m_ultima_muda;
+	}*/
 	string getM_uf_origem();
 	string getM_cidade_origem();
 };
