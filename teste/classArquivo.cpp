@@ -9,7 +9,9 @@
 using namespace std;
 
 int main(){
-vector<string> principal;
+	
+//parte dos animais
+vector<string> animais;
 
 ifstream arquivoDeEntrada;/*!<Instancia um objeto da classe  'ifstream'*/
 string S, aux; /*!<Variáveis auxiliares*/
@@ -32,105 +34,56 @@ if (!arquivoDeEntrada)
 		while (std::getline(iss, token, ';')) 
 		{
 			/*!<Enquanto houverem separadores ',' as instruções do laço serão executadas*/
-			principal.push_back(token); /*!<Pega o numero no formato de string, converte e insere na memória*/
-			if(token=="/"){
-							
+			animais.push_back(token); /*!<Pega o numero no formato de string, converte e insere na memória*/
+			if(token=="|"){	
 
-				switch (stoi(principal[0])){
+				switch (stoi(animais[0])){
 
 				case 11:
-					cout<<principal.size()<<std::endl;
-
-					std::cout << "11 "/*cod*/ << (stoi(principal[1]))/*id*/ <<" " <<principal[2] /*classe*/ <<" "<<principal[3] /*nome cientifico*/ <<" "<<principal[4] /*sexo*/<<" "<<stoi((principal[5])) /*tamanho*/<<" " <<principal[6]/*dieta*/ <<" "
-					<<principal[7]/*nome batismo*/<<" " <<(stod(principal[8])) /*tam bico*/<<" " <<(stod(principal[9])) /*env. asas*/<<" "<<principal[10]/*aut. ibama*/ <<" "<<principal[11]/*uf origem*/<<" "<<principal[12]/*cidade origem*/ <<std::endl;
-					
-					/*AveNativo(11,stoi (principal[1]), principal[2], principal[3], principal[4], stoi(principal[5]), principal[6], 
-					principal[7], stod(principal[8]), stod(principal[9]),principal[10], principal[11], principal[12] );*/
-					
-					principal.clear();
+					AveNativo(11,stoi (animais[1]), animais[2], animais[3], animais[4], stoi(animais[5]), animais[6], 
+					animais[7], stod(animais[8]), stod(animais[9]),animais[10], animais[11], animais[12] );
+					animais.clear();
 					break;
 					
 				case 12:
-					cout<<principal.size()<<std::endl;
-				
-					std::cout << "11 "/*cod*/ << (stoi(principal[1]))/*id*/ <<" " <<principal[2] /*classe*/ <<" "<<principal[3] /*nome cientifico*/ <<" "<<principal[4] /*sexo*/<<" "<<stoi((principal[5])) /*tamanho*/<<" " <<principal[6]/*dieta*/ <<" "
-					<<principal[7]/*nome batismo*/<<" " <<(stod(principal[8])) /*tam bico*/<<" " <<(stod(principal[9])) /*env. asas*/<<" "<<principal[10]/*aut. ibama*/ <<" "<<principal[11]/*país origem*/ <<std::endl;
-					 /*
-					AveExotico(12, principal[1], principal[2], principal[3], stoi(principal[4]), principal[5], 
-					principal[6], stod (principal[7]), stod(principal[8]), principal[9],principal[10],principal[11] );
-					principal.clear();*/
-					
-					principal.clear();
+					AveExotico(12, animais[1], animais[2], animais[3], stoi(animais[4]), animais[5], 
+					animais[6], stod (animais[7]), stod(animais[8]), animais[9],animais[10],animais[11] );
+					animais.clear();
 					break;
 					
 				case 21: 
-					cout<<principal.size()<<std::endl;
-
-					std::cout << "21 "/*cod*/ << (stoi(principal[1]))/*id*/ <<" " <<principal[2] /*classe*/ <<" "<<principal[3] /*nome cientifico*/ <<" "<<principal[4] /*sexo*/<<" "<<stoi((principal[5])) /*tamanho*/<<" " <<principal[6]/*dieta*/ <<" "
-					<<principal[7]/*nome batismo*/<<" " <<(stoi(principal[8])) /*total mudas*/<<" " <<principal[9] /*date ult. muda*/<<" "<<principal[10]/*aut. ibama*/ <<" "<<principal[11]/*uf origem*/<<" "<<principal[12]/*cidade origem*/ <<std::endl;
-					
-					/*
-					AnfibioNativo(21, principal[1], principal[2], principal[3], stoi(principal[4]), principal[5], principal[6],
-					stoi(principal[7]), principal[8], principal[9], principal[10], principal[11], principal[12]);
-					principal.clear();*/
-					principal.clear();
+					AnfibioNativo(21, animais[1], animais[2], animais[3], stoi(animais[4]), animais[5], animais[6],
+					stoi(animais[7]), animais[8], animais[9], animais[10], animais[11], animais[12]);
+					animais.clear();
 					break;
 					
 				case 22:
-					cout<<principal.size()<<std::endl;
-					
-					std::cout << "22 "/*cod*/ << (stoi(principal[1]))/*id*/ <<" " <<principal[2] /*classe*/ <<" "<<principal[3] /*nome cientifico*/ <<" "<<principal[4] /*sexo*/<<" "<<stoi((principal[5])) /*tamanho*/<<" " <<principal[6]/*dieta*/ <<" "
-					<<principal[7]/*nome batismo*/<<" " <<(stoi(principal[8])) /*total mudas*/<<" " <<principal[9] /*date ult. muda*/<<" "<<principal[10]/*aut. ibama*/ <<" "<<principal[11]/*pais origem*/<<std::endl;
-										
-					/*
-					AnfibioExotico(22, principal[1], principal[2], principal[3],stoi(principal[4]), principal[5],principal[6],
-					stoi(principal[7]), principal[8], principal[9], principal[10],principal[11]);
-					principal.clear();*/
-					principal.clear();
+					AnfibioExotico(22, animais[1], animais[2], animais[3],stoi(animais[4]), animais[5],animais[6],
+					stoi(animais[7]), animais[8], animais[9], animais[10],animais[11]);
+					animais.clear();
 					break;
 				case 31:
-					cout<<principal.size()<<std::endl;
-					
-					std::cout << "31 "/*cod*/ << (stoi(principal[1]))/*id*/ <<" " <<principal[2] /*classe*/ <<" "<<principal[3] /*nome cientifico*/ <<" "<<principal[4] /*sexo*/<<" "<<stoi((principal[5])) /*tamanho*/<<" " <<principal[6]/*dieta*/ <<" "
-					<<principal[7]/*nome batismo*/<<" " <<principal[8]/*cor pelo*/ <<" "<<principal[9]/*aut. ibama*/ <<" "<<principal[10]/*uf origem*/<<" "<<principal[11]/*cidade origem*/ <<std::endl;
-					
-					/*MamiferoNativo(31, principal[1], principal[2], principal[3], stoi(principal[4]), principal[5], principal[6],
-					principal[7], principal[8], principal[9], principal[10], principal[11]);*/
-					principal.clear();
+					MamiferoNativo(31, animais[1], animais[2], animais[3], stoi(animais[4]), animais[5], animais[6],
+					animais[7], animais[8], animais[9], animais[10], animais[11]);
+					animais.clear();
 					break;
 					
 				case 32:
-					cout<<principal.size()<<std::endl;
-					
-					std::cout << "32 "/*cod*/ << (stoi(principal[1]))/*id*/ <<" " <<principal[2] /*classe*/ <<" "<<principal[3] /*nome cientifico*/ <<" "<<principal[4] /*sexo*/<<" "<<stoi((principal[5])) /*tamanho*/<<" " <<principal[6]/*dieta*/ <<" "
-					<<principal[7]/*nome batismo*/<<" " <<principal[8]/*cor pelo*/ <<" "<<principal[9]/*aut. ibama*/ <<" "<<principal[10]/*país origem*/<<std::endl;
-										
-					/*MamiferoExotico(31, principal[1], principal[2], principal[3], stoi(principal[4]), principal[5], principal[6],
-					principal[7], principal[8], principal[9], principal[10]);*/
-					principal.clear();
+					MamiferoExotico(31, animais[1], animais[2], animais[3], stoi(animais[4]), animais[5], animais[6],
+					animais[7], animais[8], animais[9], animais[10]);
+					animais.clear();
 					break;
 					
 				case 41:		
-					cout<<principal.size()<<std::endl;
-					
-					std::cout << "41 "/*cod*/ << (stoi(principal[1]))/*id*/ <<" " <<principal[2] /*classe*/ <<" "<<principal[3] /*nome cientifico*/ <<" "<<principal[4] /*sexo*/<<" "<<stoi((principal[5])) /*tamanho*/<<" " <<principal[6]/*dieta*/ <<" "
-					<<principal[7]/*nome batismo*/<<" " <<principal[8]/*venenoso?*/<<" " <<principal[9]/*tipo veneno*/ <<" "<<principal[10]/*aut. ibama*/ <<" "<<principal[11]/*uf origem*/<<" "<<principal[12]/*cidade origem*/ <<std::endl;
-										
-					/*ReptilNativo(41, principal[1], principal[2], principal[3], stoi(principal[4]), principal[5], principal[6],
-					bool m_venenoso(principal[7]), principal[8], principal[9], principal[10], principal[11], principal[12]);
-					principal.clear();*/
-					principal.clear();
+					ReptilNativo(41, animais[1], animais[2], animais[3], stoi(animais[4]), animais[5], animais[6],
+					bool (m_venenoso(animais[7])), animais[8], animais[9], animais[10], animais[11], animais[12]);
+					animais.clear();
 					break;
 					
 				case 42:
-					cout<<principal.size()<<std::endl;
-					std::cout << "42 "/*cod*/ << (stoi(principal[1]))/*id*/ <<" " <<principal[2] /*classe*/ <<" "<<principal[3] /*nome cientifico*/ <<" "<<principal[4] /*sexo*/<<" "<<stoi((principal[5])) /*tamanho*/<<" " <<principal[6]/*dieta*/ <<" "
-					<<principal[7]/*nome batismo*/<<" " <<principal[8]/*venenoso?*/<<" " <<principal[9]/*tipo veneno*/ <<" "<<principal[10]/*aut. ibama*/ <<" "<<principal[11]/*país origem*/<<" " <<std::endl;						
-					/*
-					ReptilExotico(41, principal[1], principal[2], principal[3], stoi(principal[4]), principal[5], principal[6],
-					bool m_venenoso(principal[7]), principal[8], principal[9], principal[10], principal[11]);
-					principal.clear();*/
-					principal.clear();
+					ReptilExotico(41, animais[1], animais[2], animais[3], stoi(animais[4]), animais[5], animais[6],
+					bool (m_venenoso(animais[7])), animais[8], animais[9], animais[10], animais[11]);
+					animais.clear();
 					break;
 				}}
 			
@@ -138,9 +91,57 @@ if (!arquivoDeEntrada)
 		}
 }
 
-	/*for (int i = 0; i< principal.size();i++){
-		cout<<principal[i]<<" ";
+	/*for (int i = 0; i< animais.size();i++){
+		cout<<animais[i]<<" ";
 	}*/
 	arquivoDeEntrada.close();/*!<Fecha o arquivo.txt*/
+	
+	
+	//parte do tratador
+	
+vector<string> funcionarios;
+
+ifstream arquivoDeEntrada2;/*!<Instancia um objeto da classe  'ifstream'*/
+string S2, aux2; /*!<Variáveis auxiliares*/
+
+arquivoDeEntrada2.open ("funcionarios.txt", ios::in); /*!<O Objeto arquivoDeEntrada usa o arquivo arquivo.txt como entrada*/
+
+if (!arquivoDeEntrada2)
+{	
+	/*!<Caso haja algum problema na abertura de arquivo.txt a mensagem é exibida*/
+		cout << "Problemas na abertura do arquivo" << endl;
+		exit(1);
+	}
+
+	while(!arquivoDeEntrada2.eof()){
+		/*!<Enquanto o arquivo não chegar ao final as instruções do laço serão executadas*/
+		getline(arquivoDeEntrada2, S2); /*!<Insere o conteúdo do objeto arquivoDeEntrada na string S*/
+
+		std::istringstream iss(S2); /*!<Instancia iss com S como entrada*/
+		std::string token; /*!<Cria string token*/
+		while (std::getline(iss, token, ';')) 
+		{
+			/*!<Enquanto houverem separadores ',' as instruções do laço serão executadas*/
+			funcionarios.push_back(token); /*!<Pega o numero no formato de string, converte e insere na memória*/
+			if(token=="|"){	
+
+				switch (stoi(funcionarios[0])){
+
+				case 11:
+					Tratador(11,stoi(funcionarios[1]), funcionarios[2], funcionarios[3], stoi(funcionarios[4]), funcionarios[5], funcionarios[6], 
+					funcionarios[7], stoi(funcionarios[8]));
+					funcionarios.clear();
+					break;
+					
+				case 12:
+					Veterinario(12, stoi(funcionarios[1]), funcionarios[2], funcionarios[3], stoi(funcionarios[4]), funcionarios[5], funcionarios[6], 
+					funcionarios[7], funcionarios[8]);
+					funcionarios.clear();
+					break;
+				}
+			}
+		}
+	}	
+	arquivoDeEntrada2.close();/*!<Fecha o arquivo.txt*/
 }
 
