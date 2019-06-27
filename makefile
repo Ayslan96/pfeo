@@ -2,7 +2,7 @@ PROG = petfera
 CC = g++
 IDIR = /include
 CPPFLAGS = -I $(IDIR)-O0 -g -Wall -std=c++11 
-OBJS = main.o animal.o animalnativo.o animalexotico.o animalsilvestre.o anfibio.o anfibionativo.o anfibioexotico.o date.o ave.o avenativo.o aveexotico.o reptil.o reptilnativo.o reptilexotico.o mamifero.o mamiferonativo.o mamiferoexotico.o classArquivo.o menu.o interfaces.o veterinario.o funcionario.o tratador.o
+OBJS = main.o animal.o animalnativo.o animalexotico.o animalsilvestre.o anfibio.o anfibionativo.o anfibioexotico.o anfibiodomestico.o date.o ave.o avenativo.o aveexotico.o avedomestico.o reptil.o reptilnativo.o reptilexotico.o reptildomestico.o mamifero.o mamiferonativo.o mamiferoexotico.o mamiferodomestico.o classArquivo.o menu.o interfaces.o veterinario.o funcionario.o tratador.o
 
 
 $(PROG) : $(OBJS)
@@ -31,7 +31,10 @@ anfibionativo.o :
 
 anfibioexotico.o : 
 	$(CC) $(CPPFLAGS) -c src/anfibioexotico.cpp
-
+	
+anfibiodomestico.o : 
+	$(CC) $(CPPFLAGS) -c src/anfibiodomestico.cpp
+	
 date.o : 
 	$(CC) $(CPPFLAGS) -c src/date.cpp
 
@@ -44,6 +47,9 @@ avenativo.o :
 aveexotico.o : 
 	$(CC) $(CPPFLAGS) -c src/aveexotico.cpp
 
+avedomestico.o : 
+	$(CC) $(CPPFLAGS) -c src/avedomestico.cpp
+
 reptil.o : 
 	$(CC) $(CPPFLAGS) -c src/reptil.cpp
 	
@@ -53,6 +59,9 @@ reptilnativo.o :
 reptilexotico.o : 
 	$(CC) $(CPPFLAGS) -c src/reptilexotico.cpp
 
+reptildomestico.o : 
+	$(CC) $(CPPFLAGS) -c src/reptildomestico.cpp
+
 mamifero.o : 
 	$(CC) $(CPPFLAGS) -c src/mamifero.cpp
 
@@ -61,6 +70,9 @@ mamiferonativo.o :
 
 mamiferoexotico.o : 
 	$(CC) $(CPPFLAGS) -c src/mamiferoexotico.cpp
+
+mamiferodomestico.o : 
+	$(CC) $(CPPFLAGS) -c src/mamiferodomestico.cpp
 
 classArquivo.o : 
 	$(CC) $(CPPFLAGS) -c src/classArquivo.cpp
