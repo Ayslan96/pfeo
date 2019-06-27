@@ -287,7 +287,6 @@ void Interfaces::aveN(){
 void Interfaces::reptilE(){
 
 	/** @brief Criação das variáveis referentes aos atributos particulares do animal */
-	double tamanho_do_bico;
 	bool venenoso;
 	string tipo_veneno;
 	

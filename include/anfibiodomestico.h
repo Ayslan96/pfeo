@@ -2,11 +2,12 @@
 * @file anfibioDomestico.h
 * @brief Classe Anfibio filha da classe base Anfibio
 */
-
 #ifndef AnfibioDomestico_H
 #define AnfibioDomestico_H
 
 /** @brief Inclui a biblioteca anfibio.h */
+#include <iostream>
+#include <string>
 #include "anfibio.h"
 #include "animaldomestico.h"
 
@@ -22,12 +23,12 @@ class AnfibioDomestico : public Anfibio, public AnimalDomestico {
 private:
 	
 	/** @brief Implementação do método virtual sobrecarga de impressão*/ 
-	//std::ostream& print(std::ostream& os) const {
+	//std::ostream& print(std::ostream& os) const{
 		//return os << m_codigo << ";" << m_id << ";" << m_classe << ";" << m_nome_cientifico << ";" << m_sexo 
 			//  <<";" << m_tamanho <<";"<< m_dieta <<";"<< m_nome_batismo
 			//  <<";" << m_total_de_mudas << ";" << m_ultima_muda  << ";" << m_uf_origem << ";" << m_cidade_origem 
 			//  <<";" << endl;
-
+		//}
 public:
 
 
@@ -42,7 +43,7 @@ public:
 	~AnfibioDomestico();
 
 
-	void imprime();
+	void imprimir();
 	
 	void setM_codigo(int);
 	void setM_id(int);
@@ -52,10 +53,8 @@ public:
 	void setM_tamanho(double);
 	void setM_dieta(string);
 	void setM_nome_batismo(string);
-	/*void setM_total_de_mudas(int);
-	void setM_ultima_muda(Date ultima_muda){
-		m_ultima_muda = ultima_muda;
-	}*/
+	void setM_total_de_mudas(int);
+	void setM_ultima_muda(Date);
 	void setM_uf_origem(string);
 	void setM_cidade_origem(string);
 
@@ -69,11 +68,8 @@ public:
 	double getM_tamanho();
 	string getM_dieta();
 	string getM_nome_batismo();
-	/*int getM_total_de_mudas();
-
-	Date AnfibioDomestico::getM_ultima_muda(){
-		return m_ultima_muda;
-	}*/
+	int getM_total_de_mudas();
+	Date getM_ultima_muda();
 	string getM_uf_origem();
 	string getM_cidade_origem();
 };

@@ -27,11 +27,11 @@ protected:
 	Date m_ultima_muda;
 	/** @brief Implementação do método virtual sobrecarga de impressão*/ 
 
-	std::ostream& print(std::ostream& os) const {
+	/*std::ostream& print(std::ostream& os) const {
 		return os << m_codigo << ";" << m_id << ";" << m_classe << ";" << m_nome_cientifico << ";" << m_sexo 
 			  <<";" << m_tamanho <<";"<< m_dieta <<";"<< m_nome_batismo
 			  <<";" << m_total_de_mudas << ";" << m_ultima_muda << ";" << "|" << endl;
-	}
+	}*/
 
 	
 public:

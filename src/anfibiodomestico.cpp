@@ -33,8 +33,8 @@ AnfibioDomestico::~AnfibioDomestico(){}
 * @return Não possui retorno
 */
 
-void AnfibioDomestico::imprime{
-	cout << m_codigo << m_id << m_classe << m_nome_cientifico << m_sexo << m_tamanho
+void AnfibioDomestico::imprimir() {
+	std::cout << m_codigo << m_id << m_classe << m_nome_cientifico << m_sexo << m_tamanho
 	<< m_dieta << m_nome_batismo <<m_total_de_mudas <<m_ultima_muda
 	<<m_uf_origem <<m_cidade_origem << endl;
 
@@ -66,12 +66,12 @@ void AnfibioDomestico::imprime{
 	void AnfibioDomestico::setM_nome_batismo(string nome_batismo){
 		m_nome_batismo = nome_batismo;
 	}
-	/*void AnfibioDomestico::setM_total_de_mudas(int total_de_mudas){
+	void AnfibioDomestico::setM_total_de_mudas(int total_de_mudas){
 		m_total_de_mudas = total_de_mudas;
 	}
-	void setM_ultima_muda(Date ultima_muda){
+	void AnfibioDomestico::setM_ultima_muda(Date ultima_muda){
 		m_ultima_muda = ultima_muda;
-	}*/
+	}
 	void AnfibioDomestico::setM_uf_origem(string uf_origem){
 		m_uf_origem = uf_origem;
 	}
@@ -105,19 +105,17 @@ void AnfibioDomestico::imprime{
 	string AnfibioDomestico::getM_nome_batismo(){
 		return m_nome_batismo;
 	}
-/*
+
 	int AnfibioDomestico::getM_total_de_mudas(){
 		return m_total_de_mudas;
 	}
-
 	Date AnfibioDomestico::getM_ultima_muda(){
 		return m_ultima_muda;
-	}*/
+	}
+	
 	string AnfibioDomestico::getM_uf_origem(){
 		return m_uf_origem;
 	}
 	string AnfibioDomestico::getM_cidade_origem(){
 		return m_cidade_origem;
 	}
-
-
