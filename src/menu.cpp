@@ -1,5 +1,15 @@
+/**
+* @file menu.cpp
+* @brief Métodos da Classe Menu
+*/
+
+/** @brief Inclui a biblioteca iostream */
 #include <iostream>
+
+/** @brief Inclui a biblioteca menu.h */
 #include "../include/menu.h"
+
+/** @brief Inclui a biblioteca interfaces.h */
 #include "../include/interfaces.h"
 
 
@@ -7,15 +17,24 @@ using std::cin;
 using std::cout;
 using std::cerr;
 
-//vdc
+
+/**
+/** @brief Método chamado menuM responsável por organizar a interação com o usuário 
+* @param  Não possui parâmetro
+* @return Não possui retorno
+*/
 void Menu::menuM(){
 	
+	/** @brief Cria um objeto da classe Interfaces para manipular os métodos da mesma */
 	Interfaces nome;
 
+	/** @brief Chama o métodp exibeNome() da classe Interfaces */
 	nome.exibeNome();
 
+	/** @brief Define a variável do tipo inteiro chamada op para servir de parâmeotro pro Switch */
 	int op;
 
+	/** @brief Saídas do menu de interação com o usuário */
 	cout<<"1. Cadastrar novo animal " << endl;
 	cout<<"2. Remover animal " << endl;
 	cout<<"3. Alteração de cadastro de animal " << endl;
@@ -28,7 +47,7 @@ void Menu::menuM(){
 	cout<<"ENTRE COM A OPCAO DESEJADA: " << endl;
 	cin>>op;
 
-
+	/** @brief Switch que controla as funções do sistema */
 	switch(op){
 
 	case 1:
@@ -70,11 +89,20 @@ void Menu::menuM(){
 	}
 }
 
-
+/**
+/** @brief Método chamado cadastrarAnimal responsável por organizar a interação com o usuário no cadastramentos dos animais. 
+* @param  Não possui parâmetro
+* @return Não possui retorno
+*/
 void Menu::cadastrarAnimal(){
 
+	/** @brief Define a variável do tipo inteiro chamada op para servir de parâmeotro pro Switch */
 	int op = 0;
+
+	/** @brief Cria um objeto da classe Interfaces para manipular os métodos da mesma */
 	Interfaces classe;
+
+	/** @brief Saídas do menu de cadastramento dos animais para interação com o usuário */
 	cout << "" << endl;
 	cout<<"1. Mamifero " << endl;
 	cout<<"2. Ave " << endl;
@@ -83,7 +111,7 @@ void Menu::cadastrarAnimal(){
 	cout<<"ENTRE COM A OPCAO DESEJADA: " << endl;
 	cin>>op;
 
-
+	/** @brief Switch que controla os animais e métodos da classe Interfaces que vão ser utilizados */
 	switch(op){
 
 	case 1:
@@ -150,10 +178,20 @@ void Menu::cadastrarAnimal(){
 	}
 }
 
+/**
+/** @brief Método chamado cadastrarFuncionario responsável por organizar a interação com o usuário no cadastramentos dos funcionários. 
+* @param  Não possui parâmetro
+* @return Não possui retorno
+*/
 void Menu::cadastrarFuncionario(){
 
+	/** @brief Define a variável do tipo inteiro chamada op para servir de parâmeotro pro Switch */
 	int op = 0;
+
+	/** @brief Cria um objeto da classe Interfaces para manipular os métodos da mesma */
 	Interfaces classe;
+
+	/** @brief Saídas do menu de cadastramento dos funcionarios para interação com o usuário */
 	cout << "" << endl;
 	cout<<"1. Veterinário " << endl;
 	cout<<"2. Tratador " << endl;
@@ -161,7 +199,7 @@ void Menu::cadastrarFuncionario(){
 	cout<<"ENTRE COM A OPCAO DESEJADA: " << endl;
 	cin>>op;
 
-
+	/** @brief Switch que controla os funcionários e métodos da classe Interfaces que vão ser utilizados */
 	switch(op){
 
 	case 1:

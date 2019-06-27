@@ -30,7 +30,7 @@ Reptil::Reptil(int m_codigo,int m_id, string m_classe, string m_nome_cientifico,
 Reptil::~Reptil(){}
 
 /**
-* @brief Método de impressão de um anfíbio.
+* @brief Método de impressão de um reptil.
 * @return Não possui retorno
 */
 void Reptil::imprime(){

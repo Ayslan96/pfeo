@@ -1,14 +1,34 @@
+/**
+* @file mamiferoexotivo.cpp
+* @brief Métodos da Classe MamiferoExotico
+*/
+
+/** @brief Inclui a biblioteca mamiferoexotico.h */
 #include "../include/mamiferoexotico.h"
 
+/**
+* @brief Método construtor padrão.
+* @return Não possui retorno
+*/
 MamiferoExotico::MamiferoExotico(void){}
 
+/**
+* @brief Método construtor padronizado.
+* @param  m_id, m_classe, m_nome_cientifico, m_sexo, m_tamanho, m_dieta,  m_nome_batismo, m_tratador, m_veterinario, m_cor_pelo
+* @return Não possui retorno
+*/
 MamiferoExotico::MamiferoExotico(int codigo, int m_id, std::string m_classe, std::string m_nome_cientifico, char m_sexo, int m_tamanho, std::string m_dieta, std::string m_nome_batismo,
 		bool m_veterinario, bool m_tratador, std::string m_cor_pelo, std::string m_autorizacao_ibama, std::string m_pais_origem):
 		Mamifero(m_codigo, m_id, m_classe, m_nome_cientifico, m_sexo, m_tamanho, m_dieta, m_nome_batismo, m_veterinario, m_tratador, m_cor_pelo),
 		AnimalExotico(m_autorizacao_ibama, m_pais_origem) {}
 	
+/**
+* @brief Método destrutor.
+* @return Não possui retorno
+*/
 MamiferoExotico::~MamiferoExotico(){}
 
+/** @brief Implementação do método de impressão de um mamíferoExótico*/
 void MamiferoExotico::imprime(){
 
 	cout << m_codigo << m_id << m_classe << m_nome_cientifico << m_sexo << m_tamanho
